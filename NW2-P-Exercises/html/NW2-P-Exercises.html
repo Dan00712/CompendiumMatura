@@ -1,0 +1,2196 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Questions for teacher &#8212; My Jupyter Book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint single-page" id="site-navigation">
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/NW2-P-Exercises.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/NW2-P-Exercises.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Questions for teacher
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#u1">
+     Ü1
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#u2">
+     Ü2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ubungszettel-1">
+   Übungszettel 1
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gleichformige-translation">
+     Gleichförmige Translation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gleichmaszige-beschleunigte-translation">
+     Gleichmäßige beschleunigte Translation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#freier-fall-wurfe">
+     Freier Fall + Würfe
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#masse-und-kraft">
+     Masse und Kraft
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mechanische-arbeit-energieprinzip">
+     Mechanische Arbeit, Energieprinzip
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leistung-wirkungsgrad">
+     Leistung; Wirkungsgrad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rotation">
+     Rotation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hydrostatik-auftrieb-in-flussigkeiten-und-gasen">
+     Hydrostatik, Auftrieb in Flüssigkeiten und Gasen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ubungszettel-2">
+   Übungszettel 2
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#harmonische-bewegung">
+     Harmonische Bewegung
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pendel">
+     Pendel
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gedampfte-schwingung">
+     Gedämpfte Schwingung
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wellen">
+     Wellen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kontrollfragen">
+       Kontrollfragen
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schwingungen">
+   Schwingungen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uwellen-1">
+   ÜWellen_1
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#u3">
+   Ü3
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Questions for teacher</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Questions for teacher
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#u1">
+     Ü1
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#u2">
+     Ü2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ubungszettel-1">
+   Übungszettel 1
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gleichformige-translation">
+     Gleichförmige Translation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gleichmaszige-beschleunigte-translation">
+     Gleichmäßige beschleunigte Translation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#freier-fall-wurfe">
+     Freier Fall + Würfe
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#masse-und-kraft">
+     Masse und Kraft
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mechanische-arbeit-energieprinzip">
+     Mechanische Arbeit, Energieprinzip
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leistung-wirkungsgrad">
+     Leistung; Wirkungsgrad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rotation">
+     Rotation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hydrostatik-auftrieb-in-flussigkeiten-und-gasen">
+     Hydrostatik, Auftrieb in Flüssigkeiten und Gasen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ubungszettel-2">
+   Übungszettel 2
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#harmonische-bewegung">
+     Harmonische Bewegung
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pendel">
+     Pendel
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gedampfte-schwingung">
+     Gedämpfte Schwingung
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wellen">
+     Wellen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kontrollfragen">
+       Kontrollfragen
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schwingungen">
+   Schwingungen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uwellen-1">
+   ÜWellen_1
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#u3">
+   Ü3
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="n">DrWatson</span>
+<span class="nd">@quickactivate</span>
+
+<span class="k">using</span> <span class="n">Printf</span>
+<span class="k">using</span> <span class="n">CairoMakie</span>
+
+<span class="k">function</span> <span class="n">round_threedigits</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">Number</span><span class="p">)</span>
+	<span class="k">return</span> <span class="n">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="nd">@__DIR__</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;D:\\__Programming\\Jupyter\\CompendiumMatura\\notebooks&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="https://de.wikibooks.org/wiki/Formelsammlung_Physik">Formeln</a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="questions-for-teacher">
+<h1>Questions for teacher<a class="headerlink" href="#questions-for-teacher" title="Permalink to this headline">#</a></h1>
+<section id="u1">
+<h2>Ü1<a class="headerlink" href="#u1" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>3.12</p></li>
+<li><p>8.14</p></li>
+</ul>
+</section>
+<section id="u2">
+<h2>Ü2<a class="headerlink" href="#u2" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>4.2</p></li>
+</ul>
+<p>4.12</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ubungszettel-1">
+<h1>Übungszettel 1<a class="headerlink" href="#ubungszettel-1" title="Permalink to this headline">#</a></h1>
+<section id="gleichformige-translation">
+<h2>Gleichförmige Translation<a class="headerlink" href="#gleichformige-translation" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 1.1</span>
+<span class="n">v_kmh</span> <span class="o">=</span> <span class="mi">80</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mi">80</span><span class="o">/</span><span class="mf">3.6</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">60</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">v</span> <span class="o">*</span> <span class="n">t</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="n">x</span><span class="o">/</span><span class="mi">100</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;</span><span class="si">$x</span><span class="s"> km&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>26.667 km
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span> <span class="c">## Ü1 - 1.3</span>
+ <span class="n">d_cm</span> <span class="o">=</span> <span class="mi">3</span>
+ <span class="n">d</span> <span class="o">=</span> <span class="n">d_cm</span><span class="o">/</span><span class="mi">100</span>
+ <span class="n">⌀</span> <span class="o">=</span> <span class="p">(</span><span class="n">d</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span> <span class="o">*</span><span class="nb">π</span>
+
+ <span class="n">V</span> <span class="o">=</span> <span class="mi">300</span> <span class="o">/</span> <span class="mi">1000</span>
+ <span class="n">t_min</span> <span class="o">=</span> <span class="mi">12</span>
+
+ <span class="n">fillspeed</span> <span class="o">=</span> <span class="n">V</span> <span class="o">/</span> <span class="n">t_min</span>
+ <span class="n">v</span> <span class="o">=</span> <span class="n">fillspeed</span> <span class="o">/</span> <span class="n">⌀</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>35.368
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="gleichmaszige-beschleunigte-translation">
+<h2>Gleichmäßige beschleunigte Translation<a class="headerlink" href="#gleichmaszige-beschleunigte-translation" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 2,1</span>
+
+<span class="c"># a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">.5</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mi">80</span> <span class="o">/</span><span class="mf">3.6</span>
+
+<span class="c"># a(t) = v̇(t)</span>
+<span class="c"># v(t) = ∫a dt </span>
+<span class="c"># v(t) = a⋅t + v₀ | v₀ = 0 → t = v(t)/a</span>
+<span class="c"># v(t) = ṡ(t) → s(t) = ∫v(t) dt</span>
+<span class="c"># s(t) = ∫a⋅ t + v₀ dt = 1/2⋅a⋅t² + v₀⋅ t</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">v</span><span class="o">/</span><span class="n">a</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span> 
+<span class="n">t</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;</span><span class="si">$x</span><span class="s"> s&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+
+
+<span class="c"># b</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mf">.5</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">t</span><span class="o">^</span><span class="mi">2</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">s</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;</span><span class="si">$x</span><span class="s"> m&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>44.444 s
+493.817 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 2.3</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="c"># v(t_e) = 20 = a ⋅ t_e</span>
+<span class="c"># s(t_e) = 20 = 1/2 ⋅ a ⋅ t_e^2</span>
+
+<span class="c"># a = s(t_e)⋅ 2 /t_e^2 = 40/t_e^2</span>
+<span class="c"># 20 = 40/t_e^2 ⋅ t_e</span>
+<span class="c"># 20 = 40/t_e → t_e = 40/20 = 2</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;</span><span class="si">$x</span><span class="s"> s&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 2.7</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mf">11.2</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mi">90</span> <span class="o">/</span><span class="mf">3.6</span>
+
+<span class="c"># a</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">a</span> <span class="o">=</span> <span class="n">v</span><span class="o">/</span><span class="n">t</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">a</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;a: </span><span class="si">$a</span><span class="s"> m/s²&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+
+<span class="c"># b</span>
+<span class="c"># s(t) = ∫∫a dt dt = 1/2 a t^2</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="mf">.5</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">t</span><span class="o">^</span><span class="mi">2</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">s</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;b: </span><span class="si">$x</span><span class="s"> m&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 2.232 m/s²
+b: 139.991 m
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="freier-fall-wurfe">
+<h2>Freier Fall + Würfe<a class="headerlink" href="#freier-fall-wurfe" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 3.1</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="c"># s = 1/2 a t^2 = 1/2 g t^2</span>
+<span class="c"># → t = √(2s/g)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">g</span><span class="p">)</span>
+
+<span class="c"># v = g * t </span>
+<span class="c"># v = √(2 g^2 * s/g) = √(2gs)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">g</span> <span class="o">*</span> <span class="n">t</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">v</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;</span><span class="si">$</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">3.6</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span><span class="p">)</span><span class="s"> km/h&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>71.312 km/h
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 3.4</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">45</span>
+
+<span class="c">#h(t) = -.5 * g * t^2 + v * t = 45</span>
+<span class="c">#ḣ(t) = -     g * t   + v     = 0 </span>
+<span class="c"># g*t = v → t = v/g</span>
+<span class="c">#h(v) = -.5 * g * v^2/g^2 + v^2 / g = 45</span>
+<span class="c">#h(v) = v^2 * (2/2g - 1/2g) = v^2 * (1/2g)</span>
+<span class="c"># v^2 = h(t) * 2g ⇒ v = √(2gh)</span>
+<span class="n">v_0</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$x</span><span class="s"> m/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29.714 m/s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü - 3.7</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="n">v_0</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">Δh</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="c">#a</span>
+
+<span class="c">#v = a * t</span>
+<span class="c"># s = .5 * a * t^2 → a = 2s/t^2</span>
+<span class="c"># 				   → t = √(2s/a)</span>
+<span class="c">#v = 2s/t = 2s/√(2s/a) = √(2^2*s^2 / (2s/a)) = √(2sa)</span>
+
+<span class="n">v_vert</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">Δh</span><span class="o">*</span><span class="n">g</span> <span class="o">|&gt;</span> <span class="n">sqrt</span>
+<span class="n">v_ges</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">v_0</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">v_vert</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">v_ges</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;a: </span><span class="si">$x</span><span class="s"> m/s&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+
+<span class="c">#b</span>
+
+<span class="n">angl</span> <span class="o">=</span> <span class="n">atand</span><span class="p">(</span><span class="n">v_0</span> <span class="o">/</span> <span class="n">v_vert</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">angl</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="s">&quot;b: </span><span class="si">$x</span><span class="s"> °&quot;</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 11.084 m/s
+b: 46.199 °
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 3.9</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">v_hor</span> <span class="o">=</span> <span class="mi">15</span><span class="o">/</span><span class="mf">3.6</span>
+<span class="n">Δh</span> <span class="o">=</span> <span class="mi">45</span>
+
+<span class="c">#a</span>
+<span class="c"># h(t) = -.5 * g * t^2 (+ v*t) = -45</span>
+<span class="c"># ⇒ t = √|2h(t)/g| = √(2*45/g)</span>
+<span class="n">t_hit</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">Δh</span> <span class="o">/</span><span class="n">g</span><span class="p">)</span>
+<span class="n">reach</span> <span class="o">=</span> <span class="n">t_hit</span> <span class="o">*</span> <span class="n">v_hor</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;a: </span><span class="si">$reach</span><span class="s"> m&quot;</span><span class="p">)</span>
+
+<span class="c">#b</span>
+<span class="n">t_hit</span> <span class="o">=</span> <span class="n">t_hit</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;b: </span><span class="si">$t_hit</span><span class="s"> s&quot;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 12.62 m
+b: 3.029 s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 3.12</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="n">v_L0</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">a_L</span>  <span class="o">=</span> <span class="mi">4</span>
+<span class="n">Δh_innen</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c">#a </span>
+
+<span class="c"># s(t) = .5 * a * t^2 = 3</span>
+<span class="c"># t = √(2s/a)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">Δh_innen</span><span class="o">/</span> <span class="p">(</span><span class="n">g</span> <span class="o">+</span> <span class="n">a_L</span><span class="p">))</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;a: </span><span class="si">$t</span><span class="s"> s&quot;</span><span class="p">)</span>
+
+<span class="c">#b</span>
+<span class="n">s_L</span> <span class="o">=</span> <span class="mf">.5</span> <span class="o">*</span> <span class="n">a_L</span> <span class="o">*</span> <span class="n">t</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">v_L0</span> <span class="o">*</span> <span class="n">t</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;b: </span><span class="si">$s_L</span><span class="s"> m&quot;</span><span class="p">)</span>
+
+<span class="c">#c</span>
+
+<span class="c"># v(t) = -a * t + v_0 = 0 → a*t = v_0 → t = v_0/a</span>
+<span class="n">t_o_return</span> <span class="o">=</span> <span class="n">v_L0</span><span class="o">/</span><span class="n">g</span> <span class="c">#|&gt; round_threedigits</span>
+
+<span class="c"># s(t) = -.5 * a * t^2 + v_0 t</span>
+<span class="n">s</span> <span class="o">=</span> <span class="o">-</span><span class="mf">.5</span> <span class="o">*</span> <span class="n">g</span> <span class="o">*</span> <span class="n">t_o_return</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">v_L0</span> <span class="o">*</span> <span class="n">t_o_return</span>
+
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;c: Umkehrpunkt:</span><span class="si">$</span><span class="p">(</span><span class="n">t_o_return</span><span class="p">)</span><span class="s">s</span><span class="se">\n</span><span class="s">   </span><span class="si">$s</span><span class="s"> m nach oben&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 0.659 s
+b: 6.141 m
+c: Umkehrpunkt:0.8154943934760448s
+   3.261977573904179 m nach oben
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="masse-und-kraft">
+<h2>Masse und Kraft<a class="headerlink" href="#masse-und-kraft" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 4.1</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.5</span>
+
+<span class="n">F</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">m</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$F</span><span class="s"> N&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>150.0 N
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Ü1 - 4.4</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="c">#a </span>
+<span class="c">#s = .5 * a * t^2 → a = 2s/t^2</span>
+<span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="n">s</span><span class="o">/</span><span class="n">t</span><span class="o">^</span><span class="mi">2</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;a: </span><span class="si">$a</span><span class="s"> m/s^2&quot;</span><span class="p">)</span>
+
+<span class="c">#b</span>
+
+<span class="c"># v = a * t</span>
+<span class="n">v_0</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span> <span class="o">*</span> <span class="n">t</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;b: </span><span class="si">$v_0</span><span class="s"> m/s&quot;</span><span class="p">)</span>
+
+<span class="c">#c</span>
+<span class="n">F</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span><span class="n">m</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;c: </span><span class="si">$F</span><span class="s"> N&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: -2.5 m/s^2
+b: 10.0 m/s
+c: -12.5 N
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 4.6</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mi">20</span><span class="o">/</span><span class="mi">1000</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">60</span><span class="o">/</span><span class="mi">100</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="c">#a </span>
+
+<span class="c"># s = .5 a t^2</span>
+<span class="c">#  v = a * t → t = v/a</span>
+<span class="c"># s = .5 a v^2 /a^2 → .5 * v^2 /a</span>
+<span class="c"># a  = .5 v^2 /s</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">.5</span> <span class="o">*</span> <span class="n">v</span><span class="o">^</span><span class="mi">2</span> <span class="o">/</span><span class="n">l</span>
+<span class="nd">@printf</span> <span class="s">&quot;a: </span><span class="si">%.2E</span><span class="s"> m/s^2</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">a</span>
+
+<span class="c">#b</span>
+
+<span class="c"># s(t) = 0.6</span>
+<span class="c"># s(t) = .5 * a * t^2</span>
+<span class="c"># t = √(2s(t)/a)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">l</span><span class="o">/</span><span class="n">a</span><span class="p">)</span>
+<span class="nd">@printf</span> <span class="s">&quot;b: </span><span class="si">%.2E</span><span class="s"> s</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">t</span>
+
+<span class="c">#c</span>
+<span class="n">F</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">m</span>
+<span class="nd">@printf</span> <span class="s">&quot;c: </span><span class="si">%.2E</span><span class="s"> N</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">F</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 3.00E+05 m/s^2
+b: 2.00E-03 s
+c: 6.00E+03 N
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">F_G</span> <span class="o">=</span> <span class="mi">10</span><span class="o">^</span><span class="mi">5</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">F_G</span><span class="o">/</span><span class="n">g</span>
+<span class="n">F</span> <span class="o">=</span> <span class="mi">700</span>
+<span class="n">μ</span> <span class="o">=</span> <span class="mf">.005</span>
+
+<span class="n">F_res</span> <span class="o">=</span> <span class="mi">10</span><span class="o">^</span><span class="mi">5</span> <span class="o">*</span> <span class="n">μ</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">F</span> <span class="o">-</span> <span class="n">F_res</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2E</span><span class="s"> m/s^2&quot;</span> <span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.96E-02 m/s^2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mechanische-arbeit-energieprinzip">
+<h2>Mechanische Arbeit, Energieprinzip<a class="headerlink" href="#mechanische-arbeit-energieprinzip" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 6.1</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="c">#a</span>
+
+<span class="n">F</span> <span class="o">=</span> <span class="mf">.1</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">F</span><span class="o">/</span><span class="n">m</span>
+<span class="c"># v = at</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">v</span><span class="o">/</span><span class="n">a</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="mf">.5</span><span class="n">m</span> <span class="o">*</span> <span class="n">v</span><span class="o">^</span><span class="mi">2</span>
+<span class="nd">@printf</span> <span class="s">&quot;a: </span><span class="si">%.2E</span><span class="s"> s</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">t</span> 
+<span class="nd">@printf</span> <span class="s">&quot;W: </span><span class="si">%.2E</span><span class="s"> J&quot;</span> <span class="n">W</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 2.00E+03 s
+W: 2.00E+03 J
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 6.12</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">angld</span> <span class="o">=</span> <span class="mi">45</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">Δh</span> <span class="o">=</span> <span class="n">tand</span><span class="p">(</span><span class="n">angld</span><span class="p">)</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">angld</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="c"># E_pot = mgh</span>
+<span class="c"># E_kin = .5mv^2</span>
+<span class="c"># mgh = .5mv^2</span>
+<span class="c"># v^2 = 2gh</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">Δh</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2E</span><span class="s"> m/s&quot;</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.78E+00 m/s
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="leistung-wirkungsgrad">
+<h2>Leistung; Wirkungsgrad<a class="headerlink" href="#leistung-wirkungsgrad" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="c"># 7.1</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">850</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">60</span>
+<span class="n">Δh</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">Δh</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">W</span> <span class="o">/</span><span class="n">t</span>
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2E</span><span class="s"> W&quot;</span> <span class="n">P</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.78E+02 W
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 7.7.</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">μ_ges</span> <span class="o">=</span> <span class="mf">.9</span><span class="o">*</span> <span class="mf">.6</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">270</span>
+<span class="n">P</span> <span class="o">=</span> <span class="mf">7E+3</span>
+<span class="n">P_kran</span> <span class="o">=</span> <span class="n">P</span> <span class="o">*</span> <span class="n">μ_ges</span>
+
+<span class="n">F_G</span> <span class="o">=</span> <span class="mi">270</span> <span class="o">*</span> <span class="n">g</span>
+<span class="n">v</span>   <span class="o">=</span> <span class="n">P_kran</span><span class="o">/</span><span class="n">F_G</span>
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2E</span><span class="s">&quot;</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.43E+00
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="rotation">
+<h2>Rotation<a class="headerlink" href="#rotation" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c">#8.1</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">/</span><span class="mf">3.6</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">71.12</span> <span class="o">/</span><span class="mi">100</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">d</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">ω</span> <span class="o">=</span> <span class="n">v</span><span class="o">/</span><span class="n">r</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span><span class="o">/</span><span class="n">ω</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">T</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;Drehzahl:    </span><span class="si">%.3E</span><span class="s"> U/min</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">f</span><span class="o">*</span><span class="mi">60</span>
+<span class="nd">@printf</span> <span class="s">&quot;Umlaufdauer: </span><span class="si">%.1E</span><span class="s"> s</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drehzahl:    1.492E+02 U/min
+Umlaufdauer: 4.0E-01 s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 8.9</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="mi">40</span> <span class="o">/</span><span class="mf">3.6</span>
+<span class="n">F</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c">#a</span>
+
+<span class="c"># F = m*ω^2*r = m*v^2/r</span>
+<span class="c"># F ~ v^2 → v*2 ⇒ F*4</span>
+
+<span class="n">F_v2</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="mi">4</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;a: </span><span class="si">%.2E</span><span class="s"> N</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">F_v2</span>
+
+<span class="c">#b</span>
+
+<span class="c"># F ~ 1/r</span>
+<span class="c"># r*2 ⇒ F/2</span>
+
+<span class="n">F_r2</span> <span class="o">=</span> <span class="n">F</span><span class="o">/</span><span class="mi">2</span>
+<span class="nd">@printf</span> <span class="s">&quot;b: </span><span class="si">%.2E</span><span class="s"> N</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">F_r2</span>
+
+<span class="c">#c</span>
+
+
+<span class="nd">@printf</span> <span class="s">&quot;c: r*4&quot;</span>
+
+<span class="c">#</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 4.00E+02 N
+b: 5.00E+01 N
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c: r*4
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 8.14</span>
+
+<span class="n">ΔE</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">f_0</span> <span class="o">=</span> <span class="mi">70</span> <span class="o">/</span><span class="mi">60</span>
+<span class="n">f_1</span> <span class="o">=</span> <span class="mi">200</span> <span class="o">/</span><span class="mi">60</span>
+
+<span class="n">ω_0</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="nb">π</span> <span class="o">*</span> <span class="n">f_0</span>
+<span class="n">ω_1</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="nb">π</span> <span class="o">*</span> <span class="n">f_1</span>
+
+<span class="c">#  E = .5 * I * ω^2</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">ΔE</span> <span class="o">/</span> <span class="p">(</span><span class="n">ω_1</span> <span class="o">-</span> <span class="n">ω_0</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.079
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="hydrostatik-auftrieb-in-flussigkeiten-und-gasen">
+<h2>Hydrostatik, Auftrieb in Flüssigkeiten und Gasen<a class="headerlink" href="#hydrostatik-auftrieb-in-flussigkeiten-und-gasen" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">ρ_wasser</span> <span class="o">=</span> <span class="mi">1020</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="mi">250</span> <span class="o">*</span> <span class="mi">10</span><span class="o">^</span><span class="mi">5</span>
+
+<span class="c"># p = ρ * h* g</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="n">p</span> <span class="o">/</span> <span class="p">(</span><span class="n">ρ_wasser</span> <span class="o">*</span> <span class="n">g</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2498.451
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 9.7</span>
+
+
+<span class="n">V</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">ρ_ice</span> <span class="o">=</span> <span class="mi">920</span>
+<span class="n">ρ_wasser</span> <span class="o">=</span> <span class="mi">1020</span>
+
+<span class="n">m_ice</span> <span class="o">=</span> <span class="n">V</span> <span class="o">*</span> <span class="n">ρ_ice</span>
+<span class="n">V_w</span> <span class="o">=</span> <span class="n">m_ice</span> <span class="o">/</span><span class="n">ρ_wasser</span>
+
+<span class="n">percent</span> <span class="o">=</span> <span class="n">V</span> <span class="o">-</span> <span class="n">V_w</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2f</span><span class="s"> </span><span class="si">%%</span><span class="s">&quot;</span> <span class="n">percent</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.80 %
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ubungszettel-2">
+<h1>Übungszettel 2<a class="headerlink" href="#ubungszettel-2" title="Permalink to this headline">#</a></h1>
+<section id="harmonische-bewegung">
+<h2>Harmonische Bewegung<a class="headerlink" href="#harmonische-bewegung" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c">#</span>
+<span class="n">func_i</span> <span class="o">=</span> <span class="n">A</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="nb">π</span><span class="o">*</span><span class="n">f</span> <span class="o">*</span> <span class="mf">.01</span><span class="p">)</span>
+<span class="nd">@printf</span> <span class="s">&quot;E: </span><span class="si">%.02f</span><span class="s"> cm&quot;</span> <span class="n">func_i</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E: 9.71 cm
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 1.9</span>
+
+<span class="c"># T_P1:T_P2 = 19:20</span>
+<span class="c"># Δ * 15 = 3 → Δ = 1/5</span>
+<span class="n">Δ</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">5</span>
+ <span class="nd">@show</span> <span class="n">f_P1</span> <span class="o">=</span> <span class="n">Δ</span> <span class="o">*</span> <span class="mi">19</span>
+ <span class="nd">@show</span> <span class="n">f_P2</span> <span class="o">=</span> <span class="n">Δ</span> <span class="o">*</span> <span class="mi">20</span>
+
+ <span class="nd">@show</span> <span class="n">T_P1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">f_P1</span>
+ <span class="nd">@show</span> <span class="n">T_P2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">f_P2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>f_P1 = Δ * 19 = 3.8000000000000003
+f_P2 = Δ * 20 = 4.0
+T_P1 = 1 / f_P1 = 0.2631578947368421
+T_P2 = 1 / f_P2 = 0.25
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.25
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="pendel">
+<h2>Pendel<a class="headerlink" href="#pendel" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 2.1</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="c"># 25 U/min</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mi">25</span><span class="o">/</span><span class="mi">60</span>
+<span class="n">ω_0</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span> <span class="o">*</span> <span class="n">f</span>
+
+<span class="c"># ω_0 = √(k/m)</span>
+<span class="c"># → ω_0^2 = k/m </span>
+<span class="c"># → m = k/ω_0^2</span>
+
+<span class="nd">@show</span> <span class="n">m</span> <span class="o">=</span> <span class="n">k</span> <span class="o">/</span><span class="p">(</span><span class="n">ω_0</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>m = k / ω_0 ^ 2 |&gt; round_threedigits = 3.648
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 2.2</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">v_0</span> <span class="o">=</span> <span class="mf">.8</span>
+<span class="n">Â</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">/</span><span class="mi">100</span>
+
+<span class="c"># s(t) = Â * sin(ωt)</span>
+<span class="c"># v(t) = ω Â * cos(ωt)</span>
+<span class="c"># v(0) = ω * Â = .8</span>
+<span class="c"># ω * ̂5 = .8 →</span>
+<span class="n">ω</span> <span class="o">=</span> <span class="n">v_0</span><span class="o">/</span><span class="n">Â</span>
+
+<span class="c"># ω = √(k/m)</span>
+<span class="nd">@show</span> <span class="n">m</span> <span class="o">=</span> <span class="n">k</span><span class="o">/</span><span class="n">ω</span><span class="o">^</span><span class="mi">2</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>m = k / ω ^ 2 |&gt; round_threedigits = 0.117
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.117
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 2.12</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">Δl</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">/</span><span class="mi">100</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="n">Δl</span>
+<span class="n">ω</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="n">k</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">ω</span><span class="o">/</span><span class="mi">2</span><span class="nb">π</span>
+<span class="nd">@show</span> <span class="mi">1</span><span class="o">/</span><span class="n">f</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 / f |&gt; round_threedigits = 0.246
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.246
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 2.13</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">T_20</span>  <span class="o">=</span><span class="mi">32</span>
+<span class="n">T_0</span> <span class="o">=</span> <span class="n">T_20</span><span class="o">/</span><span class="mi">20</span>
+
+<span class="c">#T_0 = 2π * √(l/g)</span>
+<span class="nd">@show</span> <span class="n">l</span> <span class="o">=</span> <span class="p">(</span><span class="n">T_0</span><span class="o">/</span><span class="mi">2</span><span class="nb">π</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span> <span class="o">*</span> <span class="n">g</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>l = (T_0 / (2π)) ^ 2 * g |&gt; round_threedigits = 0.636
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.636
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># ω  = </span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="gedampfte-schwingung">
+<h2>Gedämpfte Schwingung<a class="headerlink" href="#gedampfte-schwingung" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">A_1</span> <span class="o">=</span> <span class="mf">10.5</span>
+<span class="n">A_3</span> <span class="o">=</span> <span class="mf">9.9</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="n">A_3</span><span class="o">/</span><span class="p">(</span><span class="n">A_1</span><span class="p">))</span>
+<span class="nd">@show</span> <span class="n">A_8</span> <span class="o">=</span> <span class="n">k</span><span class="o">^</span><span class="mi">7</span><span class="o">*</span> <span class="n">A_1</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A_8 = k ^ 7 * A_1 |&gt; round_threedigits = 8.546
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8.546
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># A_50 = ŷ/2</span>
+<span class="c"># A_50/A_0 = 1/2</span>
+<span class="c"># k = 2^-1/50</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">50</span><span class="p">)</span>
+<span class="nd">@show</span> <span class="n">k</span><span class="o">^</span><span class="mi">10</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>k ^ 10 * 100 |&gt; round_threedigits = 87.055
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>87.055
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="wellen">
+<h2>Wellen<a class="headerlink" href="#wellen" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 4.1</span>
+
+<span class="n">E</span> <span class="o">=</span> <span class="mf">2.1</span><span class="o">*</span><span class="mi">10</span><span class="o">^</span><span class="mi">11</span>
+<span class="n">ϱ</span> <span class="o">=</span> <span class="mi">7800</span>
+
+<span class="n">E</span><span class="o">/</span><span class="n">ϱ</span> <span class="o">|&gt;</span> <span class="n">sqrt</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5188.745
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 4.3</span>
+
+<span class="c"># a </span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="mi">340</span>
+<span class="n">λ</span> <span class="o">=</span> <span class="mi">12</span><span class="o">/</span><span class="mi">100</span>
+
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;a: </span><span class="si">$</span><span class="p">(</span><span class="n">f</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">λ</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span><span class="p">)</span><span class="s"> s^-1&quot;</span><span class="p">)</span>
+
+<span class="c"># b </span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">f</span>
+<span class="nd">@printf</span> <span class="s">&quot;b: </span><span class="si">%.02E</span><span class="s"> s&quot;</span> <span class="n">T</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 2833.333 s^-1
+b: 1.76E-04 s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 4.5</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="mi">10</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">λ</span> <span class="o">=</span> <span class="n">v</span><span class="o">/</span><span class="n">f</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 5.3</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">340</span>
+
+<span class="p">(</span>
+	<span class="c"># f&#39; = f* c/c-v</span>
+	<span class="c"># .93f/f = c/c-v</span>
+	<span class="c"># .93c - .93v = c</span>
+	<span class="c"># .93v = -(c - .93c)</span>
+	<span class="o">-</span><span class="p">(</span><span class="n">c</span> <span class="o">-</span> <span class="mf">.93</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="mf">.93</span>
+	<span class="o">|&gt;</span> <span class="n">abs</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+<span class="p">)</span> <span class="o">|&gt;</span> <span class="n">println</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>25.591
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 5.7</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">340</span>
+
+<span class="c"># f = n * c/2L</span>
+
+<span class="n">Δl_extrema</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">c</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">f</span><span class="p">)</span> 
+	<span class="o">|&gt;</span> <span class="n">L</span><span class="o">-&gt;</span> <span class="n">L</span><span class="o">/</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$Δl_extrema</span><span class="s"> m&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.17 m
+</pre></div>
+</div>
+</div>
+</div>
+<section id="kontrollfragen">
+<h3>Kontrollfragen<a class="headerlink" href="#kontrollfragen" title="Permalink to this headline">#</a></h3>
+<ul>
+<li><p>Ursache Welle:</p></li>
+<li><p>Ursprung Welle:<br />
+<em>Erregerzentrum</em></p></li>
+<li><p>harmonische Welle:<br />
+Welle der Form: <span class="math notranslate nohighlight">\(A * sin(\omega\cdot t)\)</span></p></li>
+<li><p>Transversale vs Longitudinalwelle<br />
+Longitudinal: Modulation in gleicher richtung wie Ausbreitung</p></li>
+<li><p>Erkläre</p>
+<ul class="simple">
+<li><p>Frequenz<br />
+<em>Schwingungen pro in Zeitraum (Hz bei Sekunde)</em></p></li>
+<li><p>Wellenlänge<br />
+<em>räumlicher abstand zwischen zwei nulldurchgängen | maxima | minima</em></p></li>
+<li><p>Ausbreitungsgeschwindigkeit<br />
+<em>beschreibt wie schnell sich die Welle im Raumfortbewegt</em></p></li>
+</ul>
+<p>Zusammenhang: <span class="math notranslate nohighlight">\(c = f\cdot\lambda\)</span></p>
+</li>
+<li><p>mögliche Aggregatzustände</p>
+<ul class="simple">
+<li><p>Longitudinalwelle:</p>
+<ul>
+<li><p>Fest</p></li>
+<li><p>Flüssig</p></li>
+<li><p>Gasförmig</p></li>
+</ul>
+</li>
+<li><p>Transversalwelle</p>
+<ul>
+<li><p>Fest</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Einteilung Frequenz</p>
+<ul class="simple">
+<li><p>Infraschall f &lt; 16 Hz</p></li>
+<li><p>Hörschall 16 Hz &lt; f &lt; 20kHz</p></li>
+<li><p>Ultraschall 20kHz &lt; f &lt; 16 GHz</p></li>
+</ul>
+</li>
+<li><p>Ton vs Klang<br />
+Ton genau eine f<br />
+Klang Grundton + Obertöne</p></li>
+<li><p>Tonhöhe vs Lautstärke<br />
+Tonhöhe von <span class="math notranslate nohighlight">\(f\)</span> abhängig<br />
+Lautstärke von <span class="math notranslate nohighlight">\(\hat{A}\)</span></p></li>
+<li><p>Erkläre<br />
+Grundton niedrigste f eines Klanges
+Obertöne sind ganzzahlige vielfache von einem Grundton<br />
+(e.g Grundton = 440 Hz, Obertöne = {880, 1360, 1760,…})</p></li>
+<li><p>Wellenfront<br />
+Die Fläche aller zusammenhängenden Punkte einer Welle</p></li>
+<li><p>Wellenstrahl<br />
+Die Abreitungsrichtung einer Welle</p></li>
+<li><p>Wann Wellenstrahlen parallel?<br />
+Wenn die Wellenfront Gerade verläuft und nicht Kreisförmig (ebene Wellenfront)</p></li>
+<li><p>Interferenz Bedingung
+Überlagerung mehrerer Wellen</p></li>
+<li><p>Kohärenz<br />
+Gleicher Phasenunterschied</p></li>
+<li><p>bedingung konstruktive/destruktive Interferenz</p>
+<ul class="simple">
+<li><p>Konstruktiv<br />
+<span class="math notranslate nohighlight">\(\Delta\lambda = k\cdot \lambda_1\)</span></p></li>
+<li><p>Destruktiv
+<span class="math notranslate nohighlight">\(\Delta\lambda = k\cdot\lambda_1 + \lambda_1/2\)</span></p></li>
+</ul>
+</li>
+<li><p>Huygen’sches Prinzip
+“Jeder Punkt an einer Wellenfront kann wieder als Ausgangspunkt einer neunen Welle betrachtet werden”</p></li>
+<li><p>Beugung
+Ablenkung einer Welle bei einem Hindernis</p></li>
+<li><p>Bedingung Beugung<br />
+<span class="math notranslate nohighlight">\(\lambda \approx d\)</span><br />
+wobei d öffnung bei einem einfachspalt ist</p></li>
+<li><p>Reflexionsgesetz<br />
+<span class="math notranslate nohighlight">\(\alpha = \alpha'\)</span></p></li>
+<li><p>Relexion über Huygen’sches prinzip
+Wenn eine Wellenfront auf eine Fläche trifft, so treffen manche Teilchen vor anderen auf die Fläche auf.<br />
+Diese können nun, durch das Huygen’sche Prinzip, als elementarwellen betrachtet werden, wenn ein anderer Punkt der Welle auf die Fläche auftrift,
+kann man eine linie finden, welche die Punkte miteinander verbindet, diese linie entspricht dem Reflexionsgesetz <span class="math notranslate nohighlight">\(\alpha = \alpha'\)</span></p></li>
+<li><p>Brechung
+Änderung des Winkels, wenn eine Welle von einem Trägermedium in ein anderes Trägermedium mit anderer Dichte übergeht</p></li>
+<li><p>Brechungsgesetz<br />
+<span class="math notranslate nohighlight">\(\frac{sin(\alpha)}{sin(\beta)} = \frac{n_\alpha}{n_\beta}\)</span><br />
+n…Brechungsindex</p></li>
+<li><p>Grundfrequenz Saite</p>
+<ul class="simple">
+<li><p>Länge</p></li>
+<li><p>Dicke</p></li>
+<li><p>Spannkraft</p></li>
+</ul>
+</li>
+<li><p>Zusammenhang Wellenlänge und Länge v. Seite</p></li>
+<li><p>Eigenschwingungen entstehung<br />
+Durch Reflexionen</p></li>
+<li><p>Schallabstrahlung vergrößert
+Schwungkörper</p></li>
+<li><p>Warum Musikinstrumente unterscheiden
+Verschiedene Instrumente erzeugen verschiedene Oberschwingungen</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="schwingungen">
+<h1>Schwingungen<a class="headerlink" href="#schwingungen" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 6</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">Δl</span> <span class="o">=</span> <span class="mf">1.5</span><span class="o">/</span><span class="mi">100</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">.1</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="p">(</span><span class="n">g</span> <span class="o">*</span><span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="n">Δl</span>
+<span class="n">ω</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="n">k</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">ω</span><span class="o">/</span><span class="mi">2</span><span class="nb">π</span>
+<span class="nd">@show</span> <span class="n">T</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">f</span> <span class="o">|&gt;</span> <span class="n">round_threedigits</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T = 1 / f |&gt; round_threedigits = 0.246
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.246
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 8</span>
+
+<span class="c"># m&#39; = .5m</span>
+<span class="c"># ω = √k/m</span>
+
+<span class="c"># ω&#39;/ω = √(2k/m) / k/m = √(2)</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.01f</span><span class="s"> </span><span class="si">%%</span><span class="s">&quot;</span> <span class="o">√</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="n">x</span><span class="o">*</span><span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>41.4 %
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 14</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="n">l_1</span> <span class="o">=</span> <span class="mi">25</span> <span class="o">/</span><span class="mi">100</span>
+<span class="n">l_2</span> <span class="o">=</span> <span class="mi">36</span> <span class="o">/</span><span class="mi">100</span>
+
+<span class="n">T_1</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span> <span class="o">*</span> <span class="o">√</span><span class="p">(</span><span class="n">l_1</span><span class="o">/</span><span class="n">g</span><span class="p">)</span>
+<span class="n">T_2</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span> <span class="o">*</span> <span class="o">√</span><span class="p">(</span><span class="n">l_2</span><span class="o">/</span><span class="n">g</span><span class="p">)</span>
+
+<span class="c"># ω = 2π f = 2π/T</span>
+<span class="n">ω_1</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span><span class="o">/</span><span class="n">T_1</span>
+<span class="n">ω_2</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span><span class="o">/</span><span class="n">T_2</span>
+
+<span class="c">#@show T_1</span>
+<span class="c">#@show T_2</span>
+
+<span class="c"># sin(ω_1 t) = sin(ω_2 t)</span>
+
+<span class="n">Δω</span> <span class="o">=</span> <span class="n">ω_1</span> <span class="o">-</span> <span class="n">ω_2</span> <span class="o">|&gt;</span> <span class="n">abs</span>
+<span class="nd">@printf</span> <span class="s">&quot;a: </span><span class="si">%.2f</span><span class="s"> s</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span><span class="o">/</span><span class="n">Δω</span>
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="se">\t</span><span class="s"> </span><span class="si">%.2f</span><span class="s"> s</span><span class="se">\n</span><span class="s">&quot;</span> <span class="p">(</span><span class="n">T_1</span> <span class="o">-</span> <span class="n">T_2</span> <span class="o">|&gt;</span> <span class="n">abs</span><span class="p">)</span>
+
+<span class="n">n_1</span> <span class="o">=</span> <span class="n">t</span><span class="o">/</span><span class="n">T_1</span>
+<span class="n">n_2</span> <span class="o">=</span> <span class="n">t</span><span class="o">/</span><span class="n">T_2</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;b:</span><span class="se">\n\t</span><span class="s">n_1:</span><span class="se">\t</span><span class="si">%d</span><span class="se">\n\t</span><span class="s">n_2:</span><span class="se">\t</span><span class="si">%d</span><span class="s">&quot;</span> <span class="n">n_1</span> <span class="n">n_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 6.02 s
+	 0.20 s
+b:
+	n_1:	6
+	n_2:	5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 18</span>
+
+<span class="n">T_d</span> <span class="o">=</span> <span class="mf">.72</span>
+<span class="n">I_d</span> <span class="o">=</span> <span class="mf">9.5</span> <span class="o">*</span> <span class="mi">10</span><span class="o">^-</span><span class="mi">5</span>
+
+<span class="n">T_add</span> <span class="o">=</span> <span class="mf">2.13</span>
+
+<span class="c">#T = 2π √(m*g*s/I)</span>
+
+<span class="c"># T_add/T_d = √(I_d + I_k/(I_d))</span>
+<span class="n">I_k</span> <span class="o">=</span> <span class="p">((</span><span class="n">T_add</span><span class="o">/</span><span class="n">T_d</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">I_d</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;I_k = </span><span class="si">%.2E</span><span class="s"> kg m^2&quot;</span> <span class="n">I_k</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I_k = 7.36E-04 kg m^2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 20</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">.18</span>
+<span class="n">E</span> <span class="o">=</span> <span class="mi">196</span>
+
+<span class="n">ω</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span><span class="o">/</span><span class="n">T</span>
+<span class="c"># ω = √(k/m)</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">ω</span><span class="o">^</span><span class="mi">2</span> <span class="o">*</span><span class="n">m</span>
+
+<span class="c"># E = 1/2 * k * r^2</span>
+<span class="n">r</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">E</span><span class="o">/</span><span class="n">k</span><span class="p">)</span>
+<span class="nd">@printf</span> <span class="s">&quot;r = </span><span class="si">%.2f</span><span class="s"> m&quot;</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>r = 0.20 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 23</span>
+
+<span class="n">m_p</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span><span class="mi">1000</span>
+<span class="n">m_l</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span><span class="mi">1000</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">m_l</span> <span class="o">+</span> <span class="n">m_p</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">3.5</span> <span class="o">*</span><span class="mi">10</span><span class="o">^</span><span class="mi">5</span>
+
+<span class="n">ω</span> <span class="o">=</span> <span class="o">√</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">ω</span><span class="o">/</span><span class="mi">2</span><span class="nb">π</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;f = </span><span class="si">%.2f</span><span class="s"> Hz&quot;</span> <span class="n">f</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>f = 3.65 Hz
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">r_1</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">r_2</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">ω_1</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+<span class="n">ω_2</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span> <span class="n">ω_1</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">:</span><span class="mf">.01</span><span class="o">:</span><span class="mi">3</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Axis</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">t</span><span class="p">,</span>
+	<span class="n">t</span><span class="o">-&gt;</span> <span class="n">r_1</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_1</span><span class="p">),</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="ss">:red</span>
+<span class="p">)</span>
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">t</span><span class="p">,</span>
+	<span class="n">t</span><span class="o">-&gt;</span> <span class="n">r_2</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_2</span><span class="p">),</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="ss">:blue</span>
+<span class="p">)</span>
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">t</span><span class="p">,</span>
+	<span class="n">t</span><span class="o">-&gt;</span><span class="p">(</span>
+		<span class="n">r_1</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_1</span><span class="p">)</span> <span class="o">+</span> <span class="n">r_2</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_2</span><span class="p">)</span>
+	<span class="p">),</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="ss">:purple</span><span class="p">,</span>
+<span class="p">)</span>
+ <span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/NW2-P-Exercises_64_0.png" src="_images/NW2-P-Exercises_64_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">r_1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">r_2</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">ω_1</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+<span class="n">ω_2</span> <span class="o">=</span> <span class="n">ω_1</span>
+
+<span class="n">Δϕ</span> <span class="o">=</span> <span class="nb">π</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">:</span><span class="mf">.01</span><span class="o">:</span><span class="mi">3</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Axis</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">t</span><span class="p">,</span>
+	<span class="n">t</span><span class="o">-&gt;</span> <span class="n">r_1</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_1</span><span class="p">),</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="ss">:red</span>
+<span class="p">)</span>
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">t</span><span class="p">,</span>
+	<span class="n">t</span><span class="o">-&gt;</span> <span class="n">r_2</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_2</span> <span class="o">+</span> <span class="n">Δϕ</span><span class="p">),</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="ss">:blue</span>
+<span class="p">)</span>
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">t</span><span class="p">,</span>
+	<span class="n">t</span><span class="o">-&gt;</span><span class="p">(</span>
+		<span class="n">r_1</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_1</span><span class="p">)</span> <span class="o">+</span> <span class="n">r_2</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="o">*</span> <span class="n">ω_2</span> <span class="o">+</span> <span class="n">Δϕ</span><span class="p">)</span>
+	<span class="p">),</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="ss">:purple</span><span class="p">,</span>
+<span class="p">)</span>
+ <span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/NW2-P-Exercises_65_0.png" src="_images/NW2-P-Exercises_65_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">r_x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">r_y</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">ω_x</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+<span class="n">ω_y</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+
+<span class="n">Δϕ</span>  <span class="o">=</span> <span class="mi">3</span><span class="nb">π</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">:</span><span class="mf">.01</span><span class="o">:</span><span class="mi">1</span>
+
+<span class="n">x_s</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="n">t</span>
+	<span class="n">r_x</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">ω_x</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">Δϕ</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">y_s</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="n">t</span>
+	<span class="n">r_y</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">ω_y</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Axis</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">x_s</span><span class="p">,</span>
+	<span class="n">y_s</span>
+<span class="p">)</span>
+
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/NW2-P-Exercises_66_0.png" src="_images/NW2-P-Exercises_66_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">r_x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">r_y</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">ω_x</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+<span class="n">ω_y</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+
+<span class="n">Δϕ</span>  <span class="o">=</span> <span class="nb">π</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">:</span><span class="mf">.01</span><span class="o">:</span><span class="mi">1</span>
+
+<span class="n">x_s</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="n">t</span>
+	<span class="n">r_x</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">ω_x</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">Δϕ</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">y_s</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="n">t</span>
+	<span class="n">r_y</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">ω_y</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Axis</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">x_s</span><span class="p">,</span>
+	<span class="n">y_s</span>
+<span class="p">)</span>
+
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/NW2-P-Exercises_67_0.png" src="_images/NW2-P-Exercises_67_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">r_x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">r_y</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">ω_x</span> <span class="o">=</span> <span class="mi">2</span><span class="nb">π</span>
+<span class="n">ω_y</span> <span class="o">=</span> <span class="n">ω_x</span> <span class="o">*</span> <span class="mi">3</span>
+
+<span class="n">Δϕ</span>  <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">:</span><span class="mf">.01</span><span class="o">:</span><span class="mi">1</span>
+
+<span class="n">x_s</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="n">t</span>
+	<span class="n">r_x</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">ω_x</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">Δϕ</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">y_s</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="n">t</span>
+	<span class="n">r_y</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">ω_y</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Axis</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="n">plot!</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span>
+	<span class="n">x_s</span><span class="p">,</span>
+	<span class="n">y_s</span>
+<span class="p">)</span>
+
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/NW2-P-Exercises_68_0.png" src="_images/NW2-P-Exercises_68_0.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="uwellen-1">
+<h1>ÜWellen_1<a class="headerlink" href="#uwellen-1" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 42</span>
+
+<span class="n">c</span> <span class="o">=</span>  <span class="mf">343.2</span>
+<span class="n">λ</span> <span class="o">=</span> <span class="mi">12</span> <span class="o">/</span><span class="mi">100</span>
+
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">λ</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">f</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;a: </span><span class="si">%.2f</span><span class="s"> Hz</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">f</span>
+<span class="nd">@printf</span> <span class="s">&quot;b: </span><span class="si">%.2f</span><span class="s"> ms</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">t</span> <span class="o">*</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: 2860.00 Hz
+b: 0.17 ms
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="mf">2.1</span> <span class="o">*</span> <span class="mi">10</span><span class="o">^</span><span class="mi">11</span>
+<span class="n">ϱ</span> <span class="o">=</span> <span class="mi">7800</span>
+
+<span class="n">E</span><span class="o">/</span><span class="n">ϱ</span> <span class="o">|&gt;</span> <span class="n">sqrt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5188.745216627708
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 31</span>
+<span class="n">ϱ</span> <span class="o">=</span> <span class="mi">7800</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span><span class="mi">1000</span>
+<span class="n">Ψ</span> <span class="o">=</span> <span class="mi">2100</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="o">√</span><span class="p">(</span><span class="n">Ψ</span><span class="o">/</span><span class="p">(</span><span class="nb">π</span> <span class="o">*</span> <span class="n">ϱ</span><span class="p">))</span>
+<span class="nd">@printf</span> <span class="s">&quot;c = </span><span class="si">%.2f</span><span class="s"> m/s</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c = 292.74 m/s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 51</span>
+
+<span class="n">ΔM</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span><span class="mi">100</span>
+
+<span class="n">λ</span> <span class="o">=</span> <span class="n">ΔM</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">343.2</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">λ</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3431.9999999999995
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="u3">
+<h1>Ü3<a class="headerlink" href="#u3" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">α</span>  <span class="o">=</span> <span class="mf">11.8</span> <span class="o">*</span> <span class="mi">10</span><span class="o">^-</span><span class="mi">6</span>
+<span class="n">l</span>  <span class="o">=</span> <span class="mf">300.137</span>
+<span class="n">ΔT</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="n">Δl</span> <span class="o">=</span> <span class="n">α</span> <span class="o">*</span> <span class="n">l</span> <span class="o">*</span> <span class="n">ΔT</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;a: Nein, durch die Wärmeaußdehnung ändert sich die Höhe ständig</span><span class="se">\n</span><span class="s">&quot;</span>
+<span class="nd">@printf</span> <span class="s">&quot;b: </span><span class="si">%.2f</span><span class="s"> m&quot;</span> <span class="n">Δl</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a: Nein, durch die Wärmeaußdehnung ändert sich die Höhe ständig
+b: 0.18 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 1.8</span>
+
+<span class="n">l</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">Δl</span> <span class="o">=</span> <span class="mf">.91</span><span class="o">/</span><span class="mi">1000</span>
+<span class="n">ΔT</span> <span class="o">=</span> <span class="mi">60</span>
+
+<span class="n">α</span> <span class="o">=</span> <span class="n">Δl</span><span class="o">/</span><span class="p">(</span><span class="n">l</span> <span class="o">*</span> <span class="n">ΔT</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.0555555555555555e-6
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 1.114</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">α_glass</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">*</span> <span class="mi">10</span><span class="o">^-</span><span class="mi">6</span>
+<span class="n">γ_turp</span>  <span class="o">=</span> <span class="mi">97</span> <span class="o">*</span> <span class="mi">10</span><span class="o">^-</span><span class="mi">5</span>
+<span class="n">γ_glass</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">α_glass</span>
+
+<span class="n">ΔT</span> <span class="o">=</span> <span class="mi">86</span><span class="o">-</span><span class="mi">20</span>
+
+<span class="n">ΔV_g</span> <span class="o">=</span> <span class="n">ΔT</span> <span class="o">*</span> <span class="n">γ_glass</span> <span class="o">*</span> <span class="n">V</span>
+<span class="n">ΔV_t</span> <span class="o">=</span> <span class="n">ΔT</span> <span class="o">*</span> <span class="n">γ_turp</span>  <span class="o">*</span> <span class="n">V</span>
+
+<span class="n">ΔV</span> <span class="o">=</span> <span class="n">ΔV_g</span> <span class="o">-</span> <span class="n">ΔV_t</span> <span class="o">|&gt;</span> <span class="n">abs</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2f</span><span class="s"> cm³&quot;</span> <span class="n">ΔV</span> <span class="o">*</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>62.24 cm³
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 4.4</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="mi">160</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">45</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">97_000</span>
+
+<span class="n">R_s</span> <span class="o">=</span> <span class="mi">287</span>
+
+<span class="c"># pV = mR_s T </span>
+<span class="c"># p = ϱ R_s T </span>
+<span class="c"># ϱ = p/(R_s * T); p = const</span>
+
+<span class="n">ϱ</span> <span class="o">=</span> <span class="n">T</span><span class="o">-&gt;</span> <span class="n">p</span><span class="o">/</span><span class="p">(</span><span class="n">R_s</span> <span class="o">*</span> <span class="p">(</span><span class="n">T</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">))</span>
+<span class="n">invϱ</span> <span class="o">=</span> <span class="n">ϱ</span><span class="o">-&gt;</span> <span class="p">(</span><span class="n">p</span><span class="o">/</span><span class="p">(</span><span class="n">R_s</span> <span class="o">*</span> <span class="n">ϱ</span><span class="p">))</span> <span class="o">-</span> <span class="mf">273.15</span>
+
+<span class="n">F_A</span> <span class="o">=</span> <span class="n">V</span> <span class="o">*</span> <span class="n">ϱ</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="n">g</span>
+<span class="c"># F_G = F_A = m*g + ϱ(T) * V * g</span>
+<span class="c"># ϱ(T) = (F_A - m*g)/(V * g)</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="p">(</span><span class="n">F_A</span> <span class="o">-</span> <span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V</span><span class="o">*</span><span class="n">g</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">invϱ</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2f</span><span class="s"> °C</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">T</span>
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2f</span><span class="s"> K&quot;</span> <span class="n">T</span><span class="o">+</span><span class="mf">273.15</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97.28 °C
+370.43 K
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># 4.6</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="mf">4.8</span>
+<span class="n">p_1</span> <span class="o">=</span> <span class="mf">3.85</span> <span class="o">*</span><span class="mi">100</span>
+<span class="n">p_2</span> <span class="o">=</span> <span class="mf">1.17</span> <span class="o">*</span><span class="mi">100</span>
+
+<span class="n">T_1</span> <span class="o">=</span> <span class="mi">24</span><span class="o">+</span><span class="mi">273</span>
+<span class="n">T_2</span> <span class="o">=</span> <span class="mi">22</span><span class="o">+</span><span class="mi">273</span>
+
+<span class="c"># pV/T </span>
+<span class="c"># p_1V/T_1 = p_2 (V + ΔV)/T_2</span>
+<span class="c"># V + ΔV = T_2/T_1 * p_1/p_2 *V</span>
+<span class="c"># ΔV = T_2/T_1 * p_1/p_2 * V - V</span>
+<span class="n">ΔV</span> <span class="o">=</span> <span class="n">T_2</span><span class="o">/</span><span class="n">T_1</span> <span class="o">*</span> <span class="n">p_1</span><span class="o">/</span><span class="n">p_2</span> <span class="o">*</span> <span class="n">V</span> <span class="o">-</span> <span class="n">V</span> <span class="o">|&gt;</span> <span class="n">x</span><span class="o">-&gt;</span> <span class="n">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10.89
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">T_1</span> <span class="o">=</span> <span class="mi">18</span> <span class="o">+</span> <span class="mf">273.15</span>
+<span class="n">p_1</span> <span class="o">=</span> <span class="mi">1020</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">V_1</span> <span class="o">=</span> <span class="mi">1200</span>
+
+<span class="n">V_2</span> <span class="o">=</span> <span class="mi">2250</span>
+<span class="n">p_2</span> <span class="o">=</span> <span class="mi">480</span><span class="o">*</span> <span class="mi">100</span>
+
+<span class="c"># p_1V_1/T_1 = p_2V_2/T_2</span>
+<span class="c"># T_2 = (p_2V_2)/(p_1V_1) * T_1</span>
+
+<span class="n">T_2</span> <span class="o">=</span> <span class="p">(</span><span class="n">p_2</span> <span class="o">*</span> <span class="n">V_2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">p_1</span> <span class="o">*</span> <span class="n">V_1</span><span class="p">)</span> <span class="o">*</span> <span class="n">T_1</span> <span class="o">|&gt;</span> <span class="n">T_K</span><span class="o">-&gt;</span> <span class="n">T_K</span> <span class="o">-</span><span class="mf">273.15</span>
+
+<span class="nd">@printf</span> <span class="s">&quot;</span><span class="si">%.2f</span><span class="s"> °C&quot;</span> <span class="n">T_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-16.25 °C
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "julia-1.8"
+        },
+        kernelOptions: {
+            kernelName: "julia-1.8",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'julia-1.8'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
