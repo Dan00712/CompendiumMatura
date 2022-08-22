@@ -2,5 +2,6 @@ using DrWatson
 @quickactivate
 
 using IJulia
-
-jupyterlab(dir=joinpath(".", "notebooks"))
+path = joinpath(@__DIR__, "..", "notebooks")
+@info "path: $path"
+jupyterlab(dir = path)
