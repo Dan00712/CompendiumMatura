@@ -1,0 +1,3379 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Allgemeine Chemie &#8212; My Jupyter Book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint single-page" id="site-navigation">
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/NW2-C.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/NW2-C.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Allgemeine Chemie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregatzustande">
+     Aggregatzustände
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#siedepunkt">
+       Siedepunkt
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stoff-gemische">
+     Stoff-Gemische
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bsp-stoffgemische">
+       Bsp Stoffgemische
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#trennverfahren">
+       Trennverfahren
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#fest-von-fest">
+         Fest von Fest
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#fest-von-flussig">
+         Fest von Flüssig
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#flussig-von-flussig">
+         Flüssig von Flüssig
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#chromatographie">
+           Chromatographie
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teilchen">
+     Teilchen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#atom">
+       Atom
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#isotope">
+       Isotope
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radioaktivitat">
+     Radioaktivität
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abschirmung">
+       Abschirmung
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#elektronen-konfiguration">
+     Elektronen-Konfiguration
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantenzahlen">
+     Quantenzahlen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#schalen">
+       Schalen
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hauptquantenzahl">
+         Hauptquantenzahl
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nebenquantenzahl">
+         Nebenquantenzahl
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#magnetischequantenzahl">
+         Magnetischequantenzahl
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#spinquantenzahl">
+         Spinquantenzahl
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#periodensystem">
+     Periodensystem
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bindungen">
+     Bindungen
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stochiometrie">
+     Stöchiometrie
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#grundgesetze">
+       Grundgesetze
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nomenklatur">
+       Nomenklatur
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nichtmetall-metall">
+         Nichtmetall + Metall
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#vorsilben">
+           Vorsilben
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#sauren-anionen">
+         Säuren + Anionen
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anwendung-periodensystem">
+       Anwendung Periodensystem
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reaktionsgleichungen">
+     Reaktionsgleichungen
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reaktionskinetik">
+     Reaktionskinetik
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#massenwirkungsgesetz">
+       Massenwirkungsgesetz
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#einflusse-auf-das-gleichgewicht">
+         Einflüsse auf das Gleichgewicht
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reaktionsenthalpie">
+       Reaktionsenthalpie
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#exotherm">
+         Exotherm:
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#endotherm">
+         Endotherm
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#katalysator">
+         Katalysator
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saure-base">
+     Säure Base
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ph-skala">
+       PH-Skala
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#arrhenius">
+       Arrhenius
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#saure">
+         Säure
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#base">
+         Base
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bronsted">
+       Brönsted
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#lewis">
+       Lewis
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dissoziationsgrad">
+       Dissoziationsgrad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#gleichgewichtskonstante-k">
+         Gleichgewichtskonstante K
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#indikatoren">
+       Indikatoren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#titration">
+       Titration
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ph-puffer">
+         pH-Puffer
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#redox-reaktion">
+     Redox-Reaktion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#allgemeines">
+       Allgemeines
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#gekoppelte-reaktion">
+         Gekoppelte Reaktion
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reaktionsgleichung-ausgleichen">
+         Reaktionsgleichung ausgleichen
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#elektrochemie">
+   Elektrochemie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galvanisches-element">
+     Galvanisches Element
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#referenzsystem-spannungsreihe">
+     Referenzsystem - Spannungsreihe
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#normalspannung">
+       Normalspannung
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#anwendungen-spannungsreihe">
+         Anwendungen Spannungsreihe
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#faradaysche-gesetz">
+       Faradaysche Gesetz
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#elektrochemische-spannungsquelle">
+       Elektrochemische Spannungsquelle
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#primarelement">
+         Primärelement
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#volta-element">
+           Volta-Element
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#zink-kohle-batterie">
+           Zink-Kohle Batterie
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#alkali-mangan-batterie">
+           Alkali-Mangan Batterie
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#zink-silberoxid-knopfzelle">
+           Zink-Silberoxid Knopfzelle
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sekundarelement">
+       Sekundärelement
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#blei-akku">
+         Blei Akku
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nickel-eisen-akku">
+         Nickel-Eisen Akku
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nickel-metallhydrid-akku">
+         Nickel-Metallhydrid Akku
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#lithium-ionen-akku">
+         Lithium Ionen Akku
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#brennstoffzelle">
+       Brennstoffzelle
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#aufbau">
+         Aufbau
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bsp-wasserstoff-brennstoffzelle">
+         Bsp.: Wasserstoff-Brennstoffzelle
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#elektrolyse">
+       Elektrolyse
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#schmelzflusselektrolyse">
+       Schmelzflusselektrolyse
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#uberspannung">
+       Überspannung
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anwendung">
+       Anwendung
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#elektrolyse-des-wassers">
+         Elektrolyse des Wassers
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kupferelektrolyse">
+         Kupferelektrolyse
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#chloralkalielektrolse">
+         Chloralkalielektrolse
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aluminiumelektrolyse">
+       Aluminiumelektrolyse
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#korrosion">
+     Korrosion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ursachen">
+       Ursachen
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#rostbildung-bei-eisen-und-stahl">
+         Rostbildung bei Eisen und Stahl
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#korrosionsschutz">
+     Korrosionsschutz
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beschichtung">
+       Beschichtung
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chemische-technologie">
+   Chemische Technologie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fossile-rohstoffe">
+     Fossile Rohstoffe
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kohle-torf">
+       Kohle &amp; Torf
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#einsatzgebiete">
+         Einsatzgebiete
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#erdol">
+       Erdöl
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Einsatzgebiete
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#erdgas">
+       Erdgas
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         Erdgas
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#probleme">
+       Probleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#petrochemie">
+     Petrochemie
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beispiel-produkte">
+       Beispiel Produkte
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#destillation-von-erdol">
+       Destillation von Erdöl
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bierbrauen">
+     Bierbrauen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#rohstoffe">
+       Rohstoffe
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#brauprozess">
+       Brauprozess
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#maischen">
+         Maischen
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#enzymaktivitaten">
+           Enzymaktivitäten
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#maisch-plan">
+         Maisch-Plan
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#lautern">
+         Läutern
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#wurzekochen">
+         Würzekochen
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#hopfengabe">
+           Hopfengabe
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#whirlpool">
+       Whirlpool
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#insulin">
+     Insulin
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#produktion">
+       Produktion
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kunstlich">
+         Künstlich
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#funktionsweise">
+       Funktionsweise
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diabetes">
+       Diabetes
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#typ-1">
+         Typ-1
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#typ-2">
+         Typ-2
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#antibiotika">
+     Antibiotika
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bsp-penicillin">
+       Bsp.: Penicillin
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dna-analyse">
+     DNA-Analyse
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#proben-isolierung">
+       Proben-Isolierung
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pcr">
+       PCR
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#materialien">
+         Materialien
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ablauf">
+         Ablauf
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id3">
+         Einsatzgebiete
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gelelektrophorese">
+       Gelelektrophorese
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#agarosegel">
+         Agarosegel
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#auswertung">
+           Auswertung
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Allgemeine Chemie</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Allgemeine Chemie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregatzustande">
+     Aggregatzustände
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#siedepunkt">
+       Siedepunkt
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stoff-gemische">
+     Stoff-Gemische
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bsp-stoffgemische">
+       Bsp Stoffgemische
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#trennverfahren">
+       Trennverfahren
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#fest-von-fest">
+         Fest von Fest
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#fest-von-flussig">
+         Fest von Flüssig
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#flussig-von-flussig">
+         Flüssig von Flüssig
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#chromatographie">
+           Chromatographie
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teilchen">
+     Teilchen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#atom">
+       Atom
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#isotope">
+       Isotope
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radioaktivitat">
+     Radioaktivität
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abschirmung">
+       Abschirmung
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#elektronen-konfiguration">
+     Elektronen-Konfiguration
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantenzahlen">
+     Quantenzahlen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#schalen">
+       Schalen
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hauptquantenzahl">
+         Hauptquantenzahl
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nebenquantenzahl">
+         Nebenquantenzahl
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#magnetischequantenzahl">
+         Magnetischequantenzahl
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#spinquantenzahl">
+         Spinquantenzahl
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#periodensystem">
+     Periodensystem
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bindungen">
+     Bindungen
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stochiometrie">
+     Stöchiometrie
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#grundgesetze">
+       Grundgesetze
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nomenklatur">
+       Nomenklatur
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nichtmetall-metall">
+         Nichtmetall + Metall
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#vorsilben">
+           Vorsilben
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#sauren-anionen">
+         Säuren + Anionen
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anwendung-periodensystem">
+       Anwendung Periodensystem
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reaktionsgleichungen">
+     Reaktionsgleichungen
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reaktionskinetik">
+     Reaktionskinetik
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#massenwirkungsgesetz">
+       Massenwirkungsgesetz
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#einflusse-auf-das-gleichgewicht">
+         Einflüsse auf das Gleichgewicht
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reaktionsenthalpie">
+       Reaktionsenthalpie
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#exotherm">
+         Exotherm:
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#endotherm">
+         Endotherm
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#katalysator">
+         Katalysator
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saure-base">
+     Säure Base
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ph-skala">
+       PH-Skala
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#arrhenius">
+       Arrhenius
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#saure">
+         Säure
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#base">
+         Base
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bronsted">
+       Brönsted
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#lewis">
+       Lewis
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dissoziationsgrad">
+       Dissoziationsgrad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#gleichgewichtskonstante-k">
+         Gleichgewichtskonstante K
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#indikatoren">
+       Indikatoren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#titration">
+       Titration
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ph-puffer">
+         pH-Puffer
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#redox-reaktion">
+     Redox-Reaktion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#allgemeines">
+       Allgemeines
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#gekoppelte-reaktion">
+         Gekoppelte Reaktion
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#reaktionsgleichung-ausgleichen">
+         Reaktionsgleichung ausgleichen
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#elektrochemie">
+   Elektrochemie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galvanisches-element">
+     Galvanisches Element
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#referenzsystem-spannungsreihe">
+     Referenzsystem - Spannungsreihe
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#normalspannung">
+       Normalspannung
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#anwendungen-spannungsreihe">
+         Anwendungen Spannungsreihe
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#faradaysche-gesetz">
+       Faradaysche Gesetz
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#elektrochemische-spannungsquelle">
+       Elektrochemische Spannungsquelle
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#primarelement">
+         Primärelement
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#volta-element">
+           Volta-Element
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#zink-kohle-batterie">
+           Zink-Kohle Batterie
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#alkali-mangan-batterie">
+           Alkali-Mangan Batterie
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#zink-silberoxid-knopfzelle">
+           Zink-Silberoxid Knopfzelle
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sekundarelement">
+       Sekundärelement
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#blei-akku">
+         Blei Akku
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nickel-eisen-akku">
+         Nickel-Eisen Akku
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nickel-metallhydrid-akku">
+         Nickel-Metallhydrid Akku
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#lithium-ionen-akku">
+         Lithium Ionen Akku
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#brennstoffzelle">
+       Brennstoffzelle
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#aufbau">
+         Aufbau
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bsp-wasserstoff-brennstoffzelle">
+         Bsp.: Wasserstoff-Brennstoffzelle
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#elektrolyse">
+       Elektrolyse
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#schmelzflusselektrolyse">
+       Schmelzflusselektrolyse
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#uberspannung">
+       Überspannung
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anwendung">
+       Anwendung
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#elektrolyse-des-wassers">
+         Elektrolyse des Wassers
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kupferelektrolyse">
+         Kupferelektrolyse
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#chloralkalielektrolse">
+         Chloralkalielektrolse
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aluminiumelektrolyse">
+       Aluminiumelektrolyse
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#korrosion">
+     Korrosion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ursachen">
+       Ursachen
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#rostbildung-bei-eisen-und-stahl">
+         Rostbildung bei Eisen und Stahl
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#korrosionsschutz">
+     Korrosionsschutz
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beschichtung">
+       Beschichtung
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chemische-technologie">
+   Chemische Technologie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fossile-rohstoffe">
+     Fossile Rohstoffe
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kohle-torf">
+       Kohle &amp; Torf
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#einsatzgebiete">
+         Einsatzgebiete
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#erdol">
+       Erdöl
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Einsatzgebiete
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#erdgas">
+       Erdgas
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         Erdgas
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#probleme">
+       Probleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#petrochemie">
+     Petrochemie
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beispiel-produkte">
+       Beispiel Produkte
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#destillation-von-erdol">
+       Destillation von Erdöl
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bierbrauen">
+     Bierbrauen
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#rohstoffe">
+       Rohstoffe
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#brauprozess">
+       Brauprozess
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#maischen">
+         Maischen
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#enzymaktivitaten">
+           Enzymaktivitäten
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#maisch-plan">
+         Maisch-Plan
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#lautern">
+         Läutern
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#wurzekochen">
+         Würzekochen
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#hopfengabe">
+           Hopfengabe
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#whirlpool">
+       Whirlpool
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#insulin">
+     Insulin
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#produktion">
+       Produktion
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kunstlich">
+         Künstlich
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#funktionsweise">
+       Funktionsweise
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diabetes">
+       Diabetes
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#typ-1">
+         Typ-1
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#typ-2">
+         Typ-2
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#antibiotika">
+     Antibiotika
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bsp-penicillin">
+       Bsp.: Penicillin
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dna-analyse">
+     DNA-Analyse
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#proben-isolierung">
+       Proben-Isolierung
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pcr">
+       PCR
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#materialien">
+         Materialien
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ablauf">
+         Ablauf
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id3">
+         Einsatzgebiete
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gelelektrophorese">
+       Gelelektrophorese
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#agarosegel">
+         Agarosegel
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#auswertung">
+           Auswertung
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="cell tag_remove-input tag_remove-output docutils container">
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="allgemeine-chemie">
+<h1>Allgemeine Chemie<a class="headerlink" href="#allgemeine-chemie" title="Permalink to this headline">#</a></h1>
+<section id="aggregatzustande">
+<h2>Aggregatzustände<a class="headerlink" href="#aggregatzustande" title="Permalink to this headline">#</a></h2>
+<p>Teilchen bewegen sich abhängig von der Temperatur</p>
+<ul class="simple">
+<li><p>Fest</p></li>
+<li><p>Flüssig</p></li>
+<li><p>Gasförmig<br />
+<span class="math notranslate nohighlight">\(p\cdot V = m\cdot R_s\cdot \Delta T = n \cdot R \cdot \Delta T\)</span></p></li>
+<li><p>(Plasma)</p></li>
+<li><p>(Bose-Einstein-Kondensat)</p></li>
+</ul>
+<section id="siedepunkt">
+<h3>Siedepunkt<a class="headerlink" href="#siedepunkt" title="Permalink to this headline">#</a></h3>
+<p>Wenn Dampfdruck = Umgebungsdruck</p>
+<p><img alt="" src="http://web.mit.edu/8.334/www/grades/projects/projects08/EvangelosSfakianakis/2_files/image002.jpg" /></p>
+</section>
+</section>
+<section id="stoff-gemische">
+<h2>Stoff-Gemische<a class="headerlink" href="#stoff-gemische" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>alle Stoffe</p>
+<ul>
+<li><p>Heterogene Gemische
+Mehrere Phasen erkennbar</p></li>
+<li><p>Homogene Gemische
+eine Phase erkennbar</p>
+<ul>
+<li><p>Lösung</p></li>
+<li><p>Reine Substanz</p>
+<ul>
+<li><p>Element</p></li>
+<li><p>Verbingungen</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<section id="bsp-stoffgemische">
+<h3>Bsp Stoffgemische<a class="headerlink" href="#bsp-stoffgemische" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Flüssigkeit mit Flüssig. : Wasser + Öl, …</p></li>
+<li><p>Fest mit Fest : Fuß-Ball + Tennis-Ball</p></li>
+<li><p>Fest mit Gas : Staub in Luft</p></li>
+<li><p>Flüssig. mit Gas : Wasser in Luft (Nebel)</p></li>
+<li><p>Fest mit Flüssig : Kalk in Wasser</p></li>
+</ul>
+</section>
+<section id="trennverfahren">
+<h3>Trennverfahren<a class="headerlink" href="#trennverfahren" title="Permalink to this headline">#</a></h3>
+<section id="fest-von-fest">
+<h4>Fest von Fest<a class="headerlink" href="#fest-von-fest" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Sieben</p></li>
+<li><p>Sedimentieren</p></li>
+<li><p>Magnet - Temperatur-Verfahren</p></li>
+<li><p>Lösen</p></li>
+<li><p>Schmelzen</p></li>
+<li><p>Flotieren</p></li>
+<li><p>Elektrostatische Trennung</p></li>
+</ul>
+</section>
+<section id="fest-von-flussig">
+<h4>Fest von Flüssig<a class="headerlink" href="#fest-von-flussig" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Filtrieren</p></li>
+<li><p>Abdestillieren</p></li>
+<li><p>Dekantieren</p></li>
+<li><p>Zentrifugieren</p></li>
+<li><p>Sedimentieren</p></li>
+</ul>
+</section>
+<section id="flussig-von-flussig">
+<h4>Flüssig von Flüssig<a class="headerlink" href="#flussig-von-flussig" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Destillieren<br />
+Siedepunkt Unterschied</p></li>
+<li><p>Chromatographie</p></li>
+<li><p>Phasen trennung</p></li>
+<li><p>Zentrifugieren</p></li>
+</ul>
+<section id="chromatographie">
+<h5>Chromatographie<a class="headerlink" href="#chromatographie" title="Permalink to this headline">#</a></h5>
+<p><img alt="" src="https://bitesizebio.com/wp-content/uploads/2021/09/Column-chromatography-figure-1.jpg" /></p>
+</section>
+</section>
+</section>
+</section>
+<section id="teilchen">
+<h2>Teilchen<a class="headerlink" href="#teilchen" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Molekül</p></li>
+<li><p>Atom</p></li>
+<li><p>Ionen</p>
+<ul>
+<li><p>Anion<br />
+(-) geladen</p></li>
+<li><p>Kation<br />
+(+) geladen</p></li>
+</ul>
+</li>
+</ul>
+<section id="atom">
+<h3>Atom<a class="headerlink" href="#atom" title="Permalink to this headline">#</a></h3>
+<p>besteht aus:</p>
+<ul class="simple">
+<li><p>Kern</p>
+<ul>
+<li><p>Protonen</p></li>
+<li><p>Neutronen</p></li>
+</ul>
+</li>
+<li><p>Hülle</p>
+<ul>
+<li><p>Elektronen</p></li>
+</ul>
+</li>
+</ul>
+<p>Massenzahl: Anzahl der Protonen + Neutronen<br />
+Ordnungszahl: Anzahl der Protonen</p>
+</section>
+<section id="isotope">
+<h3>Isotope<a class="headerlink" href="#isotope" title="Permalink to this headline">#</a></h3>
+<p>Atome mit gleicher Ordnungszahl aber unterschiedlicher Massenzahlen</p>
+</section>
+</section>
+<section id="radioaktivitat">
+<h2>Radioaktivität<a class="headerlink" href="#radioaktivitat" title="Permalink to this headline">#</a></h2>
+<p><span class="math notranslate nohighlight">\(\alpha\)</span>- &amp; <span class="math notranslate nohighlight">\(\beta\)</span>-Strahlung == Teilchenstrahlung<br />
+<span class="math notranslate nohighlight">\(\gamma\)</span>-Elektromagnetische Strahlung</p>
+<p>Strahlung verändert das Element, bis das Element stabil ist</p>
+<p>Die Halbwertszeit gibt an wie lange es braucht damit 50% des Materials zerfallen ist</p>
+<section id="abschirmung">
+<h3>Abschirmung<a class="headerlink" href="#abschirmung" title="Permalink to this headline">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\alpha\)</span>…Blatt Papier<br />
+<span class="math notranslate nohighlight">\(\beta\)</span>…Aluminium Blech<br />
+<span class="math notranslate nohighlight">\(\gamma\)</span>…Dicke Beton/Blei Wände</p>
+</section>
+</section>
+<section id="elektronen-konfiguration">
+<h2>Elektronen-Konfiguration<a class="headerlink" href="#elektronen-konfiguration" title="Permalink to this headline">#</a></h2>
+<p>Jedes Elektron</p>
+<ul class="simple">
+<li><p>lässt sich mit 4 Quantenzahlen beschreiben</p></li>
+<li><p>unterscheidet sich in mindestens einer Quantenzahl</p></li>
+<li><p>Kann nur eine bestimmte Energie haben</p></li>
+</ul>
+<p>Pauli-Verbot: in einem Atom gibt es keine zwei Elektronen mit gleichen Quantenzahlen</p>
+<p>Hundsche Regel: Oribitale werden zuerst mit einem Elektron besetzt bevor diese voll besetzt werden</p>
+</section>
+<section id="quantenzahlen">
+<h2>Quantenzahlen<a class="headerlink" href="#quantenzahlen" title="Permalink to this headline">#</a></h2>
+<section id="schalen">
+<h3>Schalen<a class="headerlink" href="#schalen" title="Permalink to this headline">#</a></h3>
+<section id="hauptquantenzahl">
+<h4>Hauptquantenzahl<a class="headerlink" href="#hauptquantenzahl" title="Permalink to this headline">#</a></h4>
+<p><span class="math notranslate nohighlight">\([K, L, M] \equiv [1, 2, 3]\)</span></p>
+</section>
+<section id="nebenquantenzahl">
+<h4>Nebenquantenzahl<a class="headerlink" href="#nebenquantenzahl" title="Permalink to this headline">#</a></h4>
+<p>Form des Orbitals</p>
+<p>0…s<br />
+1…p<br />
+2…d<br />
+3…f<br />
+4…g</p>
+</section>
+<section id="magnetischequantenzahl">
+<h4>Magnetischequantenzahl<a class="headerlink" href="#magnetischequantenzahl" title="Permalink to this headline">#</a></h4>
+<p><span class="math notranslate nohighlight">\(m_L = -I... 0 ... +I\)</span></p>
+</section>
+<section id="spinquantenzahl">
+<h4>Spinquantenzahl<a class="headerlink" href="#spinquantenzahl" title="Permalink to this headline">#</a></h4>
+<p><span class="math notranslate nohighlight">\(m_s = +\frac{1}{2} \quad ;\quad -\frac{1}{2}\)</span></p>
+<div class="cell tag_remove-input tag_remove-output docutils container">
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nebenquantenzahl</p></th>
+<th class="head"><p>Schale</p></th>
+<th class="head"><p>Elektronen</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(m_L\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(m_s\)</span></p></th>
+<th class="head"><p>n</p></th>
+<th class="head"><p>Orbitale</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>K</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1/2\)</span></p></td>
+<td><p>1</p></td>
+<td><p>s</p></td>
+</tr>
+<tr class="row-odd"><td><p>0, 1</p></td>
+<td><p>L</p></td>
+<td><p>6</p></td>
+<td><p>-1, 0, 1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1/2\)</span></p></td>
+<td><p>2</p></td>
+<td><p>s, p</p></td>
+</tr>
+<tr class="row-even"><td><p>0, 1, 2</p></td>
+<td><p>M</p></td>
+<td><p>10</p></td>
+<td><p>-2, -1, 0, 1, 2</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1/2\)</span></p></td>
+<td><p>3</p></td>
+<td><p>s, p, d</p></td>
+</tr>
+<tr class="row-odd"><td><p>0, 1, 2, 3</p></td>
+<td><p>N</p></td>
+<td><p>14</p></td>
+<td><p>-3, -2, -1, 0, 1, 2, 3</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1/2\)</span></p></td>
+<td><p>4</p></td>
+<td><p>s, p, d, f</p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(4 s^2\)</span><br />
+4…Hauptquantenzahl<br />
+s…Orbital<br />
+2…Nebenquantenzahl</p>
+</section>
+</section>
+</section>
+<section id="periodensystem">
+<h2>Periodensystem<a class="headerlink" href="#periodensystem" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Hauptgruppen</p>
+<ol class="simple">
+<li><p>Wasserstoff und Alkalimetalle</p></li>
+<li><p>Erdalkalimetalle</p></li>
+<li><p>Erdmetalle, Borgruppe</p></li>
+<li><p>Kohlenstoffgruppe</p></li>
+<li><p>Stickstoffgruppe</p></li>
+<li><p>Chalkogene (Gesteinsbildner)</p></li>
+<li><p>Halogene (Salzbildner)</p></li>
+<li><p>Edelgase<br />
+Bestimmen Valenzelektronen</p></li>
+</ol>
+</li>
+<li><p>Nebengruppen</p></li>
+<li><p>Perioden<br />
+In einer Periode Gleiche Anzahl an Orbitalen</p></li>
+</ul>
+</section>
+<section id="bindungen">
+<h2>Bindungen<a class="headerlink" href="#bindungen" title="Permalink to this headline">#</a></h2>
+<p>Ziel energieärmster Zustand</p>
+<p>Elektronegativität:<br />
+<span class="math notranslate nohighlight">\(\quad\)</span>maß wie stark Elektronen angezogen werden können<br />
+<span class="math notranslate nohighlight">\(\quad\)</span>Abhängig von Kernladung und Atomgröße<br />
+<span class="math notranslate nohighlight">\(\quad\)</span>Bezeichnung <span class="math notranslate nohighlight">\(EN\)</span></p>
+<ul class="simple">
+<li><p>Ionenbindung<br />
+Metall + Nicht-Metall<br />
+Kation +<br />
+Anion -<br />
+Starke Bindung<br />
+Elektrolyte: Schmelze/Lösung sind leitend<br />
+⠀<span class="math notranslate nohighlight">\(\Delta EN &gt; 2 \Rightarrow\)</span> Ionenbindung<br />
+Bsp. : <span class="math notranslate nohighlight">\(NaCl\)</span><br />
+⠀<span class="math notranslate nohighlight">\(\quad\)</span>Generell: Salze, Oxide, Säuren, Laugen</p></li>
+<li><p>Atombindung<br />
+Nicht-Metall + Nicht-Metall<br />
+⠀<span class="math notranslate nohighlight">\(\Delta EN &lt; .5\Rightarrow\)</span> Atombindung<br />
+Atome können gemeinsame Elektronenpaaren nützen<br />
+Diese Elektronenpaare bewirken Bindungskräfte</p>
+<ul>
+<li><p>Unpolare Atombindung<br />
+⠀<span class="math notranslate nohighlight">\(\Delta EN = 0\)</span><br />
+Zwischen gleichen Atomen<br />
+⠀<span class="math notranslate nohighlight">\(H_2, Cl_2,...\)</span></p></li>
+<li><p>Polare Atombindung
+⠀<span class="math notranslate nohighlight">\(0 &lt; \Delta EN &lt; .5\)</span><br />
+Elektronenpaare nicht gleichmäßig verteilt, Ladungsschwerpunkt nicht in der Mitte</p>
+<ul>
+<li><p>Dipol
+Abstand der Ladungsschwerpunkte
+⠀<span class="math notranslate nohighlight">\(H_2O, HCl, CH_4, ...\)</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Metallbindung<br />
+Metalle bestehen aus Kristallen, die eine Gitterstruktur bilden, auf denen sich Valenz und Leitungsband überschneiden</p></li>
+<li><p>Wechselwirkungen</p></li>
+</ul>
+<!---->
+<ul class="simple">
+<li><p>Komplexverbindung<br />
+Zentralatom in der Mitte (Ion)<br />
+Rundherum Liganden<br />
+Bindung der Liganden an Ion über freie Elektronenpaare</p></li>
+</ul>
+<!---->
+<ul class="simple">
+<li><p>Wasserstoffbrücken<br />
+Schwache Bindung<br />
+Beruhen auf Dipolkräften<br />
+Bsp. : Wasser, DNA</p></li>
+</ul>
+<!---->
+<ul class="simple">
+<li><p>Zwischenmolekulare Kräfte</p>
+<ul>
+<li><p>Van der Vals Kräfte<br />
+Bindung zwischen kovalenten Molekülen<br />
+Temporäre Ungleichverteilung der Elektronen
+Schwache Bindung</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="stochiometrie">
+<h2>Stöchiometrie<a class="headerlink" href="#stochiometrie" title="Permalink to this headline">#</a></h2>
+<section id="grundgesetze">
+<h3>Grundgesetze<a class="headerlink" href="#grundgesetze" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>die Summe der eingehenden Masse ist gleich der ausgehenden Masse</p></li>
+<li><p>Massenverhältnisse sind const</p></li>
+<li><p>Anzahl der Atome bleibt gleich</p></li>
+</ul>
+</section>
+<section id="nomenklatur">
+<h3>Nomenklatur<a class="headerlink" href="#nomenklatur" title="Permalink to this headline">#</a></h3>
+<section id="nichtmetall-metall">
+<h4>Nichtmetall + Metall<a class="headerlink" href="#nichtmetall-metall" title="Permalink to this headline">#</a></h4>
+<p>Name Metall + Name Nichtmetall + id</p>
+<ul class="simple">
+<li><p>Na-Cl<br />
+Natrium + Chlor + id = Natriumchlorid</p></li>
+</ul>
+<section id="vorsilben">
+<h5>Vorsilben<a class="headerlink" href="#vorsilben" title="Permalink to this headline">#</a></h5>
+<ol class="simple">
+<li><p>mono</p></li>
+<li><p>di</p></li>
+<li><p>tri</p></li>
+<li><p>tetra</p></li>
+<li><p>penta</p></li>
+<li><p>hexa</p></li>
+<li><p>penta</p></li>
+<li><p>ocata</p></li>
+<li><p>nona</p></li>
+<li><p>deca</p></li>
+</ol>
+<p>Bsp.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(PF_5\)</span><br />
+Phosphor + 5<span class="math notranslate nohighlight">\(\rightarrow\)</span> penta + Flur + id = Phosphorpentaflurid</p></li>
+</ul>
+</section>
+</section>
+<section id="sauren-anionen">
+<h4>Säuren + Anionen<a class="headerlink" href="#sauren-anionen" title="Permalink to this headline">#</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Formel</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Anion</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Beispiel</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(H_2SO_4\)</span></p></td>
+<td><p>Schwefelsäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(SO_4^{2-}\)</span></p></td>
+<td><p>Sulfat</p></td>
+<td><p><span class="math notranslate nohighlight">\(CuSO_4\)</span>…Kupfersulfat</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(H_2SO_3\)</span></p></td>
+<td><p>Schwefelige Säure</p></td>
+<td><p><span class="math notranslate nohighlight">\(SO_3^{2-}\)</span></p></td>
+<td><p>Sulfit</p></td>
+<td><p><span class="math notranslate nohighlight">\(NaSO_3\)</span>…Natriumsulfit</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(H_2CO_3\)</span></p></td>
+<td><p>Kohlensäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(CO_3^{2-}\)</span></p></td>
+<td><p>Carbonat</p></td>
+<td><p><span class="math notranslate nohighlight">\(CaCO_3\)</span>…Calciumcarbonat</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(H_3PO_3\)</span></p></td>
+<td><p>Phosphorsäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(PO_3^{2-}\)</span></p></td>
+<td><p>Phosphat</p></td>
+<td><p><span class="math notranslate nohighlight">\(NaH_2PO_4\)</span>…Natriumdihydrogenphosphat</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(HNO_3\)</span></p></td>
+<td><p>Salpetersäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(NO_3^{-}\)</span></p></td>
+<td><p>Nitrat</p></td>
+<td><p><span class="math notranslate nohighlight">\(KNO_3\)</span>…Kaliumnitrat</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(HNO_2\)</span></p></td>
+<td><p>Salpeterige Säure</p></td>
+<td><p><span class="math notranslate nohighlight">\(NO_2^{-}\)</span></p></td>
+<td><p>Nitrit</p></td>
+<td><p><span class="math notranslate nohighlight">\(NaNO_2\)</span>…Natriumnitrit</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(HClO_4\)</span></p></td>
+<td><p>Perchlorsäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(ClO_4^{-}\)</span></p></td>
+<td><p>Perchlorat</p></td>
+<td><p><span class="math notranslate nohighlight">\(Mg(ClO_4)_2\)</span>…Magnesiumperchlorat</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(HCOOH\)</span></p></td>
+<td><p>Ameisensäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(HCOO^-\)</span></p></td>
+<td><p>Formiat</p></td>
+<td><p><span class="math notranslate nohighlight">\(HCOONa\)</span>…Natriumformiat</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CH_3COOH\)</span></p></td>
+<td><p>Essigsäure</p></td>
+<td><p><span class="math notranslate nohighlight">\(CH_3COO^-\)</span></p></td>
+<td><p>Acetat</p></td>
+<td><p><span class="math notranslate nohighlight">\(CH_3COONa\)</span>…Natriumacetat</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="anwendung-periodensystem">
+<h3>Anwendung Periodensystem<a class="headerlink" href="#anwendung-periodensystem" title="Permalink to this headline">#</a></h3>
+<p>Stoffmenge: <span class="math notranslate nohighlight">\(n = 1 [mol]\)</span></p>
+<p><img alt="" src="https://tu-freiberg.de/sites/default/files/media/institut-fuer-energieverfahrenstechnik-143/Carbon-Discovery-Trail/01-board/carbon-element.png" /></p>
+<p><span class="math notranslate nohighlight">\(c = \frac{n}{V}\)</span><br />
+<span class="math notranslate nohighlight">\(n = \frac{m}{M}\)</span>
+<span class="math notranslate nohighlight">\(c_1 \cdot V_1 = c_2 \cdot V_2\)</span><br />
+<span class="math notranslate nohighlight">\(\quad c\)</span>…Stoffmengekonzentration<br />
+<span class="math notranslate nohighlight">\(\quad n\)</span>…Stoffmenge<br />
+<span class="math notranslate nohighlight">\(\quad M\)</span>…Molare Masse<br />
+<span class="math notranslate nohighlight">\(\quad V\)</span>…Volumen<br />
+<span class="math notranslate nohighlight">\(\quad m\)</span>…Masse</p>
+</section>
+</section>
+<section id="reaktionsgleichungen">
+<h2>Reaktionsgleichungen<a class="headerlink" href="#reaktionsgleichungen" title="Permalink to this headline">#</a></h2>
+<p><span class="math notranslate nohighlight">\(A~+~B\rightarrow C~+~D\)</span><br />
+<span class="math notranslate nohighlight">\(A\)</span> und <span class="math notranslate nohighlight">\(B\)</span> reagieren zu <span class="math notranslate nohighlight">\(C\)</span> und <span class="math notranslate nohighlight">\(D\)</span></p>
+<p>Zum Ausgleichen der Reaktionsstoffe dürfen nur die stöchiometrischen Faktoren geändert werden, Eingehende und Ausgehende Moleküle dürfen nicht verändert werden</p>
+</section>
+<section id="reaktionskinetik">
+<h2>Reaktionskinetik<a class="headerlink" href="#reaktionskinetik" title="Permalink to this headline">#</a></h2>
+<section id="massenwirkungsgesetz">
+<h3>Massenwirkungsgesetz<a class="headerlink" href="#massenwirkungsgesetz" title="Permalink to this headline">#</a></h3>
+<p>Bei vermischen von Substanzen welche eine reversible chemische Reaktion eingehen <span class="math notranslate nohighlight">\(\rightarrow\)</span> einstellen eines dynamischen Gleichgewichtes.</p>
+<p><span class="math notranslate nohighlight">\(Edukte~\leftrightarrows~Produkte\)</span></p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/NW2-C_35_0.png" src="_images/NW2-C_35_0.png" />
+</div>
+</div>
+<section id="einflusse-auf-das-gleichgewicht">
+<h4>Einflüsse auf das Gleichgewicht<a class="headerlink" href="#einflusse-auf-das-gleichgewicht" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Konzentrationsänderung</p></li>
+<li><p>Druckänderung</p></li>
+<li><p>Temperaturänderung</p></li>
+</ul>
+</section>
+</section>
+<section id="reaktionsenthalpie">
+<h3>Reaktionsenthalpie<a class="headerlink" href="#reaktionsenthalpie" title="Permalink to this headline">#</a></h3>
+<p>Beschreibt den Energieumsatz einer chemischen Reaktion</p>
+<p><span class="math notranslate nohighlight">\(\Delta H\)</span> kann positiv oder negativ sein</p>
+<section id="exotherm">
+<h4>Exotherm:<a class="headerlink" href="#exotherm" title="Permalink to this headline">#</a></h4>
+<p>Energie wird frei<br />
+<span class="math notranslate nohighlight">\(\Delta H &lt; 0\)</span></p>
+<p><img alt="" src="https://chemiezauber.de/images/b1/wasserstoff/exotherm.jpg" /></p>
+</section>
+<section id="endotherm">
+<h4>Endotherm<a class="headerlink" href="#endotherm" title="Permalink to this headline">#</a></h4>
+<p>Energie wird aufgenommen</p>
+<p><span class="math notranslate nohighlight">\(\Delta H &gt; 0\)</span></p>
+<p><img alt="" src="https://chemiezauber.de/images/b1/wasserstoff/endotherm.jpg" /></p>
+</section>
+<section id="katalysator">
+<h4>Katalysator<a class="headerlink" href="#katalysator" title="Permalink to this headline">#</a></h4>
+<p>beschleunigt Reaktion
+verringert die Aktivierungsenergie</p>
+<p><img alt="" src="https://assets.serlo.org/5e747a3593eb0_4f4035c3f6f64dfc497a2d46a4af14295d77c6ce.png" /></p>
+</section>
+</section>
+</section>
+<section id="saure-base">
+<h2>Säure Base<a class="headerlink" href="#saure-base" title="Permalink to this headline">#</a></h2>
+<section id="ph-skala">
+<h3>PH-Skala<a class="headerlink" href="#ph-skala" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Säuren <span class="math notranslate nohighlight">\(&lt; 7\)</span></p></li>
+<li><p>Neutral <span class="math notranslate nohighlight">\( = 7\)</span></p></li>
+<li><p>Base <span class="math notranslate nohighlight">\(&gt; 7\)</span></p></li>
+</ul>
+<p>Beim vermischen zuerst das Wasser hinzugeben</p>
+<p>Der pH-Wert ist ein Maß für den <strong>sauren</strong> oder <strong>basischen</strong> Charakter einer wässrigen Lösung</p>
+<p>Definition pH-Wert:
+Negativer 10-er-Logarithmus der <span class="math notranslate nohighlight">\(H^+\)</span>-Ionen<br />
+<span class="math notranslate nohighlight">\(pH = -log_{10}~c(H^+)\)</span></p>
+<p>Definition pHO-Wert:
+Negativer 10-er-Logarithmus der <span class="math notranslate nohighlight">\(OH^-\)</span>-Ionen<br />
+<span class="math notranslate nohighlight">\(pOH = -log_{10}~c(OH^-)\)</span></p>
+<p><span class="math notranslate nohighlight">\(pH + pOH  = 14\)</span></p>
+</section>
+<section id="arrhenius">
+<h3>Arrhenius<a class="headerlink" href="#arrhenius" title="Permalink to this headline">#</a></h3>
+<section id="saure">
+<h4>Säure<a class="headerlink" href="#saure" title="Permalink to this headline">#</a></h4>
+<p>Säuren lösen sich in Wässrigen Lösungen</p>
+<p>Säure <span class="math notranslate nohighlight">\(\rightarrow H^+ + Säurerestion&quot;\)</span></p>
+</section>
+<section id="base">
+<h4>Base<a class="headerlink" href="#base" title="Permalink to this headline">#</a></h4>
+<p>Basen lösen sich in der Schmelze und in wässrigen Lösungen</p>
+<p><span class="math notranslate nohighlight">\(MeOH \rightarrow Me^+ + OH^-\)</span></p>
+</section>
+</section>
+<section id="bronsted">
+<h3>Brönsted<a class="headerlink" href="#bronsted" title="Permalink to this headline">#</a></h3>
+<p>Säuren geben Protonen ab <span class="math notranslate nohighlight">\(~\rightarrow\)</span> Protonendonator<br />
+Basen nehmen Protonen auf <span class="math notranslate nohighlight">\(\rightarrow\)</span> Protonenakzeptor</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Säure</p></th>
+<th class="head"><p>Base +</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H^+\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(H_2O\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(OH^-\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(H^+\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(H_3O\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(H_2O\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(H^+\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(HCl\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(Cl^-\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(H^+\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<!---->
+<p>Ampholyte
+Können als Säure und Base auftreten</p>
+<p>Wasser verhält sich gegenüber Basen wie eine (schwache) Säure und<br />
+<span class="math notranslate nohighlight">\(\qquad\)</span> gegenüber Säuren wie eine Base<br />
+Säure Base Gleichgewicht<br />
+<span class="math notranslate nohighlight">\(\qquad H_2O + H_2O \rightarrow H_3O^+ + OH^-\)</span></p>
+</section>
+<section id="lewis">
+<h3>Lewis<a class="headerlink" href="#lewis" title="Permalink to this headline">#</a></h3>
+<p>Säuren sind Elektronenpaarakzeptoren<br />
+<span class="math notranslate nohighlight">\(\qquad\)</span>(<span class="math notranslate nohighlight">\(\rightarrow\)</span> benötigen ein freies orbital)</p>
+<p>Basen sind Elektronenpaardonatoren<br />
+<span class="math notranslate nohighlight">\(\qquad\)</span>(<span class="math notranslate nohighlight">\(\rightarrow\)</span> müssen ein freies elektronenpaar besitzen)</p>
+<!--![](https://www.lernhelfer.de/sites/default/files/lexicon/article_image/BWS-CHE2-0527-03.gifhttps://www.lernhelfer.de/sites/default/files/lexicon/article_image/BWS-CHE2-0527-03.gif) --></section>
+<section id="dissoziationsgrad">
+<h3>Dissoziationsgrad<a class="headerlink" href="#dissoziationsgrad" title="Permalink to this headline">#</a></h3>
+<p>Stärke einer Säure/Base gibt an wie groß die Tendenz ist ihre Säure (<span class="math notranslate nohighlight">\(H^+\)</span>) oder Base-Teilchen (<span class="math notranslate nohighlight">\(OH^-\)</span>) abzugeben</p>
+<p>Starke Säuren/Basen: dissoziieren zu fast 100%<br />
+Schwache Säuren/Basen: dissoziieren zu ca 1%</p>
+<p>Lage des Gleichgewichts <span class="math notranslate nohighlight">\(\equiv\)</span> Stärke der Säure</p>
+<p><span class="math notranslate nohighlight">\(HA + H_2O ~\leftrightarrows~ H_3O^+ + A^-\)</span><br />
+<span class="math notranslate nohighlight">\(\quad\)</span>Schwach <span class="math notranslate nohighlight">\(\qquad\quad\)</span> Stark</p>
+<section id="gleichgewichtskonstante-k">
+<h4>Gleichgewichtskonstante K<a class="headerlink" href="#gleichgewichtskonstante-k" title="Permalink to this headline">#</a></h4>
+<p>Zeigt an wie stark eine Säure oder Base in einer Gleichgewichtsreaktion mit Wasser reagiert</p>
+<ul class="simple">
+<li><p>Säuren: <span class="math notranslate nohighlight">\(pK_S\)</span> bzw <span class="math notranslate nohighlight">\(K_S\)</span></p>
+<ul>
+<li><p>Starke Säuren: <span class="math notranslate nohighlight">\(pK_s &lt; 0\)</span></p></li>
+<li><p>Schwache Säuren: <span class="math notranslate nohighlight">\(pK_S &gt;3.5 \)</span></p></li>
+</ul>
+</li>
+<li><p>Basen : <span class="math notranslate nohighlight">\(pK_B\)</span> bzw <span class="math notranslate nohighlight">\(K_B\)</span></p>
+<ul>
+<li><p>Starke Basen: <span class="math notranslate nohighlight">\(pK_B &lt; 0\)</span></p></li>
+<li><p>Schwache Basen: <span class="math notranslate nohighlight">\(pK_B &gt; 4.75\)</span></p></li>
+</ul>
+</li>
+</ul>
+<p>Bei starken Säuren/Basen kann der <span class="math notranslate nohighlight">\(pH\)</span>/<span class="math notranslate nohighlight">\(pOH\)</span> direkt durch die Konzentration berechnet werden<br />
+Bei schwachen Säuren/Basen muss der <span class="math notranslate nohighlight">\(pH\)</span>/<span class="math notranslate nohighlight">\(pOH\)</span> über den <span class="math notranslate nohighlight">\(pK_S\)</span>/<span class="math notranslate nohighlight">\(pK_B\)</span> Wert berechnet werden<br />
+<span class="math notranslate nohighlight">\(\qquad pH = \frac{1}{2}\cdot (pK_S - log_{10}~c(H^-))\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad pOH = \frac{1}{2}\cdot (pK_S - log_{10}~c(OH^-)\)</span></p>
+<ul class="simple">
+<li><p>Starke Säure + Starke Base <span class="math notranslate nohighlight">\(~~~~\quad\rightarrow\)</span> neutral</p></li>
+<li><p>Schwache Säure + Starke Base <span class="math notranslate nohighlight">\(\quad\rightarrow\)</span> basisch</p></li>
+<li><p>Starke Säure + Schwache Base <span class="math notranslate nohighlight">\(\quad\rightarrow\)</span> sauer</p></li>
+</ul>
+</section>
+</section>
+<section id="indikatoren">
+<h3>Indikatoren<a class="headerlink" href="#indikatoren" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Thymolblau</p></li>
+<li><p>Methylorange</p></li>
+<li><p>Methylrot</p></li>
+<li><p>Lackmus</p></li>
+<li><p>Bromthymolblau</p></li>
+</ul>
+</section>
+<section id="titration">
+<h3>Titration<a class="headerlink" href="#titration" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Probelösung:<br />
+Bekannter Stoff mit unbekannter Konzentration</p></li>
+<li><p>Maßlösung:<br />
+Bekannter Stoff mit bekannter Konzentration</p></li>
+</ul>
+<p>Maßlösung wird in Probelösung gegeben bis Indikator <span class="math notranslate nohighlight">\(pH = 7\)</span> anzeigt</p>
+<p>Bei <span class="math notranslate nohighlight">\(pH = 7\)</span>: Anzahl von <span class="math notranslate nohighlight">\(H^+\)</span> und <span class="math notranslate nohighlight">\(OH^-\)</span> sind gleich groß<br />
+<span class="math notranslate nohighlight">\(\qquad n(NaOH) = c(NaOH) \cdot V(NaOH) = n(HCl)\)</span></p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/NW2-C_65_0.png" src="_images/NW2-C_65_0.png" />
+</div>
+</div>
+<section id="ph-puffer">
+<h4>pH-Puffer<a class="headerlink" href="#ph-puffer" title="Permalink to this headline">#</a></h4>
+<p>ist eine Stoffemenge mit <span class="math notranslate nohighlight">\(pK_s = 7\)</span>, durch diesen ändert sich der pH-Wert deutlich langsamer</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/NW2-C_68_0.png" src="_images/NW2-C_68_0.png" />
+</div>
+</div>
+<p>pH-Puffer bei Zugabe von <span class="math notranslate nohighlight">\(H_3O\)</span></p>
+<p><span class="math notranslate nohighlight">\(H_eO^+ + Ac^-~\rightarrow~H_2O + HAc\)</span></p>
+</section>
+</section>
+</section>
+<section id="redox-reaktion">
+<h2>Redox-Reaktion<a class="headerlink" href="#redox-reaktion" title="Permalink to this headline">#</a></h2>
+<section id="allgemeines">
+<h3>Allgemeines<a class="headerlink" href="#allgemeines" title="Permalink to this headline">#</a></h3>
+<p>Gleich Säure-Base nur mit Elektronen</p>
+<p>Redox besteht aus:<br />
+<span class="math notranslate nohighlight">\(\quad\)</span><strong>Re</strong>duktion + <strong>Ox</strong>idation</p>
+<ul class="simple">
+<li><p>Oxidation<br />
+Elektron werden abgegeben ab</p></li>
+<li><p>Reduktion<br />
+Elektron werden aufgenommen</p></li>
+</ul>
+<!---->
+<ul class="simple">
+<li><p>Oxidationsmittel<br />
+Stoffe welche Elektronen aufnehmen und dabei reduziert werden -&gt; oxidiert andere Substanz</p></li>
+<li><p>Reduktionsmittel<br />
+Stoffe welche Elektronen abgeben und dabei oxidiert werden</p></li>
+</ul>
+<section id="gekoppelte-reaktion">
+<h4>Gekoppelte Reaktion<a class="headerlink" href="#gekoppelte-reaktion" title="Permalink to this headline">#</a></h4>
+<p><span class="math notranslate nohighlight">\(Oxidation \leftrightarrows Reduktion\)</span></p>
+<ul class="simple">
+<li><p>Im elementaren Zustand (als Element) ist die Oxidationszahl Null</p></li>
+<li><p>Die Summe der Oxidationszahlen aller Atome eines mehratomigen Ions ist gleich der Ladung des Ions (Oxidationszahl ist rote Zahl am Periodensystem)</p></li>
+<li><p>Flur hat immer OxZ <span class="math notranslate nohighlight">\(-1\)</span></p></li>
+<li><p>Sauerstoff hat meistens <span class="math notranslate nohighlight">\(-2\)</span></p></li>
+<li><p>Bei verbindungen von Nichtmetallen hat das elektronegative Element eine negative Oxidationszahl
+und entspricht der Ionenladung für dieses Element</p></li>
+</ul>
+</section>
+<section id="reaktionsgleichung-ausgleichen">
+<h4>Reaktionsgleichung ausgleichen<a class="headerlink" href="#reaktionsgleichung-ausgleichen" title="Permalink to this headline">#</a></h4>
+<ol class="simple">
+<li><p>Reaktionsgleichung aufstellen</p></li>
+<li><p>Oxidationszahlen bestimmen</p></li>
+<li><p>Oxidation + Reduktion Halbgleichung</p></li>
+<li><p>Gleichung kreuzmultiplizieren</p></li>
+<li><p>Zusammenfügen und Stoffausgleich</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="elektrochemie">
+<h1>Elektrochemie<a class="headerlink" href="#elektrochemie" title="Permalink to this headline">#</a></h1>
+<section id="galvanisches-element">
+<h2>Galvanisches Element<a class="headerlink" href="#galvanisches-element" title="Permalink to this headline">#</a></h2>
+<p>zur Umwandlung chem-E zu elektr.-E</p>
+<ul class="simple">
+<li><p>Halbelement<br />
+Elektrode welche in ein Elektrolyt eingetaucht wird</p>
+<ul>
+<li><p>Kupfer-Stab in Kupfer-Salzlösung</p></li>
+<li><p>Zink-Stab in Zink-Salzlösung</p></li>
+</ul>
+</li>
+</ul>
+<p>Leiter:</p>
+<ul class="simple">
+<li><p>Leiter 1-er Klasse</p>
+<ul>
+<li><p>sind Metalle, Leitfähigkeit aufgrund von Valenzelektronen</p></li>
+<li><p>spezifischer Wiederstand gibt leitfähigkeit an (je kleiner desto größer Leitfähigkeit, Temperaturabhängig NTC,PCT</p></li>
+<li><p>Bester Leiter Silber</p></li>
+<li><p>Addendum -&gt; Halbleiter, Supraleiter</p>
+<ul>
+<li><p>Halbleiter können durch erhitzen oder Dotieren leitend gemacht werden</p></li>
+<li><p>Bei Supraleiter sinkt der Wiederstand ab einer gewissen T gegen <span class="math notranslate nohighlight">\(0\)</span> ab</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Leiter 2-er Klasse</p>
+<ul>
+<li><p>Leitfähigkeit entsteht durch aufspaltung der Ionen</p>
+<ul>
+<li><p>Starkes erhitzen</p></li>
+<li><p>Auflösen in polarem Lösungsmittel</p></li>
+</ul>
+</li>
+<li><p>Leiten durch Ionen wanderung</p>
+<ul>
+<li><p>Kationen: Positiv geladene Ionen &gt; wandern zur Kathode (Kathode ist <span class="math notranslate nohighlight">\(-\)</span>)</p></li>
+<li><p>Anionen : Negativ geladene Ionen &gt; Wandern zur Anode (Anode ist <span class="math notranslate nohighlight">\(+\)</span>)</p></li>
+</ul>
+</li>
+<li><p>Bsp.: Salzlösungen<br />
+Salzionen werden in Lösung aufgespalten (<span class="math notranslate nohighlight">\(NaCl \rightarrow Na^+ + Cl^-\)</span>)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="referenzsystem-spannungsreihe">
+<h2>Referenzsystem - Spannungsreihe<a class="headerlink" href="#referenzsystem-spannungsreihe" title="Permalink to this headline">#</a></h2>
+<p>Wasserstoffelektrode</p>
+<ul class="simple">
+<li><p>Halbelement</p></li>
+<li><p>Bezugspunkt</p></li>
+<li><p>Spannung definiert als 0</p></li>
+</ul>
+<section id="normalspannung">
+<h3>Normalspannung<a class="headerlink" href="#normalspannung" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H\)</span>… 0</p></li>
+<li><p>Edle Metalle <span class="math notranslate nohighlight">\(&gt; 0\)</span></p>
+<ul>
+<li><p>lösen sich schwer auf</p></li>
+<li><p>Reaktionsträge</p></li>
+</ul>
+</li>
+<li><p>Unedle Metalle <span class="math notranslate nohighlight">\(&lt; 0\)</span></p>
+<ul>
+<li><p>Lösen sich leicht auf</p></li>
+<li><p>Reaktionsfreudig</p></li>
+<li><p>reduzieren die Ionen der edleren Metalle</p></li>
+</ul>
+</li>
+</ul>
+<!---->
+<p>Nur Metalle mit <strong>negativer Normalspannung</strong> <em>lösen</em> sich in nichtoxidierender <strong>Säure</strong> unter Wasserstoff-Entwicklung</p>
+<section id="anwendungen-spannungsreihe">
+<h4>Anwendungen Spannungsreihe<a class="headerlink" href="#anwendungen-spannungsreihe" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Elektrochemische Sapnnungsquellen</p></li>
+<li><p>Zersetzungsspannung (für Elektrolyse)</p></li>
+<li><p>Elektronchemische Korrosion</p></li>
+</ul>
+<!-- ### Kenngrößen  
+
+- Dc für t
+- Kapazität (Q = 1[Ah] = 3600 [As] = 3600 C)  
+- Wirkungsgrad  -->
+</section>
+</section>
+<section id="faradaysche-gesetz">
+<h3>Faradaysche Gesetz<a class="headerlink" href="#faradaysche-gesetz" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(Q = n\cdot z\cdot F\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{m_1}{m_2} = \frac{M/z_1}{M/z_2}\)</span></p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(\quad n...\)</span>mol<br />
+<span class="math notranslate nohighlight">\(\quad z...\)</span>Ladungszahl des Ions<br />
+<span class="math notranslate nohighlight">\(\quad Q...\)</span>Kapazität<br />
+<span class="math notranslate nohighlight">\(\quad F...\)</span>Faradaykonstante</p>
+</section>
+<section id="elektrochemische-spannungsquelle">
+<h3>Elektrochemische Spannungsquelle<a class="headerlink" href="#elektrochemische-spannungsquelle" title="Permalink to this headline">#</a></h3>
+<p>besteht aus zwei Halbelementen zusammen</p>
+<p>Anforderungen:</p>
+<ul class="simple">
+<li><p>System soll stabil sein</p></li>
+<li><p>ohne Verzögerung</p></li>
+<li><p>Masse/Energie klein</p></li>
+<li><p>Temperaturunabhängig</p></li>
+<li><p>Wiederaufladbar</p></li>
+<li><p>Billig</p></li>
+<li><p>Recyclebar</p></li>
+</ul>
+<!---->
+<p><strong>WICHTIG:</strong> Elektronen fließen immer vom unedleren zum edleren Metall</p>
+<section id="primarelement">
+<h4>Primärelement<a class="headerlink" href="#primarelement" title="Permalink to this headline">#</a></h4>
+<p>chemisch gespeicherte Energie wird elektrisch abgegeben<br />
+Reaktion ist freiwillig</p>
+<p>bei Primärelement unumkehrbar</p>
+<p><em>Anode</em> Löst sich auf (Oxidation)<br />
+<em>Kathode</em> wird vergrößert (Reduktion)<br />
+<em>Elektrolyt</em> Ionenleiter, ist nicht an Reaktion beteiligt - Reagiert mit Reaktionsprodukten</p>
+<section id="volta-element">
+<h5>Volta-Element<a class="headerlink" href="#volta-element" title="Permalink to this headline">#</a></h5>
+<p><em>Anode:</em> Zink<br />
+<em>Kathode:</em> Kupfer<br />
+<em>Elektrolyt:</em> verdünnte Schwefelsäure (<span class="math notranslate nohighlight">\(H_2SO_4\)</span>)</p>
+<p>Anoden-Reaktion: <span class="math notranslate nohighlight">\(Zn \rightarrow Zn^{2+} + 2e^-\)</span><br />
+Kathoden-Reaktion: <span class="math notranslate nohighlight">\(2H^+ + 2e^- \rightarrow H_2\)</span><br />
+Gesamt: <span class="math notranslate nohighlight">\(Zn + 2H \rightarrow Zn + H_2\)</span></p>
+<p>Wegen geringer Spannung viele in Reihe, Voltasche Säule</p>
+<p><img alt="" src="https://vreund.verbund.at/-/media/blog/beitraege/2011/20111107_batterie1.ashx?la=de&amp;hash=0C617C90B5AD805A76E77FDD32F8CAA496C765D6" /></p>
+</section>
+<section id="zink-kohle-batterie">
+<h5>Zink-Kohle Batterie<a class="headerlink" href="#zink-kohle-batterie" title="Permalink to this headline">#</a></h5>
+<p><em>Anode:</em> Zinkbecher<br />
+<em>Kathode:</em> Kohlestab und Braunstein(Mangandioxid)<br />
+<em>Elektrolyt:</em> Ammoniumchloridlösung</p>
+<ul class="simple">
+<li><p>Vom Zink freigesetzte Elektronen fließen über Anode zu Kathode</p></li>
+<li><p>Batterie ist entladen, wenn Mangan keine Elektronen mehr aufnehmen kann</p></li>
+</ul>
+<p>Anoden-Reaktion: <span class="math notranslate nohighlight">\(Zn \rightarrow Zn^{2+} + 2e^-\)</span><br />
+Kathoden-Reaktion: <span class="math notranslate nohighlight">\(2Mn^{4+} + 2e^- \rightarrow M_n^{~~3+}\)</span><br />
+Gesamt: <span class="math notranslate nohighlight">\(Zn + 2MnO_2 \rightarrow ZnO + Mn_2O_3\)</span></p>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Galvanic_cell_labeled.svg/langde-290px-Galvanic_cell_labeled.svg.png" /></p>
+</section>
+<section id="alkali-mangan-batterie">
+<h5>Alkali-Mangan Batterie<a class="headerlink" href="#alkali-mangan-batterie" title="Permalink to this headline">#</a></h5>
+<p>(Weiterentwicklung der Zink-Kohle Batterie)</p>
+<p><em>Anode:</em> Zinkpulver<br />
+<em>Kathode:</em> Braunstein<br />
+<em>Elektrolyt:</em> Alkalische Lösung (z.B. Kalilauge)</p>
+<ul class="simple">
+<li><p>freigesetze Elektronen von Oxidation wandern über Anode zu Kathode</p></li>
+<li><p>Zum Ladungsausgleich wandern <span class="math notranslate nohighlight">\(OH^-\)</span>-Ionen durch Elektrolyten von Kathode zu Anode</p></li>
+</ul>
+<p>Anoden-Reaktion: <span class="math notranslate nohighlight">\(Zn \rightarrow Zn^{2+} + 2e^-\)</span><br />
+Kathoden-Reaktion: <span class="math notranslate nohighlight">\(2Mn^{4+} + 2e^- \rightarrow M_n^{~~3+}\)</span><br />
+Gesamt: <span class="math notranslate nohighlight">\(Zn + 2MnO_2 \rightarrow ZnO + Mn_2O_3\)</span></p>
+<p><img alt="" src="https://www.w-hoelzel.de/images/images/chemie/jahrgangsstufen/elektrochemie/04-04-02-ta-batterien---alkali-mangan-batterie.jpg" /></p>
+</section>
+<section id="zink-silberoxid-knopfzelle">
+<h5>Zink-Silberoxid Knopfzelle<a class="headerlink" href="#zink-silberoxid-knopfzelle" title="Permalink to this headline">#</a></h5>
+<p><em>Anode:</em> Zinkpulver<br />
+<em>Kathode:</em> Silberoxid<br />
+<em>Elektrolyt:</em> alkalisch (z.B. verdünnte Kalilauge)</p>
+<ul class="simple">
+<li><p>Zinkpulver wird Oxidiert, Elektronen werden frei, wandern über Anode zu Kathode</p></li>
+<li><p>Silberoxid wird beim Entladen zu Silber Reduziert</p></li>
+</ul>
+<p>Anoden-Reaktion: <span class="math notranslate nohighlight">\(Zn \rightarrow Zn^{2+} + 2e^-\)</span><br />
+Kathoden-Reaktion: <span class="math notranslate nohighlight">\(2Ag^{+} + 2e^- \rightarrow Ag^-\)</span><br />
+Gesamt: <span class="math notranslate nohighlight">\(Zn + Ag_2O \rightarrow ZnO + 2Ag\)</span></p>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Knopfzelle-2.PNG/440px-Knopfzelle-2.PNG" /></p>
+</section>
+</section>
+</section>
+<section id="sekundarelement">
+<h3>Sekundärelement<a class="headerlink" href="#sekundarelement" title="Permalink to this headline">#</a></h3>
+<p>kann mit Elektrischen Strom wieder aufgeladen werden</p>
+<p>Elektroden: Hartbleigitter mit eingepresster Blei bzw Blei(IV)oxid Masse</p>
+<ul class="simple">
+<li><p>Beim Entladen wandeln sich beide Elektroden in Bleisulfat um</p></li>
+<li><p>Selbstentladung 1% der Nennkapazität</p></li>
+<li><p>Wirkungsgrad ca 72%</p></li>
+<li><p>Laden mit I = cosnt;
+Spannung bis Gasungsspannung</p>
+<ul>
+<li><p>Immer am Ende des Ladevorganges</p></li>
+<li><p>Negative Elektrode (Pb) <span class="math notranslate nohighlight">\(\rightarrow\)</span> Wasserstoff</p></li>
+<li><p>Positive Elektrode (Pb(IV) <span class="math notranslate nohighlight">\(\rightarrow\)</span> Sauerstoff)</p></li>
+</ul>
+</li>
+</ul>
+<section id="blei-akku">
+<h4>Blei Akku<a class="headerlink" href="#blei-akku" title="Permalink to this headline">#</a></h4>
+<p>Anode (beim Entladen): Blei<br />
+Kathode (beim Entladen): Bleioxid</p>
+<p>Vt:</p>
+<ul class="simple">
+<li><p>2V Zellspannung</p></li>
+<li><p>Schnell viel Strom</p></li>
+<li><p>hohe Sicherheit</p></li>
+<li><p>kein Memory-Effekt</p></li>
+<li><p>Recyclin einfach</p></li>
+</ul>
+<p>Nt:</p>
+<ul class="simple">
+<li><p>geringe Energiedichte</p></li>
+<li><p>relativ schnelle Selbstentladung</p></li>
+<li><p>schlechte Lagerfähigkeit</p></li>
+</ul>
+<p>Anodenreaktion: <span class="math notranslate nohighlight">\(PbO_2 + 2H^+ + H_2SO_4 + 2e^- \leftrightarrows PbSO_4 + 2H_2O\)</span><br />
+Kathodenreaktion: <span class="math notranslate nohighlight">\(Pb + H_2SO_4 \leftrightarrows PbSO_4 + 2H^+ + 2e^-\)</span><br />
+Gesamtreaktion: <span class="math notranslate nohighlight">\(Pb + PbO_2 + 2H_2SO_4 \leftrightarrows 2PbSO_4 + H_2O\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad\qquad\qquad\qquad\)</span> Entladen <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad\qquad\qquad\qquad\)</span> Aufladen <span class="math notranslate nohighlight">\(\leftarrow\)</span></p>
+<p><img alt="" src="https://images.tecchannel.de/bdb/373389/738x415_enlarge.jpg" /></p>
+</section>
+<section id="nickel-eisen-akku">
+<h4>Nickel-Eisen Akku<a class="headerlink" href="#nickel-eisen-akku" title="Permalink to this headline">#</a></h4>
+<p><em>Anode (beim Entladen):</em> Eisen<br />
+<em>Kathode (beim Entladen):</em> Nickel</p>
+<p>Anodenreaktion: <span class="math notranslate nohighlight">\(Fe \leftrightarrows Fe^{2+} + 2e^-\)</span><br />
+Kathodenreaktion:  <span class="math notranslate nohighlight">\(2Ni^{3+} + 2e^- \leftrightarrows 2Ni^{2+}\)</span><br />
+Gesamtreaktion: <span class="math notranslate nohighlight">\(Fe + 2Ni(OH)_3 \leftrightarrows 2Ni(OH)_2 + Fe(OH)_2\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad\qquad\qquad\qquad\)</span> Entladen <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad\qquad\qquad\qquad\)</span> Aufladen <span class="math notranslate nohighlight">\(\leftarrow\)</span></p>
+<p><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FZqHSYTq9NlZGfWyzUQrJyJSGIOkOuxRGg&amp;usqp=CAU" /></p>
+</section>
+<section id="nickel-metallhydrid-akku">
+<h4>Nickel-Metallhydrid Akku<a class="headerlink" href="#nickel-metallhydrid-akku" title="Permalink to this headline">#</a></h4>
+<p><em>Anode (beim Entladen):</em> Metall-Legierung die H binden kann<br />
+<em>Kathode (beim Entladen):</em> Nickelhydroxid<br />
+<em>Elektrolyt:</em> KOH</p>
+<p>VT:</p>
+<ul class="simple">
+<li><p>hohe Energiedichte</p></li>
+<li><p>sehr robust</p></li>
+<li><p>sehr temperaturunabhängig</p></li>
+<li><p>schnell aufladbar</p></li>
+</ul>
+<p>NT:</p>
+<ul class="simple">
+<li><p>sehr hohe Selbsterhaltungsrate</p></li>
+<li><p>neigt zum Memory Effekt</p></li>
+<li><p>Batterie verliert durch lange Lagerung an Kapazität</p></li>
+<li><p>Zellspannung nur <span class="math notranslate nohighlight">\(1.2V\)</span></p></li>
+</ul>
+<p>Anodenreaktion: <span class="math notranslate nohighlight">\(MH + OH \leftrightarrows M + H_2O + e^-\)</span><br />
+Kathodenreaktion: <span class="math notranslate nohighlight">\(NiO(OH) + H_2O + e^- \leftrightarrows Ni(OH)_2 + OH^-\)</span><br />
+Gesamtreaktion: <span class="math notranslate nohighlight">\(MH + NiO(OH) \leftrightarrows M + Ni(OH)_2\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad\qquad\qquad\qquad\)</span> Entladen <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad\qquad\qquad\qquad\)</span> Aufladen <span class="math notranslate nohighlight">\(\leftarrow\)</span></p>
+<p><img alt="" src="https://alles-mit-akku.de/wp-content/uploads/2019/10/Nickel-Metall-Hydrid.jpg" /></p>
+</section>
+<section id="lithium-ionen-akku">
+<h4>Lithium Ionen Akku<a class="headerlink" href="#lithium-ionen-akku" title="Permalink to this headline">#</a></h4>
+<p><em>Anode (beim Entladen):</em> Graphit, Silizium, Zinn(IV)oxid<br />
+<em>Kathode (beim Entladen):</em> <span class="math notranslate nohighlight">\(LiCoO_2\)</span>, <span class="math notranslate nohighlight">\(LiMnO_2\)</span>, <span class="math notranslate nohighlight">\(LiNiO_2\)</span><br />
+<em>Elektrolyt:</em> Li-Salz in Wasserfreien Lösungsmitteln</p>
+<p>VT:</p>
+<ul class="simple">
+<li><p>sehr hohe Energiedichte</p></li>
+<li><p>hohe Zellspannung <span class="math notranslate nohighlight">\(3.6V\)</span></p></li>
+<li><p>kein Memory-Effekt</p></li>
+<li><p>sehr geringe Selbstentladung</p></li>
+<li><p>sehr klein möglich<br />
+NT:</p></li>
+<li><p>teuer</p></li>
+<li><p>spezielle Ladetechnik</p></li>
+<li><p>kälte Empfindlich</p></li>
+</ul>
+</section>
+</section>
+<section id="brennstoffzelle">
+<h3>Brennstoffzelle<a class="headerlink" href="#brennstoffzelle" title="Permalink to this headline">#</a></h3>
+<p>Hier reagiert zugeführter Brennstoff mit einem Oxidationsmittel und wird in elektrische Energie umgewandelt</p>
+<p>Es entsteht: Reaktionsprodukt(Wasser bei Wasserstoffbrennstoffzelle) + Strom + Wärme</p>
+<section id="aufbau">
+<h4>Aufbau<a class="headerlink" href="#aufbau" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Zwei Elektroden</p></li>
+<li><p>Elektrolyt</p>
+<ul>
+<li><p>verantwortlich um die Elektroden zu trennen</p></li>
+<li><p>verantwortlich für den Ionentransport</p></li>
+<li><p>lässt nur Protonen durch</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="bsp-wasserstoff-brennstoffzelle">
+<h4>Bsp.: Wasserstoff-Brennstoffzelle<a class="headerlink" href="#bsp-wasserstoff-brennstoffzelle" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>An der Anode wird Wasserstoff zugeführt<br />
+An der Kathode Sauerstoff</p></li>
+<li><p>Wasserstoff wird in positive Ionen und Elektronen aufgeteilt</p>
+<ul>
+<li><p>Elektronen wandern über Anionen zur Kathode (Stromfluss)</p></li>
+<li><p>Protonen gelangen durch den Seperator zur Kathode</p></li>
+</ul>
+</li>
+<li><p>An der Kathode</p>
+<ul>
+<li><p>2 Elektronen suchen sich einen Sauerstoff und reduzieren ihn zu <span class="math notranslate nohighlight">\(O^{~~2-}\)</span></p></li>
+<li><p>mit den Wasserstoff-Protonen wird Wasser gebildet</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Brennstoffzelle_funktionsprinzip.png/340px-Brennstoffzelle_funktionsprinzip.png" /></p>
+</section>
+</section>
+<section id="elektrolyse">
+<h3>Elektrolyse<a class="headerlink" href="#elektrolyse" title="Permalink to this headline">#</a></h3>
+<p>Aufspaltung chemischer Verbindungen durch elektrischen Strom</p>
+<p>Anlegen von Gleichstrom =&gt; Elektrodenreaktion</p>
+<ul class="simple">
+<li><p>Kathodenreaktion<br />
+Kationen wander zur Kathode<br />
+Reduktion</p></li>
+<li><p>Anodenreaktion<br />
+Anionen wandern zur Anode<br />
+Oxidation</p></li>
+</ul>
+<p><strong>Es oxidiert der Stoff mit dem geringsten Standardpotential</strong><br />
+<strong>Es reduziert der Sotff mit dem höheren Standardpotential</strong></p>
+<p>Die min Spannung wird Zersetzspannung genannt</p>
+</section>
+<section id="schmelzflusselektrolyse">
+<h3>Schmelzflusselektrolyse<a class="headerlink" href="#schmelzflusselektrolyse" title="Permalink to this headline">#</a></h3>
+<p>Elektrolyse von Schmelzen einfacher Salze</p>
+<ul class="simple">
+<li><p>An der Kathode entsteht das Metall</p></li>
+<li><p>An der Anode entsteht das Nichtmetall</p></li>
+</ul>
+</section>
+<section id="uberspannung">
+<h3>Überspannung<a class="headerlink" href="#uberspannung" title="Permalink to this headline">#</a></h3>
+<p>Zersetzspannung Differenz von Standardpotentialen</p>
+<p>Überspannung durch hohe Aktivierungsenergien</p>
+<p>Passivierung:<br />
+<span class="math notranslate nohighlight">\(\quad\)</span>Verhinderung der Auflösung durch Oxidschichten</p>
+</section>
+<section id="anwendung">
+<h3>Anwendung<a class="headerlink" href="#anwendung" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Metallurgie<br />
+Gewinnung und Reinigung von Metallen</p></li>
+<li><p>Grundstoffindustrie<br />
+Gewinnung von Nichtmetallen und Verbindungen</p></li>
+<li><p>Galvanotechnik<br />
+Überzüge zum Korrosionsschutz</p></li>
+</ul>
+<section id="elektrolyse-des-wassers">
+<h4>Elektrolyse des Wassers<a class="headerlink" href="#elektrolyse-des-wassers" title="Permalink to this headline">#</a></h4>
+<p>Leitfähigkeit erhöhen
+<span class="math notranslate nohighlight">\(\quad\)</span>Schwefelsäure hizugeben<br />
+Elektrodenmeterial:<br />
+<span class="math notranslate nohighlight">\(\quad\)</span>möglichst niedrige Überspannung vor Wasserstoff + Sauerstoff <span class="math notranslate nohighlight">\(\rightarrow\)</span> Edelmetallbeschichtung<br />
+Zersetzungsspannung aufgrund der Überspannung sehr hoch<br />
+Theo: <span class="math notranslate nohighlight">\(1.2V\qquad\)</span> Praktisch: <span class="math notranslate nohighlight">\(1.8V\)</span></p>
+<p>Gesamtreaktion: <span class="math notranslate nohighlight">\(2 H_2 O~\rightarrow~ 2H_2 O\)</span><br />
+Oxidation: <span class="math notranslate nohighlight">\(2 O^{2-} \rightarrow O_2^{~~0} + 2e^-\)</span><br />
+Reduktion: <span class="math notranslate nohighlight">\(H_2^+ + 2e^- \rightarrow H_2^{~~0}\)</span></p>
+</section>
+<section id="kupferelektrolyse">
+<h4>Kupferelektrolyse<a class="headerlink" href="#kupferelektrolyse" title="Permalink to this headline">#</a></h4>
+<p>Reinigung von Rohkupfer<br />
+Zersetzungsspannung: .4V<br />
+Prinzip:<br />
+Verunreinigungen elder als Kupfer gehen nicht in Lösung und gehen zu Boden<br />
+Verunreinigungen undedler als Kupfer bleiben in Lösung, da die Spannung nicht ausreicht, damit sie Oxidiert werden können</p>
+<p>Kathode: <span class="math notranslate nohighlight">\(C_u^{2+} + 2e^- \rightarrow C_u\)</span><br />
+Anode: <span class="math notranslate nohighlight">\(C_u \rightarrow C_u^{+2} + 2e^{-}\)</span></p>
+</section>
+<section id="chloralkalielektrolse">
+<h4>Chloralkalielektrolse<a class="headerlink" href="#chloralkalielektrolse" title="Permalink to this headline">#</a></h4>
+<p>Elektrolyse wässriger Lösungen<br />
+Herstellung <span class="math notranslate nohighlight">\(NaOH\)</span><br />
+Kathode: <span class="math notranslate nohighlight">\(H + NaOH\)</span> <span class="math notranslate nohighlight">\(\qquad\)</span> <span class="math notranslate nohighlight">\(2 H + 2e^- \rightarrow H_2\)</span><br />
+Anode: <span class="math notranslate nohighlight">\(Cl\)</span>-Gas<span class="math notranslate nohighlight">\(\qquad\qquad\quad\)</span> <span class="math notranslate nohighlight">\(2 Cl^- -2e^- \rightarrow 2 Cl\)</span><br />
+Gesamt: <span class="math notranslate nohighlight">\(2 Na Cl + 2H_2O \rightarrow 2 NaOH + H_2 + Cl_2\)</span></p>
+</section>
+</section>
+<section id="aluminiumelektrolyse">
+<h3>Aluminiumelektrolyse<a class="headerlink" href="#aluminiumelektrolyse" title="Permalink to this headline">#</a></h3>
+<p>Negatives Standardpotential <span class="math notranslate nohighlight">\(\rightarrow\)</span> aus Schmelze und nicht aus Wässriger Lösung</p>
+<p><span class="math notranslate nohighlight">\(Al_2O_3\)</span> aus Bauxit und Kryolith<br />
+<span class="math notranslate nohighlight">\(I = 200,000A\)</span></p>
+<p>Kathode: <span class="math notranslate nohighlight">\(Al^{3+} + 3e^- \rightarrow Al\)</span><br />
+Anode: <span class="math notranslate nohighlight">\(2 O^{-2} + C\rightarrow CO_2 + 4e^-\)</span><br />
+Gesamt: <span class="math notranslate nohighlight">\(2Al_2O_3 + 3C \rightarrow 3CO_2 + 4Al\)</span></p>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bayer-Verfahren.svg/1920px-Bayer-Verfahren.svg.png" /></p>
+<p><img alt="" src="https://www.maschinenbau-wissen.de/bilder/skripte/werkstofftechnik/aluminium-herstellung-05.PNG" /></p>
+</section>
+</section>
+<section id="korrosion">
+<h2>Korrosion<a class="headerlink" href="#korrosion" title="Permalink to this headline">#</a></h2>
+<p>von Oberfläche ausgehende Veränderung eines Werkstoffes, welcher dabei zerstört wird</p>
+<p>4% von BSP verloren (11.8 Milliarden)</p>
+<ul class="simple">
+<li><p>Gleichförmige Korrosion<br />
+Abtrag der Oberfläche an allen Stellen mit gleicher Geschwindigkeit<br />
+geringe Probleme bei richtiger Dimensionierung</p></li>
+<li><p>Lokale Korrosion<br />
+an bestimmte stellen schneller</p>
+<ul>
+<li><p>Risskorrosion<br />
+erst im Nachhinein sichtbar</p></li>
+<li><p>Kontaktkorrosion<br />
+an Berührungsstelle von Werkstoffen</p></li>
+<li><p>interkristalline Korrosion<br />
+harrfeine Risse entstehen, Äußerlich nicht erkennbar</p></li>
+</ul>
+</li>
+</ul>
+<!--![](https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-658-29484-7_8/MediaObjects/290007_5_De_8_Fig3_HTML.png)  --><section id="ursachen">
+<h3>Ursachen<a class="headerlink" href="#ursachen" title="Permalink to this headline">#</a></h3>
+<ul>
+<li><p>(Elektro-) Chemische Vorgänge</p>
+<ul class="simple">
+<li><p>Gase</p></li>
+<li><p>durch Säuren/ Basen</p></li>
+<li><p>aggressive Wässer</p></li>
+</ul>
+<p>Elektrochemisch:</p>
+<ul class="simple">
+<li><p>ausbildung galvanischer Elemente</p></li>
+<li><p>Unterschiedliche Materialien mit Elektrolyt verbunden</p></li>
+<li><p>Auch an Legierungen (Schweißnähte + Lötstellen)</p></li>
+</ul>
+</li>
+<li><p>Physikalische Einwirkung</p></li>
+<li><p>Microorganismen</p></li>
+</ul>
+<section id="rostbildung-bei-eisen-und-stahl">
+<h4>Rostbildung bei Eisen und Stahl<a class="headerlink" href="#rostbildung-bei-eisen-und-stahl" title="Permalink to this headline">#</a></h4>
+<p>Randzone:<br />
+<span class="math notranslate nohighlight">\(\qquad\)</span>Eisen oxidiert und löst sich im Wasser <span class="math notranslate nohighlight">\(\qquad\)</span> <span class="math notranslate nohighlight">\(2 Fe \rightarrow 4e^- + 2Fe^{2+}\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad OH^-\)</span>-Ionen lösen sich im Wasser  <span class="math notranslate nohighlight">\(\qquad\)</span> <span class="math notranslate nohighlight">\(O_2 + 2H_2O - 4e^-\rightarrow 4OH^-\)</span></p>
+<ul class="simple">
+<li><p>Auf Stahl/Eisen<br />
+Unterschiedliche Kristallstruktur <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+Haftet nicht <span class="math notranslate nohighlight">\(\rightarrow\)</span> Reaktion läuft weiter</p></li>
+<li><p>Auf Aluminium<br />
+Ähnliche Kristallstruktur <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+Bildet <span class="math notranslate nohighlight">\(Al_2O_3\)</span>-Schutzschicht <span class="math notranslate nohighlight">\(\rightarrow\)</span> Reaktion stoppt</p></li>
+<li><p>Kupfer<br />
+Ähnliche Kritallstruktur <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+Bildet <span class="math notranslate nohighlight">\(CuO\)</span>-Schutzschicht <span class="math notranslate nohighlight">\(\rightarrow\)</span> Reaktion stoppt</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="korrosionsschutz">
+<h2>Korrosionsschutz<a class="headerlink" href="#korrosionsschutz" title="Permalink to this headline">#</a></h2>
+<p>Korrosion an Phasengrenzflächen</p>
+<ul class="simple">
+<li><p>Maßnahmen am Werkstoff</p>
+<ul>
+<li><p>Korrosionsbeständige Materialen</p></li>
+<li><p>Kontaktkorrosion vermeiden</p></li>
+</ul>
+</li>
+<li><p>Maßnahmen am Medium</p>
+<ul>
+<li><p>Entzug on Feuchtigkeit</p></li>
+<li><p>Korrosionshemmer</p></li>
+</ul>
+</li>
+<li><p>Maßnahme an Phasengrenze</p>
+<ul>
+<li><p>Beschichtung</p></li>
+</ul>
+</li>
+</ul>
+<section id="beschichtung">
+<h3>Beschichtung<a class="headerlink" href="#beschichtung" title="Permalink to this headline">#</a></h3>
+<p>Vorbereiten<br />
+Bürsten, schleifen, …<br />
+beizen, spülen und trocknen, …</p>
+<ul class="simple">
+<li><p>Überzüge</p>
+<ul>
+<li><p>Thermische Auftragung</p>
+<ul>
+<li><p>Aufwalzen</p></li>
+<li><p>Tauchen in flüssige Metalle</p></li>
+</ul>
+</li>
+<li><p>Elektrolytische Auftragung</p>
+<ul>
+<li><p>das Werkstück ist im Beschichtungsprozess als Kathode geschaltet</p></li>
+<li><p>Anode besteht aus Überzugsmaterial</p></li>
+<li><p>Elektrolyt: Wässrige Lösung eines Salzes des Überzugsmaterials</p></li>
+<li><p>Einflussfaktoren: Temperatur, Badspannung, Stromdicht, Elektrolytzusätze,…</p></li>
+</ul>
+</li>
+<li><p>Anorganische</p>
+<ul>
+<li><p>Thermisch</p>
+<ul>
+<li><p>Email</p></li>
+</ul>
+</li>
+<li><p>Elektrolytisch</p>
+<ul>
+<li><p>Eloxieren</p></li>
+<li><p>in <span class="math notranslate nohighlight">\(SO_4\)</span>  und mit Heißwasser</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Organische</p>
+<ul>
+<li><p>Aufkleben einer dicken Kunststoff-/Gummi-Folie</p></li>
+<li><p>Lack</p>
+<ul>
+<li><p>Bindemittel, Lösungsmittel, Pigmente, …</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Aktiver Katodischer Korrosionsschutz</p>
+<ul class="simple">
+<li><p>Leitfähige Verbindung mit unedleren Metall(Anode)<br />
+dient als Opfer-Anode</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="chemische-technologie">
+<h1>Chemische Technologie<a class="headerlink" href="#chemische-technologie" title="Permalink to this headline">#</a></h1>
+<section id="fossile-rohstoffe">
+<h2>Fossile Rohstoffe<a class="headerlink" href="#fossile-rohstoffe" title="Permalink to this headline">#</a></h2>
+<section id="kohle-torf">
+<h3>Kohle &amp; Torf<a class="headerlink" href="#kohle-torf" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Aus pflanzlichen Überresten</p></li>
+<li><p>Erste Stufe der Kohlebildung ist Torf</p></li>
+<li><p>Durch großer Druck Torf =&gt; Braunkohle</p>
+<ul>
+<li><p>mit noch mehr Druck =&gt; Steinkohle</p></li>
+</ul>
+</li>
+<li><p>Steinkohle wenig verunreinigung =&gt; hohe Dichte =&gt; hoher Brennwert</p></li>
+</ul>
+<section id="einsatzgebiete">
+<h4>Einsatzgebiete<a class="headerlink" href="#einsatzgebiete" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Heizung</p></li>
+<li><p>Filterung von Schadstoffen</p></li>
+<li><p>Rohstoff</p></li>
+<li><p>Kunststoffe</p></li>
+<li><p>Pflanzenschutz</p></li>
+</ul>
+</section>
+</section>
+<section id="erdol">
+<h3>Erdöl<a class="headerlink" href="#erdol" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Aus Kleinstlebewesen</p></li>
+<li><p>unter sauerstoffreichen Wasser im Schlamm angesammelt</p></li>
+<li><p>Erdkruste setze sich ab =&gt; hoher Druck =&gt; entstehung</p></li>
+<li><p>Geringe Dichte =&gt; sammelt sich im durchlässigen Gestein</p>
+<ul>
+<li><p>tritt an manchen Stellen an die Oberfläche</p></li>
+</ul>
+</li>
+</ul>
+<section id="id1">
+<h4>Einsatzgebiete<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Treibstoff</p></li>
+<li><p>Heizung</p></li>
+<li><p>Kunststoffe</p></li>
+<li><p>Wasch-/ Reinigungsmittel</p></li>
+<li><p>Medikamente</p></li>
+</ul>
+</section>
+</section>
+<section id="erdgas">
+<h3>Erdgas<a class="headerlink" href="#erdgas" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Entstehung == Erdöl</p></li>
+<li><p>Hat sich über Erdöl angereichert</p></li>
+<li><p>Gas (großteil Methan)</p>
+<ul>
+<li><p>ungiftig</p></li>
+<li><p>brennbar</p></li>
+<li><p>Farb und Geruchslos</p></li>
+</ul>
+</li>
+</ul>
+<section id="id2">
+<h4>Erdgas<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Heizung</p></li>
+<li><p>Herde und Öfen</p></li>
+<li><p>Energiegewinnung</p></li>
+<li><p>Rohstoffe für chemische Industrie</p></li>
+</ul>
+</section>
+</section>
+<section id="probleme">
+<h3>Probleme<a class="headerlink" href="#probleme" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Treibhauseffekt</p></li>
+<li><p>Öl verseucht den Boden</p></li>
+<li><p>wenig Reserven</p></li>
+<li><p>nicht erneuerbar</p></li>
+</ul>
+</section>
+</section>
+<section id="petrochemie">
+<h2>Petrochemie<a class="headerlink" href="#petrochemie" title="Permalink to this headline">#</a></h2>
+<p>Erzeugung von Produkten auf Erdölbasis</p>
+<p>meist Synthese von Kohlenwasserstoffen mit Erdöl/Erdgas-Basis</p>
+<section id="beispiel-produkte">
+<h3>Beispiel Produkte<a class="headerlink" href="#beispiel-produkte" title="Permalink to this headline">#</a></h3>
+<p>Kunststoffe, Weichmacher, Waschroohstoffe, Lösemittel, Vorprodukte für die Weiterverarbeitung</p>
+</section>
+<section id="destillation-von-erdol">
+<h3>Destillation von Erdöl<a class="headerlink" href="#destillation-von-erdol" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>abhängig v Siedepunkt -&gt; Öl wird in Bestandteile zerlegt<br />
+genannt:</p></li>
+<li><p>Fraktionieren</p>
+<ul>
+<li><p>Cracken von Carbon-Ketten =&gt; Abbau des Moleküls (Ungesättigte Verbindungen)</p></li>
+<li><p>Diesel höhere Temperatur <span class="math notranslate nohighlight">\(\rightarrow\)</span><br />
+Diesel längere Carbon-Ketten (als z.B. Benzin)</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="https://yclat-resources.azureedge.net/d16c9847-7899-48dd-97fb-0ce251d08df0/FraktionierteDestillation_adapted.png" /></p>
+</section>
+</section>
+<section id="bierbrauen">
+<h2>Bierbrauen<a class="headerlink" href="#bierbrauen" title="Permalink to this headline">#</a></h2>
+<section id="rohstoffe">
+<h3>Rohstoffe<a class="headerlink" href="#rohstoffe" title="Permalink to this headline">#</a></h3>
+<ul>
+<li><p>Wasser<br />
+Hat Einfluss auf die Qualität und Charakteristiken (Geschmack, Mundgefühl)</p>
+<ul class="simple">
+<li><p>pH-Wert</p></li>
+<li><p>Mineralgehalt</p></li>
+<li><p>Wasserhärte<br />
+Kalk gehalt in Grad Deutscher Härte<br />
+Braunau: 16°dH<br />
+verschiedene Aufbereitungsmethooden</p></li>
+<li><p>Destillieren</p></li>
+<li><p>Neutralisieren</p></li>
+<li><p>Osmose-Anlage<br />
+Filtern über halbdurchlässige Membran</p></li>
+</ul>
+</li>
+<li><p>Malz<br />
+Vorbereitung</p>
+<ol class="simple">
+<li><p>Keimen lassen
+Enzyme entstehen</p></li>
+<li><p>Darren (trocknen)</p></li>
+<li><p>Rösten</p></li>
+</ol>
+<p>Durch das Keimen werden wichtige Enzyme gebildet, welche die Reservestoffe des Korns aufschließen<br />
+Amylasen -&gt; zum Abbau der Stärke</p>
+</li>
+<li><p>Hopfen<br />
+bestimmt Geschmack</p>
+<ul class="simple">
+<li><p>bitter, blumig, fruchtig</p></li>
+<li><p>Ausschlaggebend ist der IBU-Wert<br />
+<span class="math notranslate nohighlight">\(IBU = \frac{Hopfenmenge[g] \cdot Alphasäuregehalt[\%]\cdot Ausnutzung[\%]}{Ausschlagmenge[l] * 10}\)</span></p></li>
+</ul>
+<p>für Haltbarkeit<br />
+verantwortlich für Schaum</p>
+</li>
+<li><p>Hefe<br />
+Eukaryot<br />
+Zwei Arten:</p>
+<ul class="simple">
+<li><p>Obergärige Hefe<br />
+Schwimmt oben<br />
+<span class="math notranslate nohighlight">\(T = [15, 20] °C\)</span><br />
+Zeit: 2-3 Wochen</p></li>
+<li><p>Untergärige Hefe<br />
+Sinkt zu Boden<br />
+<span class="math notranslate nohighlight">\(T = [4, 9] °C\)</span><br />
+Zeit: 10 Wochen</p></li>
+</ul>
+</li>
+</ul>
+<p>Umwandlung Zucker <span class="math notranslate nohighlight">\(\rightarrow\)</span> Alkohol:</p>
+<p><span class="math notranslate nohighlight">\(C_6H_{12}O_6~\rightarrow~2CH_3CH_2OH + 2CO_2\)</span></p>
+</section>
+<section id="brauprozess">
+<h3>Brauprozess<a class="headerlink" href="#brauprozess" title="Permalink to this headline">#</a></h3>
+<p><img alt="" src="https://brauer-bund.de/wp-content/uploads/2020/06/180306-Grafik-Brauprozess-kleiner.jpg" /></p>
+<section id="maischen">
+<h4>Maischen<a class="headerlink" href="#maischen" title="Permalink to this headline">#</a></h4>
+<p>Malz wird geschrotetet und unter zurühren in erhitztes Wasser hinzugegeben<br />
+Die Typische Temperatur des Wassers ist dabei ca <span class="math notranslate nohighlight">\(52°C\)</span></p>
+<section id="enzymaktivitaten">
+<h5>Enzymaktivitäten<a class="headerlink" href="#enzymaktivitaten" title="Permalink to this headline">#</a></h5>
+<ul class="simple">
+<li><p>Eiweißrast (Proteasen)</p></li>
+<li><p>Maltoserast (<span class="math notranslate nohighlight">\(\beta\)</span>-Amylase)</p></li>
+<li><p>…</p></li>
+</ul>
+<p>Das Ende wird mit einer Iodprobe überprüft:</p>
+<ul class="simple">
+<li><p>Iod lagert sich in der Stärke Helix ein -&gt; Iod Stärke ist blau</p></li>
+<li><p>Wird stärke zu zucker abgebaut kann dieser Komplex nicht mehr gebildet werden -&gt; Gelb</p></li>
+</ul>
+</section>
+</section>
+<section id="maisch-plan">
+<h4>Maisch-Plan<a class="headerlink" href="#maisch-plan" title="Permalink to this headline">#</a></h4>
+<p><img alt="" src="https://patentimages.storage.googleapis.com/2f/66/6b/b8b4d268e8c168/00110002.png" /></p>
+</section>
+<section id="lautern">
+<h4>Läutern<a class="headerlink" href="#lautern" title="Permalink to this headline">#</a></h4>
+<p>Trennen der flüssigen/festen Bestandteile<br />
+Es wird ein natürlicher Filter gebildet (Treber)<br />
+Der Mahlgrad des Malzes ist entscheidend (Spelzen)</p>
+</section>
+<section id="wurzekochen">
+<h4>Würzekochen<a class="headerlink" href="#wurzekochen" title="Permalink to this headline">#</a></h4>
+<p>Das Wasser soll verdampfen<br />
+Das Eiweiß denaturiert<br />
+Dieser Schritt macht das Bier haltbar</p>
+<section id="hopfengabe">
+<h5>Hopfengabe<a class="headerlink" href="#hopfengabe" title="Permalink to this headline">#</a></h5>
+<ul class="simple">
+<li><p>Frühe gabe: bitter</p></li>
+<li><p>Späte Gabe: fruchtiger, weniger bitter</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="whirlpool">
+<h3>Whirlpool<a class="headerlink" href="#whirlpool" title="Permalink to this headline">#</a></h3>
+<p>Denaturierter Eiweißtrub<br />
+Aufgelöster Hopfen<br />
+Trub-Kegel</p>
+</section>
+</section>
+<section id="insulin">
+<h2>Insulin<a class="headerlink" href="#insulin" title="Permalink to this headline">#</a></h2>
+<p>Für senkung des Blutzuckerspiegels verantwortlich</p>
+<p>biochemischer Botenstoff<br />
+besteht aus 2 Aminosäuren und 3 Disulfidbrücken<br />
+hydrophil</p>
+<section id="produktion">
+<h3>Produktion<a class="headerlink" href="#produktion" title="Permalink to this headline">#</a></h3>
+<p>in <span class="math notranslate nohighlight">\(\beta\)</span>-Zellen der Bauchspeicheldrüse gebildet<br />
+wird über Blutbahn in Zellen gebracht</p>
+<section id="kunstlich">
+<h4>Künstlich<a class="headerlink" href="#kunstlich" title="Permalink to this headline">#</a></h4>
+<ol class="simple">
+<li><p>Vorbereitung der Insulin DNA</p></li>
+<li><p>Insulin-Gen wird ins Plasmid einer Hefezelle geschleust</p></li>
+<li><p>Vermehrung der Zelle</p></li>
+<li><p>Produktion der Vorstufe (Proinsulin)</p></li>
+<li><p>Faltung durch aktives Hormon</p></li>
+</ol>
+</section>
+</section>
+<section id="funktionsweise">
+<h3>Funktionsweise<a class="headerlink" href="#funktionsweise" title="Permalink to this headline">#</a></h3>
+<p>Gegenspieler zum Glukagon</p>
+<p>Nach Nahrungsaufnahme gelangt Glukose ,über Darm, ins Blut<br />
+(Insulin dient als Schlüssel -&gt; dockt an Rezeptoren an,<br />
+Auslösung eines Second Messenger Systems -&gt; Glukose darf in Zelle)</p>
+<p>Insulin sorgt dafür das Zellen den Zucker aufnehmen können</p>
+</section>
+<section id="diabetes">
+<h3>Diabetes<a class="headerlink" href="#diabetes" title="Permalink to this headline">#</a></h3>
+<section id="typ-1">
+<h4>Typ-1<a class="headerlink" href="#typ-1" title="Permalink to this headline">#</a></h4>
+<p>Körper zerstört <span class="math notranslate nohighlight">\(\beta\)</span>-Zellen<br />
+Glukose kann nicht in Zellen aufgenommen werden</p>
+<p>Behandlung mit Insulin notwendig</p>
+</section>
+<section id="typ-2">
+<h4>Typ-2<a class="headerlink" href="#typ-2" title="Permalink to this headline">#</a></h4>
+<p>Insulin ist vorhanden, kann nicht wirken</p>
+<p>zuerst Insulin Überproduktion, dann mangel</p>
+<p>schwer Behandelbar</p>
+</section>
+</section>
+</section>
+<section id="antibiotika">
+<h2>Antibiotika<a class="headerlink" href="#antibiotika" title="Permalink to this headline">#</a></h2>
+<p>Wirkt nur bei Bakterien<br />
+Greifen die Zellwand oder Sotffwechsel des Bakteriums an</p>
+<p>Antibiotika wird über Pilze gebildet</p>
+<section id="bsp-penicillin">
+<h3>Bsp.: Penicillin<a class="headerlink" href="#bsp-penicillin" title="Permalink to this headline">#</a></h3>
+<p>Der Pilz wird in Fermentern gezüchtet (stark Sauerstoffabhängig)<br />
+Während Wachstum wenig Antibiotika,
+Erst wenn C-Quelle erschöpft ist beginnt die Penicillin Produktion</p>
+</section>
+</section>
+<section id="dna-analyse">
+<h2>DNA-Analyse<a class="headerlink" href="#dna-analyse" title="Permalink to this headline">#</a></h2>
+<section id="proben-isolierung">
+<h3>Proben-Isolierung<a class="headerlink" href="#proben-isolierung" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p>Zelle öffnen
+Zellwände können durch detergenzien zerstört werden (Zellwände aus Phospholipiddoppelschicht)<br />
+Der Zellinhalt ist dann in der Probeflüssigkeit gelöst</p></li>
+<li><p>Ausfällen von Zelltrümmern<br />
+Fällung mit Salz (NaCl)<br />
+Zentrifugieren -&gt; Zellteile als Pellet entfernen -&gt; DNA in wässriger Lösung</p></li>
+<li><p>DNA-Reinigen<br />
+DNA mit organischen Lösungsmittel fällen<br />
+Zentrifugieren -&gt; DN-Pellet</p></li>
+</ol>
+<blockquote>
+<div><p>fällen… einen gelösten Stoff aus einer Lösung ausscheiden</p>
+</div></blockquote>
+</section>
+<section id="pcr">
+<h3>PCR<a class="headerlink" href="#pcr" title="Permalink to this headline">#</a></h3>
+<p>DNA-Vervielfältigung</p>
+<section id="materialien">
+<h4>Materialien<a class="headerlink" href="#materialien" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Matrixe: DNA-Fragment</p></li>
+<li><p>Primer:<br />
+kurzes Nukleinsäurefragment<br />
+Bei bekannter DNA kann über Primer ein bestimmter abschnitt kopiert werden</p></li>
+<li><p>dNTPs: A, G, C, T</p></li>
+<li><p>Polymerase: hitzestabil</p></li>
+<li><p>Puffer</p></li>
+</ul>
+</section>
+<section id="ablauf">
+<h4>Ablauf<a class="headerlink" href="#ablauf" title="Permalink to this headline">#</a></h4>
+<ol class="simple">
+<li><p>Denaturierung<br />
+Öffnung des DNA-Strangs, durch Erhitzung (95 °C)</p></li>
+<li><p>Annealing<br />
+Primer lagert sich an DNA an<br />
+Temperatur weniger, abhängig von der Länge (55-70 °C)</p></li>
+<li><p>Elongation<br />
+Die Polymerase baut den Komplementärstrang auf<br />
+<span class="math notranslate nohighlight">\(5'\)</span> nach <span class="math notranslate nohighlight">\(3'\)</span></p></li>
+<li><p>Termination<br />
+Abschluss<br />
+evtl. Auffüllen nicht vollständiger Fragmente</p></li>
+</ol>
+<p><img alt="" src="https://images.openscience-files.or.at/_/0c/66/0c6617a2.jpg" /></p>
+</section>
+<section id="id3">
+<h4>Einsatzgebiete<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Forensik -&gt; genetischer Fingerabdruck</p></li>
+<li><p>Vaterschatstest</p></li>
+<li><p>Krankheiten
+(CORONA!)</p></li>
+<li><p>Klonieren</p></li>
+</ul>
+</section>
+</section>
+<section id="gelelektrophorese">
+<h3>Gelelektrophorese<a class="headerlink" href="#gelelektrophorese" title="Permalink to this headline">#</a></h3>
+<p>chromagraphische Trennung von Molekülen nach größe und Ladung<br />
+Verschiedene Gele mit verschiedener Porengröße</p>
+<section id="agarosegel">
+<h4>Agarosegel<a class="headerlink" href="#agarosegel" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Porengröße ca. <span class="math notranslate nohighlight">\(150-500~nm\)</span></p></li>
+<li><p>zur Auftrennung von DNA</p></li>
+<li><p>Produziert aus Rotalgen</p></li>
+<li><p>Lange Ketten bildet ein Gitter(Polysaccherid)</p></li>
+</ul>
+<section id="auswertung">
+<h5>Auswertung<a class="headerlink" href="#auswertung" title="Permalink to this headline">#</a></h5>
+<ul class="simple">
+<li><p>Proben wird ein Farbstoff hinzugegeben</p></li>
+<li><p>Sichtbarmachung durch UV-Strahlung</p></li>
+</ul>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Agarose-Gelelektrophorese.png" /></p>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "julia-1.8"
+        },
+        kernelOptions: {
+            kernelName: "julia-1.8",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'julia-1.8'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
