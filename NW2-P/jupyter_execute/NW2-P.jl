@@ -42,7 +42,7 @@ ax3 = fig[1,3] = Axis(fig,
 xlims!(ax3, 0, 10)
 ylims!(ax3, 0, 10)
 lines!(ax3, 0:0.1:10,
-	V-> 1/V
+	V-> 1/(V-1) + 1
 )
 fig
 
