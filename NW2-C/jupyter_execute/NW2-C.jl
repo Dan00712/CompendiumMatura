@@ -1,41 +1,7 @@
 using DrWatson
 @quickactivate
 
-using DataFrames
 using CairoMakie
-
-d = Dict()
-
-d[:n] = [1,2,3,4]
-d[:Schale] = ["K", "L", "M", "N"]
-d[:Nebenquantenzahl] = [
-    [0],
-    [0, 1],
-    [0, 1, 2],
-    [0, 1, 2, 3]
-]
-
-d[:m_L] = [
-    [0],
-    [-1, 0, 1],
-    [-2, -1, 0, 1, 2],
-    [-3, -2, -1, 0, 1, 2, 3]
-]
-d[:m_s] = ("± 1/2")
-d[:e] = [
-    [2],
-    [2, 6],
-    [2, 6, 10],
-    [2, 6, 10, 14]
-]
-d[:orbital] = [
-    ["s"],
-    ["s", "p"],
-    ["s", "p", "d"],
-    ["s", "p", "d", "f"]
-]
-
-d |> DataFrame |> print
 
 xs = 0:.1:5.5
 
@@ -65,12 +31,90 @@ lines!(ax2, xs,
     color = :red
 )
 lines!(ax2, xs,
-    x->  -(ℯ^(-x) -1) * 2.5,
+    x->  -(ℯ^(-x) -1) * 3,
     color = :green
 )
 text!(ax2, "Edukte", position = (1, 3), color = :red)
 text!(ax2, "Produkte", position = (1, .8), color = :green)
 
+
+fig
+
+###### 
+fig = Figure(resolution = (1200, 800))
+
+u = 5
+ts = 0:.01:u
+
+endtherm = Axis(fig[1, 1],
+    title = "Endotherme Reaktion",
+    ylabel = "Freie Reaktionsenthalpie",
+    xlabel = "Zeit"
+)
+exotherm = Axis(fig[1, 2],
+    title = "Exotherme Reaktion",
+    ylabel = "Freie Reaktionsenthalpie",
+    xlabel = "Zeit"
+)
+
+lines!(endtherm,
+    ts,
+    t-> atan(8t-16)/π + .5 + ℯ^(-(1.75(t - 2))^2)
+)
+arrows!(endtherm,
+    [2.15], [.01],
+    [0],
+    [1.69],
+    color = :green
+)
+arrows!(endtherm,
+    [2.2], [1.7],
+    [0],
+    [-.7],
+    color = :red
+)
+text!(endtherm, 
+    2.2, .6,
+    text = "Aktivierungsenergie",
+    color = :green
+)
+text!(endtherm, 
+    2.2, .7,
+    text = "ΔH\nfreie Reaktionsenthalpie",
+    color = :red
+)
+
+
+lines!(exotherm,
+    ts,
+    t-> -(atan(8t-16)/π) + .5 + ℯ^(-(1.75(t - 2))^2)
+)
+
+arrows!(exotherm,
+    [1.8], [1],
+    [0],
+    [.69],
+    color = :green
+)
+
+arrows!(exotherm,
+    [1.85], [1.7],
+    [0],
+    [-1.69],
+    color = :red
+)
+
+text!(exotherm, 
+    2.5, .6,
+    text = "Aktivierungsenergie",
+    color = :green
+)
+
+text!(exotherm, 
+    2.5, .7,
+    text = "ΔH\nfreie Reaktionsenthalpie",
+    color = :red
+)
 
 fig
 

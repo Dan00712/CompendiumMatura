@@ -1,13 +1,59 @@
 using DrWatson
 @quickactivate
+"Test"
 
 using CairoMakie
 
-function triangle(p1, p2, p3, args...)
-	poly([p1, p2, p3], args...)
-end
-
 @__DIR__
+
+fig = Figure(resolution = (1200, 400))
+
+acceleration = Axis(fig[1, 1],
+    title = "Beschleunigung",
+    xlabel = "Zeit",
+)
+speed = Axis(fig[1, 2],
+    title = "Geschwindigkeit",
+    xlabel = "Zeit"
+)
+distance = Axis(fig[1,3],
+    title = "Weg",
+    xlabel = "Zeit"
+)
+
+A = 2
+v_0 = 5
+
+a = (t)-> A
+v = (t)-> (A * t) + v_0
+s = (t)-> .5 * A * t^2 + v_0 * t
+
+ts = 0:.1:8
+
+lines!(acceleration, ts, a)
+lines!(speed, ts, v)
+lines!(distance, ts, s)
+
+fig
+
+
+
+fig = Figure()
+
+ax = Axis(fig[1, 1])
+
+vs = 0:.2:5
+f_0 =  5_000
+c = 340
+
+# Sender Bewegent sich auf Quelle zu
+lines!(ax,
+    vs,
+    v-> f_0 * (c)/(c + v),
+    color = :green
+)
+
+fig
 
 fig = Figure(resolution = (600*3, 800))
 
