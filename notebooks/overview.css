@@ -1,0 +1,30 @@
+body {
+	background-color:white;
+}
+
+ul.a {
+	list-style-type: square;
+	list-style-position: outside;
+	margin: 2em; 
+}
+
+ul.li {
+	font-weight: bold;
+	padding-left: 1em;
+	margin-bottom: .5em;
+}
+
+ul li:hover {
+	color: #000;
+	background-color: #ddd; 
+}
+
+a:hover {
+	color: red
+}
+
+h1 {
+	padding-left: .5em;
+	color: navy;
+	font-family: Arial, Helvetica, serif;
+}
