@@ -6,3 +6,4 @@ wand
 ghp-import
 
 notebook
+jupyterlab
