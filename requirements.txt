@@ -1,4 +1,6 @@
 matplotlib
+numpy
+
 git+https://github.com/upb-lea/control-block-diagram@main
 schemdraw
 wand
@@ -7,3 +9,4 @@ ghp-import
 
 notebook
 jupyterlab
+jupyter-book
