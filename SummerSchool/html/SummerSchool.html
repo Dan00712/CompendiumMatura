@@ -1,0 +1,1232 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Chemistry - 05-09-2022 &#8212; My Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'SummerSchool';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    <p class="title logo__title">My Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Chemistry - 05-09-2022
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/SummerSchool.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chemistry - 05-09-2022</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chemistry - 05-09-2022</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thema-1">Thema 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregatzustande">Aggregatzustände</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chemische-bindungen">Chemische Bindungen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stochiometrie">Stöchiometrie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reaktionskinetik">Reaktionskinetik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#saure">Säure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redox">Redox</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrochemie">Elektrochemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrische-leiter">Elektrische Leiter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faradaysche-gesetz">Faradaysche Gesetz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chemistry-09-09-2022">Chemistry - 09-09-2022</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Elektrochemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faraday">Faraday</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#akkus">Akkus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrolyse">Elektrolyse</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrolyse-des-wassers">Elektrolyse des Wassers:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kupferelektrolyse">Kupferelektrolyse</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chloralkalieelektrolyse">~~Chloralkalieelektrolyse~~</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aluminium">Aluminium</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#korrosion">Korrosion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#erscheinungen">Erscheinungen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#korrosionsschutz">Korrosionsschutz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technische-chemie">Technische Chemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fossile-rohstoffe">Fossile Rohstoffe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fragmentierung">Fragmentierung</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bierbrauen">Bierbrauen</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#wasser">Wasser</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#getreide">Getreide</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hopfen">Hopfen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hefe">Hefe</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fermentierung">Fermentierung</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insulin">Insulin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anitbiotika">Anitbiotika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pcr">PCR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gelekektrophorese">Gelekektrophorese</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organische-chemie">Organische Chemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#allgemein">Allgemein</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fett-ole">Fett/Öle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schreibweisen">Schreibweisen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unterschied-aldose-ketose">Unterschied Aldose Ketose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disaccharide">Disaccharide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glycosidische-bindungen">Glycosidische Bindungen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polysaccharide">Polysaccharide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aminosaure">Aminosäure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peptidbindung">Peptidbindung</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proteinstruktur">Proteinstruktur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nukleinsauren">Nukleinsäuren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zellbiologie">Zellbiologie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mendel">Mendel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-05-09-2022">Physics - 05-09-2022</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sprengung-eines-felsens">Sprengung eines Felsens</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flosz">Floß</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flugzeug">Flugzeug</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli">Bernoulli</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energie">Energie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubung">Übung</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">DrWatson</span>
+<span class="nd">@quickactivate</span><span class="w">  </span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">Printf</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="chemistry-05-09-2022">
+<h1>Chemistry - 05-09-2022<a class="headerlink" href="#chemistry-05-09-2022" title="Permalink to this heading">#</a></h1>
+<p>Bspfrage:</p>
+<ul class="simple">
+<li><p>a</p></li>
+<li><p>b</p></li>
+<li><p>c</p></li>
+<li><p>d</p></li>
+</ul>
+<section id="thema-1">
+<h2>Thema 1<a class="headerlink" href="#thema-1" title="Permalink to this heading">#</a></h2>
+<section id="aggregatzustande">
+<h3>Aggregatzustände<a class="headerlink" href="#aggregatzustande" title="Permalink to this heading">#</a></h3>
+<p>Phasendiagramm wichtig</p>
+<p>Ideales Gas (<span class="math notranslate nohighlight">\(22.4 \frac{l}{mol}\)</span>, kommt alleine nicht); Wetterballon wichtig (auch Taucher);<br />
+Flüssig; Gleichgewicht Phasen;</p>
+<p>Trennverfahren logisch lernen</p>
+<p>Teilchen<br />
+Radioaktivität weniger</p>
+<p>Elektronenkonfiugration wichtig</p>
+<p>Jedes Elektron eigenen Energiezustand, 4 Quantenzahlen</p>
+<p>Periodensystem nach Pauli-Verbot und Hundsche Regel geordnet</p>
+<ul class="simple">
+<li><p>Hauptquantenzahl: Schalen</p></li>
+<li><p>Nebenquantenzahl: Oribtalform</p></li>
+<li><p>Magnetquantenzahl: Räumliche Ordnung d. Räumlichen Ordnung</p></li>
+<li><p>Spinquantenzahl: Drehrichtung</p></li>
+</ul>
+<p>Äußere Schale bedeutet nich automatisch mehr Energie<br />
+Elektronenkonfiguration mit Periodensystem erkennen</p>
+<p>keine Explizite Frage zum Periodensystem<br />
+Hauptgruppen nicht Auswendig</p>
+</section>
+<section id="chemische-bindungen">
+<h3>Chemische Bindungen<a class="headerlink" href="#chemische-bindungen" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Ionenbindung<br />
+ein Ion gibt Elektronen ab anderes nimmt auf<br />
+in Wasser gelöst Gitterenergie wird frei<br />
+Metall + Nichtmetall</p></li>
+<li><p>Atombindung<br />
+Elektronen können gemeinsam genutzt werden<br />
+2 Nichtmetalle<br />
+Polar | Unpolar<br />
+Dipol (Partialladung)</p></li>
+<li><p>Metallbindung<br />
+Geben alle Elektronen ab (Elektronensee)<br />
+2 Metalle</p></li>
+<li><p>Komplexverbind<br />
+Moleküle lagern sich um zentrales Molekül</p></li>
+</ul>
+<p>Zwischenmolekulare Kräfte</p>
+<ul class="simple">
+<li><p>Wasserstoffbrücken: Wegen Partialladung<br />
+Dynamische Wechselwirkungen</p></li>
+<li><p>Van-der-Vals-Kräfte<br />
+Temporere Partialladung</p></li>
+</ul>
+<p>Nomenklatur + Stoffmenge + Molare Masse kein eigenes Bsp. aber wichtig<br />
+~~<span class="math notranslate nohighlight">\(* \bullet~X~H_2O\)</span>~~</p>
+<p><strong>Wichtig:</strong></p>
+<p><span class="math notranslate nohighlight">\(c = \frac{n}{V}\)</span><br />
+<span class="math notranslate nohighlight">\(c_1 \cdot V_1 = c_2 \cdot V_2\)</span></p>
+</section>
+<section id="stochiometrie">
+<h3>Stöchiometrie<a class="headerlink" href="#stochiometrie" title="Permalink to this heading">#</a></h3>
+<p>logisch<br />
+keine Frage explizit Stöchiometrie</p>
+</section>
+<section id="reaktionskinetik">
+<h3>Reaktionskinetik<a class="headerlink" href="#reaktionskinetik" title="Permalink to this heading">#</a></h3>
+<p>kein Massenwirkungsgesetz aufstellen<br />
+Bedeutung schon</p>
+<p>Beinflussen mit…</p>
+<p>Exo- &amp; Endotherme Reaktionen<br />
+Endoterm (Kalkbrennen)
+Exoterm (Nitroglycerin)</p>
+<p>Kat</p>
+</section>
+<section id="saure">
+<h3>Säure<a class="headerlink" href="#saure" title="Permalink to this heading">#</a></h3>
+<p>Arrhenius am wichtigsten<br />
+Brönsted/ Lewis grob beschreiben<br />
+~~Amphylite~~</p>
+<p>Definition pH/pOH</p>
+<p>Dissoziationsgrad<br />
+pK_S wert Starke Säuren<br />
+von Liste und Berechnen</p>
+<p>Titration nur von Starken Säuren/Basen!</p>
+<p>Puffer nur erklären</p>
+</section>
+<section id="redox">
+<h3>Redox<a class="headerlink" href="#redox" title="Permalink to this heading">#</a></h3>
+<p>nutzen (elektr. Energie, Elektrolyse,…)</p>
+<p>Reduktion und Oxidation definition</p>
+<p>Gekoppelte Reaktion; wo Reduktion eine Oxidation<br />
+In elementarer Zustand Oxidationszahl Null</p>
+<p>keine Redoxreaktion vollständig lösen</p>
+<p>Halbgleichungen<br />
+wie z.B elektro Chemie</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Wetterballon</span>
+<span class="n">V_0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1e-3</span><span class="w">  </span>
+<span class="n">T_0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">273.15</span>
+<span class="n">p_0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.013</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1e-5</span>
+
+<span class="n">p_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">.1013e-5</span>
+<span class="n">T_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">273.15</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">55</span>
+
+<span class="c"># Stoffmenge n₁ = n₂</span>
+
+<span class="n">V_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">p_0</span><span class="o">/</span><span class="n">p_1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">T_1</span><span class="o">/</span><span class="n">T_0</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V_0</span>
+
+<span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;V₁ = </span><span class="si">%.3E</span><span class="s"> m³</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">V_1</span><span class="w">  </span>
+<span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;V₁ = </span><span class="si">%.3E</span><span class="s"> L&quot;</span><span class="w"> </span><span class="n">V_1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1e+3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>V₁ = 2.396E+00 m³
+V₁ = 2.396E+03 L
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Kaffemaschnine</span>
+<span class="n">M_Kalk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">40</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">12</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="o">*</span><span class="mi">16</span><span class="w">  </span>
+<span class="n">M_Essig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="mi">12</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="mi">16</span><span class="w">  </span>
+
+<span class="c"># 1 Kalk + 2 Essig -&gt;  </span>
+
+<span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="o">/</span><span class="mi">100</span><span class="w">  </span>
+<span class="n">m_Essig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_Essig</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span>
+
+<span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;Masse der Essigsäure: </span><span class="si">%.2E</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">m_Essig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masse der Essigsäure: 6.00E+00
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="elektrochemie">
+<h2>Elektrochemie<a class="headerlink" href="#elektrochemie" title="Permalink to this heading">#</a></h2>
+<section id="elektrische-leiter">
+<h3>Elektrische Leiter<a class="headerlink" href="#elektrische-leiter" title="Permalink to this heading">#</a></h3>
+<p>1./2. Klasse</p>
+<p>Halbelment</p>
+<p>Spannungsreihe</p>
+<p>Bedeutung</p>
+</section>
+<section id="faradaysche-gesetz">
+<h3>Faradaysche Gesetz<a class="headerlink" href="#faradaysche-gesetz" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="chemistry-09-09-2022">
+<h1>Chemistry - 09-09-2022<a class="headerlink" href="#chemistry-09-09-2022" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>Elektrochemie<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Umwandlung chemische elektrische Energie</p>
+<p>Leiter 1./2.-Klasse</p>
+<p>Halbelement</p>
+<p>edel vs unedel</p>
+<p>Normalspannung-herleitung<br />
+=&gt; Praktische bedeutung</p>
+<section id="faraday">
+<h3>Faraday<a class="headerlink" href="#faraday" title="Permalink to this heading">#</a></h3>
+<p>Faraday Formel ja, Konstante nein<br />
+bsp. Bleiakku wichtig<br />
+Faradaysche Gesetz</p>
+<p>Bleiakku gesamt können</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Bleiakku</span>
+
+<span class="c"># Q = n * z * F</span>
+
+<span class="n">Q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">85</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3600</span>
+<span class="n">F</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">96485</span>
+<span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+
+<span class="c"># n = Q/(z*F)</span>
+<span class="nd">@show</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Q</span><span class="o">/</span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">F</span><span class="p">)</span>
+
+<span class="n">M_blei</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">207</span>
+<span class="n">M_bleoxid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">207</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">16</span>
+<span class="n">M_H2SO4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">16</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">32</span>
+
+<span class="nd">@show</span><span class="w"> </span><span class="n">m_blei</span><span class="w"> </span><span class="o">=</span><span class="w">     </span><span class="n">M_blei</span><span class="w">    </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="w">     </span><span class="o">/</span><span class="mi">1000</span>
+<span class="nd">@show</span><span class="w"> </span><span class="n">m_bleioxid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">M_bleoxid</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="w">     </span><span class="o">/</span><span class="mi">1000</span>
+<span class="nd">@show</span><span class="w"> </span><span class="n">m_H2SO4</span><span class="w"> </span><span class="o">=</span><span class="w">    </span><span class="n">M_H2SO4</span><span class="w">   </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="mi">1000</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n = Q / (z * F) = 1.5857387158625693
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>m_blei = (M_blei * n * 6) / 1000 = 1.9694874851013113
+m_bleioxid = (M_bleoxid * n * 6) / 1000 = 2.2739493185469244
+m_H2SO4 = (M_H2SO4 * n * 6 * 2) / 1000 = 1.8648287298543818
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.8648287298543818
+</pre></div>
+</div>
+</div>
+</div>
+<p>Anforderung Sidefragen</p>
+</section>
+<section id="akkus">
+<h3>Akkus<a class="headerlink" href="#akkus" title="Permalink to this heading">#</a></h3>
+<p>Können:</p>
+<ul class="simple">
+<li><p>Daniellelement</p></li>
+<li><p>Zink-Hohle Zelle (Erklären wichtiger)</p>
+<ul>
+<li><p>Zinkbecher:
+Gehäuse und Elektrode (Anode)<br />
+Gehäuse löst sich auf
+Mittlerweile in Kunststoffmantel</p></li>
+<li><p>Kohle<br />
+nur Leiter</p></li>
+<li><p>Manganodxid
+Kathode</p></li>
+</ul>
+</li>
+<li><p>Alkali Mangan Zelle
+Reaktionsgleichung gleich<br />
+Stahlmantel</p></li>
+<li><p>Knopf Zelle<br />
+Sidefrage (Bauarten)</p></li>
+</ul>
+<!---->
+<ul class="simple">
+<li><p>Bleiakku</p>
+<ul>
+<li><p>entsteht beim Laden: Wasser</p></li>
+<li><p>entsteht beim Entladen: Bleisulfid</p></li>
+<li><p>Sonderinformationen als Zusatz</p></li>
+</ul>
+</li>
+<li><p>Nickel Metallhydrid<br />
+Keine eigene Frage</p></li>
+<li><p>Lithium<br />
+Minimalistisch</p>
+<ul>
+<li><p>Elektrolyt: organisches Lösungsmittel</p></li>
+</ul>
+</li>
+</ul>
+<!---->
+<ul class="simple">
+<li><p>Brennstoffzelle allgemein</p>
+<ul>
+<li><p>Elektrolyt gleich KOH H_3O+
+Teilfrage</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="elektrolyse">
+<h3>Elektrolyse<a class="headerlink" href="#elektrolyse" title="Permalink to this heading">#</a></h3>
+<p>Umgekehrt Batterien</p>
+<p>Überspannung:<br />
+Warum?<br />
+Regelungstechnisch verarbeiten<br />
+Möglichst lange Lebenszeit</p>
+<section id="elektrolyse-des-wassers">
+<h4>Elektrolyse des Wassers:<a class="headerlink" href="#elektrolyse-des-wassers" title="Permalink to this heading">#</a></h4>
+<p>Verwendung<br />
+Arten von Wasserstoff</p>
+</section>
+<section id="kupferelektrolyse">
+<h4>Kupferelektrolyse<a class="headerlink" href="#kupferelektrolyse" title="Permalink to this heading">#</a></h4>
+<p>Fast reines Kupfer zu reinem Kupfer<br />
+Spannung reicht um Kupfer abzuscheiden<br />
+Zink scheidet sich ab, kann sich <strong>nicht</strong> abscheiden
+Gold/Silber kann sich nicht ablösen</p>
+</section>
+<section id="chloralkalieelektrolyse">
+<h4>~~Chloralkalieelektrolyse~~<a class="headerlink" href="#chloralkalieelektrolyse" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="aluminium">
+<h4>Aluminium<a class="headerlink" href="#aluminium" title="Permalink to this heading">#</a></h4>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>aus was besteht Aluminium, Bauxit,...  
+Bauxit: 50% $Al_2O_3$, 10-30% $Fe_2O_3$, $SiO_2$, Schmelzpunkt: 2050  
+Kryolit: $Na_3AlF_6$, Schmelzpunkt: 1000
+flüssiges Krylit löst Bauxit auf!
+Bayer-verfahren können  
+
+Kohlewanne wegen Anode  
+grob aufzeichnen
+</pre></div>
+</div>
+</section>
+</section>
+<section id="korrosion">
+<h3>Korrosion<a class="headerlink" href="#korrosion" title="Permalink to this heading">#</a></h3>
+<section id="erscheinungen">
+<h4>Erscheinungen<a class="headerlink" href="#erscheinungen" title="Permalink to this heading">#</a></h4>
+<p>Grob Arten<br />
+Ursachen</p>
+<ul class="simple">
+<li><p><strong>chemischen Vorgänge</strong></p>
+<ul>
+<li><p>woher</p></li>
+</ul>
+</li>
+<li><p><strong>Elektrochemische Vorgänge</strong></p></li>
+</ul>
+<p>Rostbildung bei Gegenwart von Wasser (auch Skizze)</p>
+<p>ablösen augrund von Kristall-Struktur</p>
+<p>elektrochemische Korrosion:<br />
+<strong>Ausbildung eines Galvanischen Elementes</strong></p>
+</section>
+<section id="korrosionsschutz">
+<h4>Korrosionsschutz<a class="headerlink" href="#korrosionsschutz" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Werkstoff</p></li>
+<li><p>Medium</p></li>
+<li><p>Phasengrenze</p></li>
+</ul>
+<p>Passiver Schutz bei beschädigung von passivem Schutz =&gt; unwirksam<br />
+Aktiver Schutz galvanisches Element mit Unedleren Metall =&gt; Unedlere Metall löst sich auf</p>
+<ul class="simple">
+<li><p>Rohrleitungen unter Straße</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="technische-chemie">
+<h2>Technische Chemie<a class="headerlink" href="#technische-chemie" title="Permalink to this heading">#</a></h2>
+<section id="fossile-rohstoffe">
+<h3>Fossile Rohstoffe<a class="headerlink" href="#fossile-rohstoffe" title="Permalink to this heading">#</a></h3>
+<section id="fragmentierung">
+<h4>Fragmentierung<a class="headerlink" href="#fragmentierung" title="Permalink to this heading">#</a></h4>
+<p>aufspaltung von C-C Ketten<br />
+Diesel 25<br />
+Benzin kürzer</p>
+</section>
+</section>
+<section id="bierbrauen">
+<h3>Bierbrauen<a class="headerlink" href="#bierbrauen" title="Permalink to this heading">#</a></h3>
+<p>Rohstoffe</p>
+<p>Hefe-damals noch nicht bekannt</p>
+<section id="wasser">
+<h4>Wasser<a class="headerlink" href="#wasser" title="Permalink to this heading">#</a></h4>
+<p>grob Einfluss</p>
+</section>
+<section id="getreide">
+<h4>Getreide<a class="headerlink" href="#getreide" title="Permalink to this heading">#</a></h4>
+<p>Keimen - Warum<br />
+Enzym, was macht es, was ist es,<br />
+<strong>Amylase für Stärke</strong></p>
+<p>Schlüssel-Schloss-Prinzip</p>
+<p>Enzym spaltet Stärke auf</p>
+</section>
+<section id="hopfen">
+<h4>Hopfen<a class="headerlink" href="#hopfen" title="Permalink to this heading">#</a></h4>
+<p>Alpha Säure existiert</p>
+<p>Warum</p>
+</section>
+<section id="hefe">
+<h4>Hefe<a class="headerlink" href="#hefe" title="Permalink to this heading">#</a></h4>
+<p>Pilz, Obergärig | Untergärig</p>
+<p>Zucker -&gt; Alkohol</p>
+</section>
+<section id="fermentierung">
+<h4>Fermentierung<a class="headerlink" href="#fermentierung" title="Permalink to this heading">#</a></h4>
+<p>Tabelle wenn</p>
+<p>Blackboxen:<br />
+-&gt; Maischen -&gt; Läutern -&gt; Würzekochen -&gt; Whirlpool -&gt;…</p>
+<p>Maischdiagramm grob warum dT</p>
+<p>Maischplan, Iod-Probe</p>
+</section>
+</section>
+<section id="insulin">
+<h3>Insulin<a class="headerlink" href="#insulin" title="Permalink to this heading">#</a></h3>
+<p>Aus was ist es Aufbegaut<br />
+2 Aminosäureketten mit 3 Brücken</p>
+<p>Was Früher, was Heute</p>
+<p>Insulin aus Pankreas von Schweinen -&gt; … -&gt; Künstliches</p>
+<p>Diabetes Typ 1./2.</p>
+<p>DNA in Plasmid<br />
+(Plasmid wichtig)<br />
+Zelle vermehren<br />
+Produktion Vorstuffe<br />
+Fertigstellung durch Hormon</p>
+<p>Hormon besteht aus Aminosäuren</p>
+<ol class="arabic simple">
+<li><p>DNA Codiert Aminosäure</p></li>
+<li><p>Einbau von Markern</p></li>
+<li><p>Plasmid</p></li>
+<li><p>öffnung von Plasmid</p></li>
+<li><p>Einbau in Plasmid</p></li>
+<li><p>Plasmid in Zelle</p></li>
+<li><p>Zelle vermehrt sich</p></li>
+<li><p>Insulin wird in Zelle Produziert</p></li>
+</ol>
+<p>(Ligation verwenden)</p>
+</section>
+<section id="anitbiotika">
+<h3>Anitbiotika<a class="headerlink" href="#anitbiotika" title="Permalink to this heading">#</a></h3>
+<p>Wie wirken Antibiotika</p>
+<p>Bakteriozid &amp; Bakteriostatisch</p>
+<p>Herstellung</p>
+</section>
+<section id="pcr">
+<h3>PCR<a class="headerlink" href="#pcr" title="Permalink to this heading">#</a></h3>
+<p>Materialien</p>
+<ul class="simple">
+<li><p>Isolierung</p></li>
+<li><p>Schritte nach Skizze beschreiben</p></li>
+</ul>
+<p>CT-Wert</p>
+<p>Je höher CT desto geringer Konzentration</p>
+<p>Einsatzgebiet</p>
+</section>
+<section id="gelekektrophorese">
+<h3>Gelekektrophorese<a class="headerlink" href="#gelekektrophorese" title="Permalink to this heading">#</a></h3>
+<p>Marker als Referenz</p>
+</section>
+</section>
+<section id="organische-chemie">
+<h2>Organische Chemie<a class="headerlink" href="#organische-chemie" title="Permalink to this heading">#</a></h2>
+<section id="allgemein">
+<h3>Allgemein<a class="headerlink" href="#allgemein" title="Permalink to this heading">#</a></h3>
+<p>Nomenklatur<br />
+Funktionelle Gruppe</p>
+<p>Wichtige Reaktionen</p>
+</section>
+<section id="fett-ole">
+<h3>Fett/Öle<a class="headerlink" href="#fett-ole" title="Permalink to this heading">#</a></h3>
+<p>Aufbau</p>
+<ul class="simple">
+<li><p>gesättigt</p></li>
+<li><p>ungesättigt</p></li>
+</ul>
+</section>
+<section id="schreibweisen">
+<h3>Schreibweisen<a class="headerlink" href="#schreibweisen" title="Permalink to this heading">#</a></h3>
+<p>Fischer und Haworth (zeigt nach oben/ unten)</p>
+</section>
+<section id="unterschied-aldose-ketose">
+<h3>Unterschied Aldose Ketose<a class="headerlink" href="#unterschied-aldose-ketose" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="disaccharide">
+<h3>Disaccharide<a class="headerlink" href="#disaccharide" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="glycosidische-bindungen">
+<h3>Glycosidische Bindungen<a class="headerlink" href="#glycosidische-bindungen" title="Permalink to this heading">#</a></h3>
+<p>Verbindung Einfachzucker<br />
+Nur ausschnitt, reicht</p>
+</section>
+<section id="polysaccharide">
+<h3>Polysaccharide<a class="headerlink" href="#polysaccharide" title="Permalink to this heading">#</a></h3>
+<p>Wichtigste Vertreter <span class="math notranslate nohighlight">\(\alpha-1,6\)</span> Bedeutung<br />
+Alpha Lage vom C-Atom. Beta auch die Verbindung</p>
+</section>
+<section id="aminosaure">
+<h3>Aminosäure<a class="headerlink" href="#aminosaure" title="Permalink to this heading">#</a></h3>
+<p>Aufbau</p>
+</section>
+<section id="peptidbindung">
+<h3>Peptidbindung<a class="headerlink" href="#peptidbindung" title="Permalink to this heading">#</a></h3>
+<p>aufzeichnen</p>
+</section>
+<section id="proteinstruktur">
+<h3>Proteinstruktur<a class="headerlink" href="#proteinstruktur" title="Permalink to this heading">#</a></h3>
+<p>Primär, Secundär, Tertiär, Quartärstruktur</p>
+</section>
+<section id="nukleinsauren">
+<h3>Nukleinsäuren<a class="headerlink" href="#nukleinsauren" title="Permalink to this heading">#</a></h3>
+<p>aufzeichnen</p>
+<ul class="simple">
+<li><p>Phosphat + Basis reicht</p></li>
+</ul>
+</section>
+<section id="zellbiologie">
+<h3>Zellbiologie<a class="headerlink" href="#zellbiologie" title="Permalink to this heading">#</a></h3>
+<p>Zelle beschreiben bzw. aufzeichnen</p>
+<p>Bakterium aufbau und Funktionen der bestandteile</p>
+<ul class="simple">
+<li><p>Plasmid</p></li>
+<li><p>Ribosomen<br />
+Aufgabe</p></li>
+<li><p>Cytoplasma</p></li>
+<li><p>Zellmembran<br />
+nicht nähre</p></li>
+<li><p>Endoplasmatische Reitkolum nicht genau</p></li>
+<li><p>Zellwand</p></li>
+</ul>
+<p>Prokaryoten vs Eukaryoten vergleichen</p>
+<p>Eukaryoten DNA</p>
+<p>Planzen Zelle und Tierzelle</p>
+<p>Zellteilung
+Erbgut</p>
+<p>Unterschied Meiose und Mitose</p>
+<p>Meiose und Mitose</p>
+<p>Phasen</p>
+<p>Grober Vorgang</p>
+<p>Proteinbiosynthese</p>
+<p>Transkription und Translation</p>
+<p>Replikation</p>
+</section>
+<section id="mendel">
+<h3>Mendel<a class="headerlink" href="#mendel" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="physics-05-09-2022">
+<h1>Physics - 05-09-2022<a class="headerlink" href="#physics-05-09-2022" title="Permalink to this heading">#</a></h1>
+<section id="sprengung-eines-felsens">
+<h2>Sprengung eines Felsens<a class="headerlink" href="#sprengung-eines-felsens" title="Permalink to this heading">#</a></h2>
+<p>Stein mit Masse, Loch wird gebort, Schwarzpulver rein und gesprengt, Masseverhältnise 2:1</p>
+<p><span class="math notranslate nohighlight">\(E = 100kJ\)</span><br />
+<span class="math notranslate nohighlight">\(m = 2t\)</span><br />
+<span class="math notranslate nohighlight">\(m_1 = \frac{2}{3}t\)</span><br />
+<span class="math notranslate nohighlight">\(m_2 = \frac{4}{3}t\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_{kin} = \frac{1}{2} m v^2\)</span><br />
+<span class="math notranslate nohighlight">\(E_{kin; ges} = const = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 + E_{BOOM} = \frac{1}{2} m_1 v_1'^2 + \frac{1}{2} m_2 v_2'^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_{BOOM} = 100kJ = \frac{1}{2} m_1 v_1'^2 + \frac{1}{2} m_2 v_2'^2\)</span><br />
+<span class="math notranslate nohighlight">\(m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2 = 0\)</span></p>
+<p>Einsetzen und Umformen<br />
+…</p>
+</section>
+<section id="flosz">
+<h2>Floß<a class="headerlink" href="#flosz" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">400</span>
+<span class="n">ρ_H</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">470</span>
+
+<span class="n">ρ_w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span>
+
+<span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.81</span>
+<span class="c"># F_A = F_G + F_TL  </span>
+<span class="c"># ρ_W g V = ρ_W g V + F_TL  </span>
+
+<span class="c"># Vg( ρ_W - ρ_H) = F_TL</span>
+
+<span class="n">V</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ρ_w</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ρ_H</span><span class="p">)</span>
+
+<span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="o">/</span><span class="mi">100</span>
+
+<span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">V</span><span class="o">/</span><span class="n">d</span><span class="w">  </span>
+
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">√</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;V: </span><span class="si">%.2E</span><span class="s"> m³</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">V</span>
+<span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;A: </span><span class="si">%.2E</span><span class="s"> m²</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">A</span>
+<span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;a: √A = </span><span class="si">%.2E</span><span class="s"> m</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>V: 7.55E-01 m³
+A: 7.55E+00 m²
+a: √A = 2.75E+00 m
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="flugzeug">
+<h2>Flugzeug<a class="headerlink" href="#flugzeug" title="Permalink to this heading">#</a></h2>
+<p>Flugzeug steigt wegen <span class="math notranslate nohighlight">\(F_A\)</span>:<br />
+<span class="math notranslate nohighlight">\(F_A = \frac{1}{2}~c_A \cdot \rho \cdot v^2 \cdot A\)</span><br />
+(<span class="math notranslate nohighlight">\(F_W = \frac{1}{2}~c_W \cdot \rho \cdot v^2 \cdot A\)</span>)</p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{2}\rho v^2 + p_{st}\)</span> ist falsch,
+weil sich der obere Luftstrom nicht Beschleunigt,
+nach dem Flügel entstehen Wirbel,
+welche das Flugzeug nach oben drehen.</p>
+</section>
+<section id="bernoulli">
+<h2>Bernoulli<a class="headerlink" href="#bernoulli" title="Permalink to this heading">#</a></h2>
+<p>Rennauto nutzt Bernoulli Gleichung, da unter dem Auto wenig Platz ist, durch <span class="math notranslate nohighlight">\(\frac{1}{2} \rho v^2 + p_{st}\)</span></p>
+</section>
+<section id="energie">
+<h2>Energie<a class="headerlink" href="#energie" title="Permalink to this heading">#</a></h2>
+<p>Energielücke Isolator &gt; 4eV</p>
+<p><span class="math notranslate nohighlight">\(E = hf \rightarrow\)</span>
+<span class="math notranslate nohighlight">\(f = 9.6E+15~Hz\)</span><br />
+<span class="math notranslate nohighlight">\(\lambda = \frac{c}{f} = 3E-7~m\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="nd">@printf</span><span class="w"> </span><span class="s">&quot;</span><span class="si">%.2E</span><span class="s">&quot;</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.6e-19</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">6.62e-34</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.67E+14
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ubung">
+<h2>Übung<a class="headerlink" href="#ubung" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="c"># Wahrscheinlichkeiten</span>
+<span class="c"># 1. Unwahrscheinlicher Zustaand wird zu Aufgeteilten zustand =&gt; Wahrscheinlicher</span>
+<span class="c"># 2. Wahrscheinlicher Zustand wird zu Unwahrscheinlichen =&gt; wirc geordnet =&gt; externe Energie muss aufgewendet werden</span>
+
+<span class="c"># Entropie Entwicklung  </span>
+<span class="c"># 1. Entropie nimmt zu; keine Schwerkraft =&gt; keine Energie von außen</span>
+<span class="c"># 2. Entropie nimmt ab; Schwerkraft Energie von Außen =&gt; Ordnet das System</span>
+
+<span class="c"># Entropie nimmt immer zu, bis zum Hitzetod des Universums =&gt; kompletter Ausgleich geschaffen</span>
+<span class="c"># 2. Hautpsatz der Thermodynamik ΔH &gt; 0 </span>
+<span class="c"># Ein System mit maximaler Energie kann sich nicht verändern, ohne Energie von außen zu erhalten</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Entropie:</p>
+<ul class="simple">
+<li><p>Zusammenhang mit Wahrscheinlichkeit</p></li>
+<li><p>Zusammenhang mit den thermodynamischen Hauptsätzen</p></li>
+<li><p>Was gibt es zur Entropie in Zusa mit t</p></li>
+</ul>
+<p>Entropie ist ein maß für die Wahrscheinlichkeiten von Zuständen, je höher die Entropie je Wahrscheinlicher der Zustand<br />
+<span class="math notranslate nohighlight">\(S = k ln(p)\)</span></p>
+<p>Wahrscheinlichkeiten bei Box mit 2 Teilchen ist die Entropie bei Gleichverteilung am Größten</p>
+<p>Normalverteilung</p>
+<p>Um die Entropie zu verringern muss Energie hinzugefügt werden, um die Entropie zu erhöhen muss nichts getan werden, dieser Schritt passiert automatisch.</p>
+<p>Entropie muss mehr werden.</p>
+<p>Nachdem die Zeit in eine Richtung geht,</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "julia-1.8"
+        },
+        kernelOptions: {
+            name: "julia-1.8",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'julia-1.8'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Chemistry - 05-09-2022</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thema-1">Thema 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregatzustande">Aggregatzustände</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chemische-bindungen">Chemische Bindungen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stochiometrie">Stöchiometrie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reaktionskinetik">Reaktionskinetik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#saure">Säure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redox">Redox</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrochemie">Elektrochemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrische-leiter">Elektrische Leiter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faradaysche-gesetz">Faradaysche Gesetz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chemistry-09-09-2022">Chemistry - 09-09-2022</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Elektrochemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faraday">Faraday</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#akkus">Akkus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrolyse">Elektrolyse</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#elektrolyse-des-wassers">Elektrolyse des Wassers:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kupferelektrolyse">Kupferelektrolyse</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chloralkalieelektrolyse">~~Chloralkalieelektrolyse~~</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aluminium">Aluminium</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#korrosion">Korrosion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#erscheinungen">Erscheinungen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#korrosionsschutz">Korrosionsschutz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technische-chemie">Technische Chemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fossile-rohstoffe">Fossile Rohstoffe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fragmentierung">Fragmentierung</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bierbrauen">Bierbrauen</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#wasser">Wasser</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#getreide">Getreide</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hopfen">Hopfen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hefe">Hefe</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fermentierung">Fermentierung</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insulin">Insulin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anitbiotika">Anitbiotika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pcr">PCR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gelekektrophorese">Gelekektrophorese</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organische-chemie">Organische Chemie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#allgemein">Allgemein</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fett-ole">Fett/Öle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schreibweisen">Schreibweisen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unterschied-aldose-ketose">Unterschied Aldose Ketose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disaccharide">Disaccharide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glycosidische-bindungen">Glycosidische Bindungen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polysaccharide">Polysaccharide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aminosaure">Aminosäure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peptidbindung">Peptidbindung</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proteinstruktur">Proteinstruktur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nukleinsauren">Nukleinsäuren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zellbiologie">Zellbiologie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mendel">Mendel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-05-09-2022">Physics - 05-09-2022</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sprengung-eines-felsens">Sprengung eines Felsens</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flosz">Floß</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flugzeug">Flugzeug</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli">Bernoulli</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energie">Energie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubung">Übung</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
