@@ -4,5 +4,6 @@ schemdraw
 wand
 
 ghp-import
+jinja2
 
 notebook
