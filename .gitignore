@@ -431,3 +431,7 @@ venv
 .venv
 
 build
+**/build/
+**/__pycache__/
+
+log
