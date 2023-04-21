@@ -1,4 +1,6 @@
 #!/venv/bin/python
+import logging
+
 import os
 import shutil
 import pathlib as plib
@@ -8,6 +10,8 @@ from typing import List
 import jinja2
 
 from publish.paths import export_path, template_path
+
+log = logging.getLogger('Setup')
 
 def get_compiled_sites():
     return plib.Path('./build/_build/_page').iterdir()
@@ -58,11 +62,17 @@ def copy_css_files():
         shutil.copy(file, new_file)
 
 def main()-> int:
+    log.info('setting up filesystem...')
     create_export_dir()
+    log.info('copying generated files...')
     copy_exported_files()
 
+    log.info('generating html from templates...')
     copy_html_template()
+    log.info('copying css files...')
     copy_css_files()
+    log.info('setup finished!')
+    return 0
 
 if __name__ == '__main__':
     exit(main())

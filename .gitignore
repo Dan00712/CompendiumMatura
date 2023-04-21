@@ -430,3 +430,4 @@ venv
 **/build/
 
 **/__pycache__/
+log
