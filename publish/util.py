@@ -2,8 +2,11 @@ import pathlib as plib
 from typing import List
 
 from publish.paths import export_files
+import argparse
 
 def get_export_files_list() -> List[str]:
+    if USE_CMD_NBS:
+        return CMD_NBS
     with export_files.open() as f:
         return [line.rstrip('\n') for line in f]
 

@@ -11,6 +11,7 @@ from typing import List
 
 from pprint import pprint 
 
+import publish.util as util
 from publish.util import get_export_files_list
 from publish.paths import notebooks
 
@@ -63,4 +64,12 @@ def main()->int:
     
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('nb', default=None)
+    args = parser.parse_args()
+
+    util.USE_CMD_NBS = args.nb is not None
+    util.CMD_NBS = [args.nb]
+
     exit(main())
