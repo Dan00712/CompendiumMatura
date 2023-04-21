@@ -14,7 +14,7 @@ def main()->int:
     )
 
     parser.add_argument('-l', '--local-only', action='store_true', dest='local_only', default=False)
-    parser.add_argument('nb', default=None)
+    parser.add_argument('--nb', default=None)
     args = parser.parse_args()
 
     util.USE_CMD_NBS = args.nb is not None

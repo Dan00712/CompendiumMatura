@@ -66,7 +66,7 @@ def main()->int:
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('nb', default=None)
+    parser.add_argument('--nb', default=None)
     args = parser.parse_args()
 
     util.USE_CMD_NBS = args.nb is not None
