@@ -10,10 +10,13 @@ from typing import List
 
 from pprint import pprint 
 
-from util import get_export_files_list
+from publish.util import get_export_files_list
+from publish.paths import notebooks
+
+from publish.paths import output_dir
 
 def get_notebook_path()-> plib.Path:
-    return plib.Path().cwd()/'notebooks'
+    return notebooks
 
 
 def get_notebooks()->List[plib.Path]:
@@ -28,7 +31,7 @@ def get_notebooks()->List[plib.Path]:
 
 
 def run_convert(fn):
-    return subprocess.call(['jupyter-book', 'build', '--path-output=build', '--builder=html', fn])
+    return subprocess.call(['jupyter-book', 'build', f'--path-output={output_dir}', '--builder=html', fn])
 
 def main()->int:
     try:

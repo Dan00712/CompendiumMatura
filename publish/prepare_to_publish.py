@@ -2,13 +2,12 @@
 import os
 import shutil
 import pathlib as plib
-from util import get_export_files_list
+from publish.util import get_export_files_list
 from typing import List
 
 import jinja2
 
-export_path = plib.Path('build')/'to_publish'
-template_path = plib.Path('html_templates/')
+from publish.paths import export_path, template_path
 
 def get_compiled_sites():
     return plib.Path('./build/_build/_page').iterdir()
