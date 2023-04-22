@@ -1,0 +1,9 @@
+format: jb-book
+root: root.ipynb
+options:
+  numbered: true
+
+chapters:
+- file: mtrs
+  title: MTRS
+- file: NW2-P
