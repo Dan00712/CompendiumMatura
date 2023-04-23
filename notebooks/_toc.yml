@@ -1,9 +1,18 @@
 format: jb-book
-root: root.ipynb
+root: intro
 options:
+  numbered: false 
+defaults:
   numbered: true
 
+
+
 chapters:
-- file: mtrs
-  title: MTRS
-- file: NW2-P
+  - file: Formulas
+    title: Formulas
+  - file: mtrs
+    title: MTRS
+  - file: NW2-P
+    title: NW2-P
+  - file: NW2-C
+    title: NW2-C

@@ -1,3 +1,8 @@
 title: Compendium Matura
-html: 
-  home_page_in_navbar: false
+execute: 
+  execute_notebooks: force
+
+only_build_toc_files: true
+
+html:
+  use_multitoc_numbering: false
