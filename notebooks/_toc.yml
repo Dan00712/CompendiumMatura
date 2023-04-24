@@ -7,14 +7,18 @@ defaults:
 
 
 
-chapters:
-  - file: Formulas
-    title: Formulas
-  - file: mtrs
-    title: MTRS
-  - file: NW2-P
-    title: NW2-P
-  - file: NW2-C
-    title: NW2-C
-  - file: D
-    title: Deutsch
+parts:
+  - caption: Vorgezogen
+    chapters:
+    - file: Formulas
+      title: Formulas
+    - file: NW2-P
+      title: NW2-P
+    - file: NW2-C
+      title: NW2-C
+  - caption: Haupttermin
+    chapters:
+    - file: D
+      title: Deutsch
+    - file: mtrs
+      title: MTRS
