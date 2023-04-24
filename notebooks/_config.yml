@@ -1,0 +1,8 @@
+title: Compendium Matura
+execute: 
+  execute_notebooks: force
+
+only_build_toc_files: true
+
+html:
+  use_multitoc_numbering: false

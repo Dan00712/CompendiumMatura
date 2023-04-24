@@ -1,8 +1,13 @@
 matplotlib
+numpy
+
 git+https://github.com/upb-lea/control-block-diagram@main
 schemdraw
 wand
 
 ghp-import
+jinja2
 
 notebook
+jupyterlab
+jupyter-book
