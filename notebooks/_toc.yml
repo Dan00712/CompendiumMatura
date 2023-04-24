@@ -14,9 +14,10 @@ parts:
       title: NW2-P
     - file: NW2-C
       title: NW2-C
-  - caption: Haupttermin
+  - caption: Schriftlich
     chapters:
     - file: D
       title: Deutsch
     - file: mtrs
       title: MTRS
+  - caption: Mündlich
