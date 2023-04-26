@@ -16,6 +16,8 @@ parts:
       title: NW2-C
   - caption: Schriftlich
     chapters:
+    - file: AM
+      title: AM
     - file: D
       title: Deutsch
     - file: mtrs
