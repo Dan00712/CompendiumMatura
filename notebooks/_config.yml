@@ -1,0 +1,9 @@
+title: Compendium Matura
+execute: 
+  execute_notebooks: force
+  timeout: 60
+
+only_build_toc_files: true
+
+html:
+  use_multitoc_numbering: false

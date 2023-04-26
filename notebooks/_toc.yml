@@ -1,0 +1,22 @@
+format: jb-book
+root: intro
+defaults:
+  numbered: false
+
+
+
+parts:
+  - caption: Vorgezogen
+    chapters:
+    - file: Formulas
+      title: Formulas
+    - file: NW2-P
+      title: NW2-P
+    - file: NW2-C
+      title: NW2-C
+  - caption: Schriftlich
+    chapters:
+    - file: D
+      title: Deutsch
+    - file: mtrs
+      title: MTRS
