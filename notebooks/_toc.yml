@@ -20,3 +20,6 @@ parts:
       title: Deutsch
     - file: mtrs
       title: MTRS
+  - caption: Mündlich
+    chapters:
+      - file: FSST
