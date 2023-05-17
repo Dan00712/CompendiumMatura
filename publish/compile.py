@@ -7,24 +7,32 @@ log = logging.getLogger('compile')
 def build_book(path=NOTEBOOK_PATH, output=BUILD_PATH):
     cmds = ['jupyter-book', 'build', f'{path}', f'--path-output={output}']
     log.debug('running compile with: %s', cmds)
-    process = Popen(cmds, stdout=PIPE)
+    process = Popen(cmds, stdout=PIPE, stderr=PIPE)
 
+    code = process.wait()
     with process.stdout:
         try:
             for line in iter(process.stdout.readline, b''):
                 log.debug(line.strip())
         except CalledProcessError as e:
             log.error(str(e))
+    with process.stderr:
+        try:
+            for line in iter(process.stderr.readline, b''):
+                log.warning(line.strip())
+        except CalledProcessError as e:
+            log.error(str(e))
     
-    return process.wait()
+    return code
+    
     
 
 def main()-> int:
     try:
-        build_book()
+        code = build_book()
     except:
         return 1
-    return 0
+    return code
 
 if __name__ == '__main__':
     exit(main())
