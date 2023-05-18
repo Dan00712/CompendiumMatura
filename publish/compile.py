@@ -9,7 +9,6 @@ def build_book(path=NOTEBOOK_PATH, output=BUILD_PATH):
     log.debug('running compile with: %s', cmds)
     process = Popen(cmds, stdout=PIPE, stderr=PIPE)
 
-    code = process.wait()
     with process.stdout:
         try:
             for line in iter(process.stdout.readline, b''):
@@ -23,6 +22,7 @@ def build_book(path=NOTEBOOK_PATH, output=BUILD_PATH):
         except CalledProcessError as e:
             log.error(str(e))
     
+    code = process.wait()
     return code
     
     
