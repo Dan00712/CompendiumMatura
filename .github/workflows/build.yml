@@ -39,7 +39,7 @@ jobs:
 
       - name: Install Julia dependencies
         run: |
-          julia -e 'using Pkg; Pkg.add("IJulia"); Pkg.add("Conda"); Pkg.add("WebIO"); using IJulia, WebIO; WebIO.install_jupyter_nbextension(); IJulia.installkernel("Julia", "--project=@.")'
+          julia --project=. -e 'using Pkg; Pkg.instantiate(); using IJulia'
 
       - name: Build Jupyter Book
         run: |
