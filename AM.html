@@ -348,7 +348,38 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1b4bbb3786bfab848230cee6ab73afe4ca0bb6a59d0b4e49d07e206945169982.png" src="_images/1b4bbb3786bfab848230cee6ab73afe4ca0bb6a59d0b4e49d07e206945169982.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">PolicyError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">WImage</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;am_media/srdp_am_ma_formelsammlung.pdf&quot;</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages/wand/image.py:9365,</span> in <span class="ni">Image.__init__</span><span class="nt">(self, image, blob, file, filename, pseudo, background, colorspace, depth, extract, format, height, interlace, resolution, sampling_factors, units, width)</span>
+<span class="g g-Whitespace">   </span><span class="mi">9363</span>     <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">blob</span><span class="o">=</span><span class="n">blob</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">9364</span> <span class="k">elif</span> <span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">9365</span>     <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">9366</span> <span class="c1"># clear the wand format, otherwise any subsequent call to</span>
+<span class="g g-Whitespace">   </span><span class="mi">9367</span> <span class="c1"># MagickGetImageBlob will silently change the image to this</span>
+<span class="g g-Whitespace">   </span><span class="mi">9368</span> <span class="c1"># format again.</span>
+<span class="g g-Whitespace">   </span><span class="mi">9369</span> <span class="n">library</span><span class="o">.</span><span class="n">MagickSetFormat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wand</span><span class="p">,</span> <span class="n">binary</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">))</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages/wand/image.py:10120,</span> in <span class="ni">Image.read</span><span class="nt">(self, file, filename, blob, background, colorspace, depth, extract, format, height, interlace, resolution, sampling_factors, units, width)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10118</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">library</span><span class="o">.</span><span class="n">MagickReadImage</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wand</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10119</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
+<span class="ne">&gt; </span><span class="mi">10120</span>     <span class="bp">self</span><span class="o">.</span><span class="n">raise_exception</span><span class="p">()</span>
+<span class="g g-Whitespace">  </span><span class="mi">10121</span>     <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;MagickReadImage returns false, but did not raise &#39;</span>
+<span class="g g-Whitespace">  </span><span class="mi">10122</span>            <span class="s1">&#39;ImageMagick  exception. This can occur when a delegate &#39;</span>
+<span class="g g-Whitespace">  </span><span class="mi">10123</span>            <span class="s1">&#39;is missing, or returns EXIT_SUCCESS without generating a &#39;</span>
+<span class="g g-Whitespace">  </span><span class="mi">10124</span>            <span class="s1">&#39;raster.&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">  </span><span class="mi">10125</span>     <span class="k">raise</span> <span class="n">WandRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages/wand/resource.py:225,</span> in <span class="ni">Resource.raise_exception</span><span class="nt">(self, stacklevel)</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span>     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">224</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">225</span>     <span class="k">raise</span> <span class="n">e</span>
+
+<span class="ne">PolicyError</span>: attempt to perform an operation not allowed by the security policy `PDF&#39; @ error/constitute.c/IsCoderAuthorized/421
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -362,16 +393,16 @@ document.write(`
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "compendiummatura"
         },
         kernelOptions: {
-            name: "python3",
+            name: "compendiummatura",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'compendiummatura'</script>
 
                 </article>
               
