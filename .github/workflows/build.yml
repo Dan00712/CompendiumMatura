@@ -39,7 +39,7 @@ jobs:
       
       - name: Register IPython env
         run: |
-          ipython.exe kernel install --user --name compendiummatura
+          ipython kernel install --user --name compendiummatura
 
       
       - name: Install Julia dependencies
