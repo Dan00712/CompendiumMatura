@@ -38,7 +38,7 @@ jobs:
           pip install -r requirements.txt  # If you have a requirements.txt file
       
       - name: Register IPython env
-      - run: |
+        run: |
           ipython.exe kernel install --user --name compendiummatura
 
       
