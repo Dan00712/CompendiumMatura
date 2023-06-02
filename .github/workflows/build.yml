@@ -46,6 +46,11 @@ jobs:
         run: |
           julia --project=. -e 'using Pkg; Pkg.instantiate(); using IJulia'
 
+      - name: Install ImageMagick and Ghostscript
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick ghostscript
+
       - name: Build Jupyter Book
         run: |
           jupyter-book build notebooks
