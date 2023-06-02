@@ -51,6 +51,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick ghostscript
 
+      - name: Configure ImageMagick policy
+        run: |
+          echo "policy PDF 'read, write, execute, rasterize,  label, exif, path, write-path, filter, image' }" | sudo tee /etc/ImageMagick-6/policy.xml
+
       - name: Build Jupyter Book
         run: |
           jupyter-book build notebooks
