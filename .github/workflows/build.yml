@@ -21,16 +21,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
+      - name: Cache Julia package registry
+        uses: actions/cache@v2
+        with:
+          path: ~/.julia/registries
+          key: ${{ runner.os }}-julia-${{ hashFiles('**/Project.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-julia-
+
       - name: Set up Python and Julia
         uses: actions/setup-python@v2
         with:
           python-version: 3.11
-
-      - name: Cache Julia dependencies
-        uses: julia-actions/setup-julia@v1
-        with:
-          version: 1.9
-          cache-key: ${{ runner.os }}-julia-${{ hashFiles('**/Project.toml') }}
 
       - name: Install Python dependencies
         run: |
