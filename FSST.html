@@ -2232,90 +2232,88 @@ und als receiver des Events genutzt werden kann.</p>
 </div>
 <p>Diese Variante funktioniert nur, wenn das Event nur eine Methode hat!</p>
 <p>Bsp Programm.:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span>public class Main {
-	public static void main(String[] args) {
-		MyFrame boo = new MyFrame();
-	}
-}
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="n">MyFrame</span><span class="w"> </span><span class="n">boo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MyFrame</span><span class="p">();</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
 
-class MyFrame extends Frame{
-	public MyFrame() {
-		super(&quot;Boo&quot;);
-		
-		this.setSize(800,600);
-		
-		this.addWindowListener(new WindowAdapter() {
-			
-			@Override
-			public void windowClosing(WindowEvent e) {
-				setVisible(false);
-				dispose();
-				System.exit(0);
-			}
-			
-		});
-		
-		//this.addMouseListener(this.new MyMouseListener());
-		this.addMouseMotionListener(this.new MyMouseListener());
-		this.setVisible(true);
-	}
-	
-	class MyMouseListener extends MouseAdapter{
-		@Override
-		public void mousePressed(MouseEvent e) {
-			System.out.println(e.getX()+&quot; | &quot;+ e.getY());
-		}
-		
-		@Override
-		public void mouseMoved(MouseEvent e) {
-			// TODO Auto-generated method stub
-			System.out.println(e.getX() + &quot; | &quot; + e.getY());
-		}
-	}
-}
-public class Main {
-	public static void main(String[] args) {
-		MyFrame boo = new MyFrame();
-	}
-}
+<span class="kd">class</span> <span class="nc">MyFrame</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Frame</span><span class="p">{</span>
+<span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">MyFrame</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="kd">super</span><span class="p">(</span><span class="s">&quot;Boo&quot;</span><span class="p">);</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">setSize</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">);</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">addWindowListener</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">WindowAdapter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span>
+<span class="w">			</span><span class="nd">@Override</span>
+<span class="w">			</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">windowClosing</span><span class="p">(</span><span class="n">WindowEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="n">setVisible</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="w">				</span><span class="n">dispose</span><span class="p">();</span>
+<span class="w">				</span><span class="n">System</span><span class="p">.</span><span class="na">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span>
+<span class="w">		</span><span class="p">});</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="c1">//this.addMouseListener(this.new MyMouseListener());</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">addMouseMotionListener</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">new</span><span class="w"> </span><span class="n">MyMouseListener</span><span class="p">());</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">setVisible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="kd">class</span> <span class="nc">MyMouseListener</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">MouseAdapter</span><span class="p">{</span>
+<span class="w">		</span><span class="nd">@Override</span>
+<span class="w">		</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">mousePressed</span><span class="p">(</span><span class="n">MouseEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getX</span><span class="p">()</span><span class="o">+</span><span class="s">&quot; | &quot;</span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getY</span><span class="p">());</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="nd">@Override</span>
+<span class="w">		</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">mouseMoved</span><span class="p">(</span><span class="n">MouseEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="c1">// TODO Auto-generated method stub</span>
+<span class="w">			</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getX</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; | &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getY</span><span class="p">());</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="n">MyFrame</span><span class="w"> </span><span class="n">boo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MyFrame</span><span class="p">();</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
 
-class MyFrame extends Frame{
-	public MyFrame() {
-		super(&quot;Boo&quot;);
-		
-		this.setSize(800,600);
-		
-		this.addWindowListener(new WindowAdapter() {
-			
-			@Override
-			public void windowClosing(WindowEvent e) {
-				setVisible(false);
-				dispose();
-				System.exit(0);
-			}
-			
-		});
-		
-		//this.addMouseListener(this.new MyMouseListener());
-		this.addMouseMotionListener(this.new MyMouseListener());
-		this.setVisible(true);
-	}
-	
-	class MyMouseListener extends MouseAdapter{
-		@Override
-		public void mousePressed(MouseEvent e) {
-			System.out.println(e.getX()+&quot; | &quot;+ e.getY());
-		}
-		
-		@Override
-		public void mouseMoved(MouseEvent e) {
-			// TODO Auto-generated method stub
-			System.out.println(e.getX() + &quot; | &quot; + e.getY());
-		}
-	}
-}
-
-´``
+<span class="kd">class</span> <span class="nc">MyFrame</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Frame</span><span class="p">{</span>
+<span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="nf">MyFrame</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="kd">super</span><span class="p">(</span><span class="s">&quot;Boo&quot;</span><span class="p">);</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">setSize</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">);</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">addWindowListener</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">WindowAdapter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span>
+<span class="w">			</span><span class="nd">@Override</span>
+<span class="w">			</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">windowClosing</span><span class="p">(</span><span class="n">WindowEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="n">setVisible</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="w">				</span><span class="n">dispose</span><span class="p">();</span>
+<span class="w">				</span><span class="n">System</span><span class="p">.</span><span class="na">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span>
+<span class="w">		</span><span class="p">});</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="c1">//this.addMouseListener(this.new MyMouseListener());</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">addMouseMotionListener</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">new</span><span class="w"> </span><span class="n">MyMouseListener</span><span class="p">());</span>
+<span class="w">		</span><span class="k">this</span><span class="p">.</span><span class="na">setVisible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="kd">class</span> <span class="nc">MyMouseListener</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">MouseAdapter</span><span class="p">{</span>
+<span class="w">		</span><span class="nd">@Override</span>
+<span class="w">		</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">mousePressed</span><span class="p">(</span><span class="n">MouseEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getX</span><span class="p">()</span><span class="o">+</span><span class="s">&quot; | &quot;</span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getY</span><span class="p">());</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">		</span>
+<span class="w">		</span><span class="nd">@Override</span>
+<span class="w">		</span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">mouseMoved</span><span class="p">(</span><span class="n">MouseEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="c1">// TODO Auto-generated method stub</span>
+<span class="w">			</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getX</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; | &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getY</span><span class="p">());</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
